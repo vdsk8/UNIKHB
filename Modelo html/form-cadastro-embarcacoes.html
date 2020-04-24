@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>INSERIR CADASTRO EMBARCAÇÕES</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Bootstrap core CSS -->
+	<link href="bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link type="text/css" href="css/theme.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ 
+<!-- INSERIR CADASTRO EMBARCAÇÕES-->
+<div class="container">
+    <div class="card formulario my-5">
+        <!-- INTRODUCTION -->
+        <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Inserir Aeronave</h1>
+        <hr class="mx-5"/>
+        <div class="mx-5">
+            <p class="text-center text-muted">A UNIK HB atua como divulgadora e intermediadora de vendas e anúncios feitos por proprietários e/ou mandatários mediante comissão sobre as vendas realizadas através do site, conforme tabela de comissões presente no termo de adesão, variando de 5% a 10%.</p>
+            <p class="text-center text-muted">O valor mínimo para anunciar produtos nessa categora é de <span class="font-weight-bold">R$ 150.000,00</span></p>
+        </div>
+        <div class="card-body text-secondary">
+            <form class="container font-weight-bold">
+                <!-- CADASTRO COMUM -->
+                <div class="col-12 text-center my-2">
+                    <h2 class="font-weight-bold">Você é mandatário?</h2>
+                    <div class="d-flex justify-content-center">
+                        <div class="row">
+                            <div class="col-3 mx-4">
+                                <div class="form-check font-weight-normal">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mandatario" value="option1">
+                                    <label class="form-check-label" for="mandatario"><h5>Sim</h5></label>
+                                </div>
+                            </div>
+                            <div class="col-3 mx-4">
+                                <div class="form-check font-weight-normal">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mandatario" value="option1">
+                                    <label class="form-check-label" for="mandatario"><h5>Não</h5></label>
+                                </div>                         
+                            </div>
+                        </div>
+                    </div>  
+                    <button class="btn btn-warning text-white border-0 rounded-0 py-1">Simulador de gratificação</button>
+                </div>
+                <!-- título -->
+                <div class="form-group">
+                    <label for="inlineFormInputName">Título</label>
+                    <input type="text" class="form-control">
+                </div>
+                <!-- ESPECIFICIDADE -->
+                <!-- Preço e anexos -->
+               <div class="row">
+                <div class="col-3 form-group text-center">
+                    <label>Moeda</label>
+                    <div class="form-check font-weight-normal">
+                        <div class="d-inline mx-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="produtoCadastrado" value="option1">
+                            <label class="form-check-label" for="produtoCadastrado">Real</label>
+                        </div>
+                        <div class="d-inline mx-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="produtoCadastrado" value="option1">
+                            <label class="form-check-label" for="produtoCadastrado">Dolar</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 form-group">
+                    <label for="inlineFormInputName">Preço</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-3 form-group text-center">
+                    <label>Financiado</label>
+                    <div class="form-check font-weight-normal">
+                        <div class="d-inline mx-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="produtoCadastrado" value="option1">
+                            <label class="form-check-label" for="produtoCadastrado">Sim</label>
+                        </div>
+                        <div class="d-inline mx-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="produtoCadastrado" value="option1">
+                            <label class="form-check-label" for="produtoCadastrado">Não</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 form-group text-center">
+                    <label>Alienado</label>
+                    <div class="form-check font-weight-normal">
+                        <div class="d-inline mx-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="produtoCadastrado" value="option1">
+                            <label class="form-check-label" for="produtoCadastrado">Sim</label>
+                        </div>
+                        <div class="d-inline mx-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="produtoCadastrado" value="option1">
+                            <label class="form-check-label" for="produtoCadastrado">Não</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 form-group">
+                    <label for="inlineFormInputName">Fotos</label>
+                    <div class="input-group mb-3">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="inputGroupFile01">
+                          <label class="custom-file-label" for="inputGroupFile01">Escolher os arquivos</label>
+                        </div>
+                    </div>
+                    <small><p>Ao escolher, mantenha CTRL precionado para selecionar mais de 1 imagem se necessário. Máximo de 15 fotos</p></small>
+                </div>
+                <div class="col-6 form-group">
+                    <label for="inlineFormInputName">Documentos*</label>
+                    <div class="input-group mb-3">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="inputGroupFile01">
+                          <label class="custom-file-label" for="inputGroupFile01">Escolher os arquivos</label>
+                        </div>
+                    </div>
+                    <small><p>Ao escolher, mantenha CTRL precionado para selecionar mais de 1 imagem se necessário.</p></small>
+                </div>
+                <div class="col-12 form-group">
+                    <label for="inlineFormInputName">Descrição</label>
+                    <textarea type="text" class="form-control" name="paragraph" rows="5"></textarea>
+                </div>
+                <div class="col-12 form-group">
+                    <label for="inlineFormInputName">Observações</label>
+                    <textarea type="text" class="form-control" name="paragraph" rows="5"></textarea>
+                    <small><p>*Somente a Unik HB e usuário que cadastrou o produto visualizarão esse campo</p></small>
+                </div>
+                
+           </div>
+            <!-- DADOS DE LOCALIZAÇÃO -->
+            <div class="col-12 text-center my-4">
+                <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Dados de localização</h1>
+                <hr class="mx-5"/>
+            </div>
+            <div class="row">
+                <div class="col-4 form-group">
+                    <label for="exampleInputEmail1">País*</label>
+                    <select class="custom-select" id="inlineFormCustomSelect">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-4 form-group">
+                    <label for="exampleInputEmail1">Estado*</label>
+                    <select class="custom-select" id="inlineFormCustomSelect">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-4 form-group">
+                    <label for="exampleInputEmail1">Cidade*</label>
+                    <select class="custom-select" id="inlineFormCustomSelect">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-4 form-group">
+                    <label for="inlineFormInputName">CEP*</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-4 form-group">
+                    <label for="inlineFormInputName">Logradouro*</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-4 form-group">
+                    <label for="inlineFormInputName">Número*</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-4 form-group">
+                    <label for="exampleInputEmail1">Bairro*</label>
+                    <select class="custom-select" id="inlineFormCustomSelect">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-4 form-group">
+                    <label for="inlineFormInputName">Complemento*</label>
+                    <input type="text" class="form-control">
+                </div>                    
+            </div>
+            <small class="form-text">*Somente a Unik HB e usuário que cadastrou o produto visualizarão esse campo.</small>
+            <!-- BOTÃO -->
+            <div class="col-12 text-right mt-2">
+                <button type="submit" class="btn btn-warning text-white text-uppercase p-3">cadastrar</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
