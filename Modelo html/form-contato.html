@@ -29,40 +29,36 @@
         <hr class="mx-5"/>
         <div class="card-body text-secondary">
             <p class="text-center mx-5">Prezamos muito para que a comunicação com nossos clientes seja a mais eficaz possível. Por isso, diversos canais de comunicação estão disponíveis para que você seja atendido(a) da melhor forma. Entre em contato conosco!</p>
-            <form class="row font-weight-bold">
-                <div class="col-6">
-                    <div class="form-group">
-                        <label for="inlineFormInputName">Nome</label>
+            <form class="container">
+                <div class="row">
+                    <div class="col-6 form-group">
+                        <label for="nome">Nome</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Telefone</label>
-                        <input type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">E-mail</label>
+                    <div class="col-6 form-group">
+                        <label for="email">E-mail</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Assunto</label>
-                        <select class="custom-select" id="inlineFormCustomSelect">
+                    <div class="col-6 form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 form-group">
+                        <label for="assunto">Assunto</label>
+                        <select class="custom-select" id="assunto">
                             <option selected>Choose...</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
                     </div>
-                </div>
-                <div class="col-12">
-                    <div class="form-group">
+                    <div class="col-12 form-group">
                         <label for="exampleInputEmail1">Mensagem</label>
                         <textarea type="text" class="form-control" name="paragraph" rows="9" cols="50"></textarea>
+                    </div>          
+                    <div class="col-12 text-right mt-2">
+                        <button type="submit" class="btn btn-warning text-white text-uppercase p-3">enviar</button>
                     </div>
-                </div>                
-                <div class="col-12 text-right mt-2">
-                    <button type="submit" class="btn btn-warning text-white text-uppercase p-3">enviar</button>
                 </div>
             </form>
         </div>

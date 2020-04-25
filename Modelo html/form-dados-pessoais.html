@@ -31,55 +31,53 @@
         <h1 class="card-title text-center text-uppercase text-primary font-weight-bold mt-4">Dados Pessoais</h1>
         <hr class="mx-5"/>
         <div class="card-body text-secondary">
-            <form class="row font-weight-bold">
-                <div class="col-6">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">CPF</label>
+            <form class="container">
+                <div class="row">
+                    <div class="col-6 form-group">
+                        <label for="cpf">CPF</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Data de Nascimento</label>
+                    <div class="col-6 form-group">
+                        <label for="rg">RG</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Celular</label>
+                    <div class="col-6 form-group">
+                        <label for="dataDeNascimento">Data de Nascimento</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Telefone Residencial</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Profissão</label>
-                        <select class="custom-select" id="inlineFormCustomSelect">
-                            <option selected>Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">RG</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Estado Civil</label>
-                        <select class="custom-select" id="inlineFormCustomSelect">
+                    <div class="col-6 form-group">
+                        <label for="estadoCivil">Estado Civil</label>
+                        <select class="custom-select" id="estadoCivil">
                             <option selected placeholder="Solteiro"></option>
                             <option value="1"></option>
                             <option value="2"></option>
                             <option value="3"></option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Telefone</label>
+                    <div class="col-6 form-group">
+                        <label for="celular">Celular</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Nacionalidade</label>
-                        <select class="custom-select" id="inlineFormCustomSelect">
+                    <div class="col-6 form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 form-group">
+                        <label for="telefoneResidencial">Telefone Residencial</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-6 form-group">
+                        <label for="nacionalidade">Nacionalidade</label>
+                        <select class="custom-select" id="nacionalidade">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-6 form-group">
+                        <label for="profissao">Profissão</label>
+                        <select class="custom-select" id="profissao">
                             <option selected>Choose...</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
@@ -92,69 +90,66 @@
                     <h1 class="text-center text-uppercase text-primary font-weight-bold mt-4">Dados de localização</h1>
                     <hr class="mx-5"/>
                 </div>
-                <div class="col-6">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">País</label>
-                        <select class="custom-select" id="inlineFormCustomSelect">
+                <div class="row">
+                    <div class="col-6 form-group">
+                        <label for="pais">País</label>
+                        <select class="custom-select" id="pais">
                             <option selected>Choose...</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Cidade</label>
-                        <select class="custom-select" id="inlineFormCustomSelect">
+                    <div class="col-6 form-group">
+                        <label for="estado">Estado</label>
+                        <select class="custom-select" id="estado">
                             <option selected>Choose...</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Logradouro</label>
+                    <div class="col-6 form-group">
+                        <label for="cidade">Cidade</label>
+                        <select class="custom-select" id="cidade">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-6 form-group">
+                        <label for="cep">CEP</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Bairro</label>
-                        <select class="custom-select" id="inlineFormCustomSelect">
-                            <option selected>Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Li e concordo com os termos de uso</label>
-                    </div>
-                </div>
-
-                <div class="col-6">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Estado</label>
-                        <select class="custom-select" id="inlineFormCustomSelect">
-                            <option selected>Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">CEP</label>
+                    <div class="col-6 form-group">
+                        <label for="logadouro">Logradouro</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="form-group">
+                    <div class="col-6 form-group">
                         <label for="exampleInputEmail1">Número</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Complemento</label>
+                    <div class="col-6 form-group">
+                        <label for="bairro">Bairro</label>
+                        <select class="custom-select" id="bairro">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-6 form-group">
+                        <label for="complemento">Complemento</label>
                         <input type="text" class="form-control">
                     </div>
-                </div>
-                <div class="col-12 text-right mt-2">
-                    <button type="submit" class="btn btn-warning text-white text-uppercase p-3">cadastrar</button>
+                    <div class="col-6 form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Li e concordo com os termos de uso</label>
+                    </div>
+                    <div class="col-12 text-right mt-2">
+                        <button type="submit" class="btn btn-warning text-white text-uppercase p-3">cadastrar</button>
+                    </div>
                 </div>
             </form>
         </div>

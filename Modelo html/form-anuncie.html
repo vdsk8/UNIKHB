@@ -29,8 +29,8 @@
         <hr class="mx-5"/>
         <div class="card-body text-secondary">
             <p class="text-center mx-5">Nesse primeiro momento, envie apenas a sua ideia básica de anúncio. Através dela, nossa equipe irá avaliar a melhor opção para que seu anúncio atinja o seu público específico da maneira mais eficiente. Nosso compromisso é com o seu resultado!</p>
-            <form class="row font-weight-bold">
-                <div class="col-12 text-center my-4">
+            <form class="container">
+                <div class="col-12 form-group text-center">
                     <h5 class="font-weight-bold">Tipo de Publicidade</h5>
                     <div class="row mt-3">
                         <div class="col-6">
@@ -40,228 +40,223 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="produtoCadastrado" value="option1">
-                            <label class="form-check-label" for="produtoCadastrado"><h5>Banner com URL externa</h5></label>                            
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="bannerComUrlExterna" value="option1">
+                            <label class="form-check-label" for="bannerComUrlExterna"><h5>Banner com URL externa</h5></label>                            
                         </div>
                     </div>
                 </div>
-
-                <div class="col-12">
-                    <div class="form-group">
-                        <label for="formAnuncieProdutos">Produtos</label>
-                        <select class="custom-select" id="formAnuncieProdutos">
+                <!-- ESPECIFICIDADES -->
+                <div class="row">
+                    <div class="col-12 form-group">
+                        <label for="produtos">Produtos</label>
+                        <select class="custom-select" id="pordutos">
                             <option selected>Choose...</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="formAnuncieTitulo">Título</label>
-                        <input type="text" class="form-control" id="formAnuncieTitulo">
+                    <div class="col-12 form-group">
+                        <label for="titulo">Título</label>
+                        <input type="text" class="form-control" id="titulo">
                     </div>
-                    <div class="form-group">
-                        <label for="inlineFormInputName">Mensagem</label>
+                    <div class="col-12 form-group">
+                        <label for="mensagem">Mensagem</label>
                         <textarea type="text" class="form-control" name="paragraph" rows="9" cols="50"></textarea>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">E-mail</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div class="col-4 form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="form-group">
-                        <label for="inlineFormInputName">Telefone</label>
+                    <div class="col-4 form-group">
+                        <label for="telefone">Telefone</label>
                         <input type="text" class="form-control">
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="form-group">
-                        <label for="inlineFormInputName">CPF</label>
+                    <div class="col-4 form-group">
+                        <label for="cpf">CPF</label>
                         <input type="text" class="form-control">
                     </div>
-                </div>
-                <div class="col-12">
-                    <h5 class="font-weight-bold">Local</h5>
-                    <button type="button" class="btn btn-link text-secondary">Home</button>
-                    <button type="button" class="btn btn-link text-secondary">Categorias</button>
-                    <button type="button" class="btn btn-link text-secondary">Páginas</button>
-                    <button type="button" class="btn btn-link text-secondary">Buscas</button>
-                    <!-- DESTAQUE HOME-->
-                    <div class="card font-weight-normal my-3">
-                        <div class="row d-flex justify-content-center m-4">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="destaqueHome" value="Destaque-Home">
-                                <label class="form-check-label" for="destaqueHome">Destaque Home</label>
+                    <!-- local banners -->
+                    <div class="col-12">
+                        <h5 class="font-weight-bold">Local</h5>
+                        <button type="button" class="btn btn-link text-secondary">Home</button>
+                        <button type="button" class="btn btn-link text-secondary">Categorias</button>
+                        <button type="button" class="btn btn-link text-secondary">Páginas</button>
+                        <button type="button" class="btn btn-link text-secondary">Buscas</button>
+                        <!-- DESTAQUE HOME-->
+                        <div class="card font-weight-normal my-3">
+                            <div class="row d-flex justify-content-center m-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="destaqueHome" value="Destaque-Home">
+                                    <label class="form-check-label" for="destaqueHome">Destaque Home</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="bannerSecundarioHome" value="Banner-Seccundario-Home">
+                                    <label class="form-check-label" for="bannerSecundarioHome">Banner Secundário Home</label>
+                                </div>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="bannerSecundarioHome" value="Banner-Seccundario-Home">
-                                <label class="form-check-label" for="bannerSecundarioHome">Banner Secundário Home</label>
+                        </div>
+                        <!-- DESTAQUE CATEGORIAS -->
+                        <div class="card font-weight-normal my-3">
+                            <div class="card-header text-primary bg-white">
+                                Destaque Superior
+                            </div>
+                            <div class="row d-flex justify-content-center m-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="categoriaAleatoria" value="Categoria-Aleatoria">
+                                    <label class="form-check-label" for="categoriaAleatoria">Categoria Aleatória</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="imovel" value="Imovel">
+                                    <label class="form-check-label" for="imovel">Imóvel</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="automovel" value="Automovel">
+                                    <label class="form-check-label" for="automovel">Automóvel</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="motocicleta" value="Motocicleta">
+                                    <label class="form-check-label" for="motocicleta">Motocicleta</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="embarcacao" value="Embarcacao">
+                                    <label class="form-check-label" for="embarcacao">Embarcação</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="aeronave" value="Aeronave">
+                                    <label class="form-check-label" for="aeronave">Aeronave</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="maquinaAgricolaConstrucao" value="Maquina-Agricola-Construcao">
+                                    <label class="form-check-label" for="maquinaAgricolaConstrucao">Máquina agrícola/construção</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="maquinaIndustrial" value="Maquina-Industrial">
+                                    <label class="form-check-label" for="maquinaIndustrial">Máquina industrial</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="outros" value="Outros">
+                                    <label class="form-check-label" for="outros">Outros</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card font-weight-normal my-3">
+                            <div class="card-header text-primary bg-white">
+                                Destaque Principal
+                            </div>
+                            <div class="row d-flex justify-content-center m-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="categoriaAleatoria" value="Categoria-Aleatoria">
+                                    <label class="form-check-label" for="categoriaAleatoria">Categoria Aleatória</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="imovel" value="Imovel">
+                                    <label class="form-check-label" for="imovel">Imóvel</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="automovel" value="Automovel">
+                                    <label class="form-check-label" for="automovel">Automóvel</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="motocicleta" value="Motocicleta">
+                                    <label class="form-check-label" for="motocicleta">Motocicleta</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="embarcacao" value="Embarcacao">
+                                    <label class="form-check-label" for="embarcacao">Embarcação</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="aeronave" value="Aeronave">
+                                    <label class="form-check-label" for="aeronave">Aeronave</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="maquinaAgricolaConstrucao" value="Maquina-Agricola-Construcao">
+                                    <label class="form-check-label" for="maquinaAgricolaConstrucao">Máquina agrícola/construção</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="maquinaIndustrial" value="Maquina-Industrial">
+                                    <label class="form-check-label" for="maquinaIndustrial">Máquina industrial</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="outros" value="Outros">
+                                    <label class="form-check-label" for="outros">Outros</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- DESTAQUE PÁGINAS -->
+                        <div class="card font-weight-normal my-3">
+                            <div class="row d-flex justify-content-center m-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="paginaAleatoria" value="Pagina-Aleatoria">
+                                    <label class="form-check-label" for="paginaAleatoria">Página Aleatória</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="vantagens" value="Vantagens">
+                                    <label class="form-check-label" for="vantagens">Vantagens</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="comoFunciona" value="Como-Funciona">
+                                    <label class="form-check-label" for="comoFunciona">Como Funciona</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="assessoriaJuridica" value="Assessoria-Juridica">
+                                    <label class="form-check-label" for="assessoriaJuridica">Assessoria Jurídica</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="contato" value="Contato">
+                                    <label class="form-check-label" for="contato">Contato</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="linksUteis" value="Links-Uteis">
+                                    <label class="form-check-label" for="linksUteis">Links Úteis</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="documentos" value="Documentos">
+                                    <label class="form-check-label" for="documentos">Documentos</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="procedimentos" value="Procedimentos">
+                                    <label class="form-check-label" for="procedimentos">Procedimentos</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="quemSomos" value="Quem-somos">
+                                    <label class="form-check-label" for="quemSomos">Quem Somos</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="duvidasfrequentes" value="Duvidas-Frequentes">
+                                    <label class="form-check-label" for="duvidasfrequentes">Dúvidas Frequentes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="dicionarios" value="Dicionarios">
+                                    <label class="form-check-label" for="dicionarios">Dicionários</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="publicidade" value="Publicidade">
+                                    <label class="form-check-label" for="publicidade">Publicidade</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- DESTAQUE BUSCAS-->
+                        <div class="card font-weight-normal my-3">
+                            <div class="row d-flex justify-content-center m-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="bannerLateral" value="Banner-Lateral">
+                                    <label class="form-check-label" for="bannerLateral">Banner Lateral</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="bannerProdutos" value="Banner-Produtos">
+                                    <label class="form-check-label" for="bannerProdutos">Banner Produtos</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="bannerSuperior" value="Banner-Superior">
+                                    <label class="form-check-label" for="bannerSuperior">Banner Superior</label>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- DESTAQUE CATEGORIAS -->
-                    <div class="card font-weight-normal my-3">
-                        <div class="card-header text-primary bg-white">
-                            Destaque Superior
-                        </div>
-                        <div class="row d-flex justify-content-center m-4">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="categoriaAleatoria" value="Categoria-Aleatoria">
-                                <label class="form-check-label" for="categoriaAleatoria">Categoria Aleatória</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="imovel" value="Imovel">
-                                <label class="form-check-label" for="imovel">Imóvel</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="automovel" value="Automovel">
-                                <label class="form-check-label" for="automovel">Automóvel</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="motocicleta" value="Motocicleta">
-                                <label class="form-check-label" for="motocicleta">Motocicleta</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="embarcacao" value="Embarcacao">
-                                <label class="form-check-label" for="embarcacao">Embarcação</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="aeronave" value="Aeronave">
-                                <label class="form-check-label" for="aeronave">Aeronave</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="maquinaAgricolaConstrucao" value="Maquina-Agricola-Construcao">
-                                <label class="form-check-label" for="maquinaAgricolaConstrucao">Máquina agrícola/construção</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="maquinaIndustrial" value="Maquina-Industrial">
-                                <label class="form-check-label" for="maquinaIndustrial">Máquina industrial</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="outros" value="Outros">
-                                <label class="form-check-label" for="outros">Outros</label>
-                            </div>
-                        </div>
+                    <div class="col-12 text-right mt-2">
+                        <button type="submit" class="btn btn-warning text-white text-uppercase p-3">Enviar</button>
                     </div>
-                    <div class="card font-weight-normal my-3">
-                        <div class="card-header text-primary bg-white">
-                            Destaque Principal
-                        </div>
-                        <div class="row d-flex justify-content-center m-4">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="categoriaAleatoria" value="Categoria-Aleatoria">
-                                <label class="form-check-label" for="categoriaAleatoria">Categoria Aleatória</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="imovel" value="Imovel">
-                                <label class="form-check-label" for="imovel">Imóvel</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="automovel" value="Automovel">
-                                <label class="form-check-label" for="automovel">Automóvel</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="motocicleta" value="Motocicleta">
-                                <label class="form-check-label" for="motocicleta">Motocicleta</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="embarcacao" value="Embarcacao">
-                                <label class="form-check-label" for="embarcacao">Embarcação</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="aeronave" value="Aeronave">
-                                <label class="form-check-label" for="aeronave">Aeronave</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="maquinaAgricolaConstrucao" value="Maquina-Agricola-Construcao">
-                                <label class="form-check-label" for="maquinaAgricolaConstrucao">Máquina agrícola/construção</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="maquinaIndustrial" value="Maquina-Industrial">
-                                <label class="form-check-label" for="maquinaIndustrial">Máquina industrial</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="outros" value="Outros">
-                                <label class="form-check-label" for="outros">Outros</label>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- DESTAQUE PÁGINAS -->
-                    <div class="card font-weight-normal my-3">
-                        <div class="row d-flex justify-content-center m-4">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="paginaAleatoria" value="Pagina-Aleatoria">
-                                <label class="form-check-label" for="paginaAleatoria">Página Aleatória</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="vantagens" value="Vantagens">
-                                <label class="form-check-label" for="vantagens">Vantagens</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="comoFunciona" value="Como-Funciona">
-                                <label class="form-check-label" for="comoFunciona">Como Funciona</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="assessoriaJuridica" value="Assessoria-Juridica">
-                                <label class="form-check-label" for="assessoriaJuridica">Assessoria Jurídica</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="contato" value="Contato">
-                                <label class="form-check-label" for="contato">Contato</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="linksUteis" value="Links-Uteis">
-                                <label class="form-check-label" for="linksUteis">Links Úteis</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="documentos" value="Documentos">
-                                <label class="form-check-label" for="documentos">Documentos</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="procedimentos" value="Procedimentos">
-                                <label class="form-check-label" for="procedimentos">Procedimentos</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="quemSomos" value="Quem-somos">
-                                <label class="form-check-label" for="quemSomos">Quem Somos</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="duvidasfrequentes" value="Duvidas-Frequentes">
-                                <label class="form-check-label" for="duvidasfrequentes">Dúvidas Frequentes</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="dicionarios" value="Dicionarios">
-                                <label class="form-check-label" for="dicionarios">Dicionários</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="publicidade" value="Publicidade">
-                                <label class="form-check-label" for="publicidade">Publicidade</label>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- DESTAQUE BUSCAS-->
-                    <div class="card font-weight-normal my-3">
-                        <div class="row d-flex justify-content-center m-4">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="bannerLateral" value="Banner-Lateral">
-                                <label class="form-check-label" for="bannerLateral">Banner Lateral</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="bannerProdutos" value="Banner-Produtos">
-                                <label class="form-check-label" for="bannerProdutos">Banner Produtos</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="bannerSuperior" value="Banner-Superior">
-                                <label class="form-check-label" for="bannerSuperior">Banner Superior</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 text-right mt-2">
-                    <button type="submit" class="btn btn-warning text-white text-uppercase p-3">Enviar</button>
                 </div>
             </form>
         </div>
