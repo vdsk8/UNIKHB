@@ -37,19 +37,15 @@
                 <!-- CADASTRO COMUM -->
                 <div class="col-12 text-center my-2">
                     <h2 class="font-weight-bold">Você é mandatário?</h2>
-                    <div class="d-flex justify-content-center">
-                        <div class="row">
-                            <div class="col-3 mx-4">
-                                <div class="form-check font-weight-normal">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mandatarioSim" value="option1">
-                                    <label class="form-check-label" for="mandatarioSim"><h5>Sim</h5></label>
-                                </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col">
+                            <div class="d-inline mx-auto">
+                                <input id="mandatarioSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="mandatarioSim"><span><span></span></span>Sim</label>
                             </div>
-                            <div class="col-3 mx-4">
-                                <div class="form-check font-weight-normal">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mandatarioNao" value="option1">
-                                    <label class="form-check-label" for="mandatarioNao"><h5>Não</h5></label>
-                                </div>                         
+                            <div class="d-inline mx-auto">
+                                <input id="mandatarioNao" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="mandatarioNao"><span><span></span></span>Não</label>
                             </div>
                         </div>
                     </div>
@@ -64,14 +60,14 @@
                 <div class="row my-3">
                     <div class="col-4 form-group text-center">
                         <label for="condicao">Condição</label>
-                        <div class="form-check font-weight-normal">
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="novo" value="option1">
-                                <label class="form-check-label" for="novo">Novo</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="condicaoNovo" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="condicaoNovo"><span><span></span></span>Novo</label>
                             </div>
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="usado" value="option1">
-                                <label class="form-check-label" for="usado">Usado</label>
+                            <div class="d-inline mx-auto">
+                                <input id="condicaoUsado" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="condicaoUsado" class="radio-orange"><span><span></span></span>Usado</label>
                             </div>
                         </div>
                     </div>
@@ -146,287 +142,287 @@
                     </div>
                     <div class="col-4 form-group text-center">
                         <label>DPEM pago</label>
-                        <div class="form-check font-weight-normal">
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="dpemPagoSim" value="option1">
-                                <label class="form-check-label" for="dpemPagoSim">Sim</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="dpemPagoSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="dpemPagoSim"><span><span></span></span>Sim</label>
                             </div>
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="dpemPagoNao" value="option1">
-                                <label class="form-check-label" for="dpemPagoNao">Não</label>
+                            <div class="d-inline mx-auto">
+                                <input id="dpemPagoNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="dpemPagoNao" class="radio-orange"><span><span></span></span>Não</label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Equipamentos e acessórios -->
                 <h5 class="font-weight-bold my-2">Equipamentos e Acessórios</h5>
-                <div class="container my-3">
-                    <div class="row my-3">
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="arCondicionado">
-                            <label class="form-check-label" for="arCondicionado">Ar condicionado</label>
+                <div class="container my-3 mx-0 p-0">
+                    <div class="row my-3 ">
+                        <div class="col-4">
+                            <input id="arCondicionado" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="arCondicionado"><span></span>Ar condicionado</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="sistemaPurificadorCombustivel">
-                            <label class="form-check-label" for="sistemaPurificadorCombustivel">Sistema purificador de combustível</label>
+                        <div class="col-4">
+                            <input id="sistPurificadorCombustivel" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="sistPurificadorCombustivel"><span></span>Sist. purificador de combustível</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="radar">
-                            <label class="form-check-label" for="radar">Radar</label>
+                        <div class="col-4">
+                            <input id="radar" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="radar"><span></span>Radar</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="guinchoDeAncora">
-                            <label class="form-check-label" for="guinchoDeAncora">Guincho de âncora</label>
+                        <div class="col-4">
+                            <input id="guinchoDeAncora" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="guinchoDeAncora"><span></span>Guincho de âncora</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="gerador">
-                            <label class="form-check-label" for="gerador">Gerador</label>
+                        <div class="col-4">
+                            <input id="gerador" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="gerador"><span></span>Gerador</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="radioVhfEBussola">
-                            <label class="form-check-label" for="radioVhfEBussola">Rádio VHF e bússola</label>
+                        <div class="col-4">
+                            <input id="radioVhfEBussola" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="radioVhfEBussola"><span></span>Rádio VHF e bússola</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="pilotoAutomatico">
-                            <label class="form-check-label" for="pilotoAutomatico">Piloto automático</label>
+                        <div class="col-4">
+                            <input id="pilotoAutomatico" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="pilotoAutomatico"><span></span>Piloto automático</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="gps">
-                            <label class="form-check-label" for="gps">GPS</label>
+                        <div class="col-4">
+                            <input id="gps" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="gps"><span></span>GPS</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="geladeira">
-                            <label class="form-check-label" for="geladeira">Geladeira</label>
+                        <div class="col-4">
+                            <input id="geladeira" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="geladeira"><span></span>Geladeira</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="toldo">
-                            <label class="form-check-label" for="toldo">Toldo</label>
+                        <div class="col-4">
+                            <input id="toldo" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="toldo"><span></span>Toldo</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="ponteHidraulica">
-                            <label class="form-check-label" for="ponteHidraulica">Ponte Hidráulica</label>
+                        <div class="col-4">
+                            <input id="ponteHidraulica" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="ponteHidraulica"><span></span>Ponte Hidráulica</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="capotaRetratil">
-                            <label class="form-check-label" for="capotaRetratil">Capota retrátil</label>
+                        <div class="col-4">
+                            <input id="capotaRetratil" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="capotaRetratil"><span></span>Capota retrátil</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="churrasqueira">
-                            <label class="form-check-label" for="churrasqueira">Churrasqueira</label>
+                        <div class="col-4">
+                            <input id="churrasqueira" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="churrasqueira"><span></span>Churrasqueira</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="flapsHidraulicos">
-                            <label class="form-check-label" for="flapsHidraulicos">Flaps hidráulicos</label>
+                        <div class="col-4">
+                            <input id="flapsHidraulicos" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="flapsHidraulicos"><span></span>Flaps hidráulicos</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="bateriasDeServicos">
-                            <label class="form-check-label" for="bateriasDeServicos">Baterias de serviços</label>
+                        <div class="col-4">
+                            <input id="bateriasDeServicos" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="bateriasDeServicos"><span></span>Baterias de serviços</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="geradorDeBaterias">
-                            <label class="form-check-label" for="geradorDeBaterias">Gerador de baterias</label>
+                        <div class="col-4">
+                            <input id="geradorDeBateria" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="geradorDeBateria"><span></span>Gerador de baterias</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="direcaoHidraulica">
-                            <label class="form-check-label" for="direcaoHidraulica">Direção Hidráulica</label>
+                        <div class="col-4">
+                            <input id="direcaoHidraulica" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="direcaoHidraulica"><span></span>Direção Hidráulica</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="pia">
-                            <label class="form-check-label" for="pia">Pia</label>
+                        <div class="col-4">
+                            <input id="pia" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="pia"><span></span>Pia</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="carretaDeEncalhe">
-                            <label class="form-check-label" for="carretaDeEncalhe">Carreta de encalhe</label>
+                        <div class="col-4">
+                            <input id="carretaDeEncalhe" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="carretaDeEncalhe"><span></span>Carreta de encalhe</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="iceMaker">
-                            <label class="form-check-label" for="iceMaker">Ice maker</label>
+                        <div class="col-4">
+                            <input id="iceMaker" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="iceMaker"><span></span>Ice maker</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="sky">
-                            <label class="form-check-label" for="sky">Sky</label>
+                        <div class="col-4">
+                            <input id="sky" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="sky"><span></span>Sky</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="bombaDePorao">
-                            <label class="form-check-label" for="bombaDePorao">Bomba de porão</label>
+                        <div class="col-4">
+                            <input id="bombaDePorao" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="bombaDePorao"><span></span>Bomba de porão</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="sistemaeComandoEletronicosIntegrados">
-                            <label class="form-check-label" for="sistemaeComandoEletronicosIntegrados">Sistema e comando eletrônicos integrados</label>
+                        <div class="col-4">
+                            <input id="sistComandoEletronicosIntegrados" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="sistComandoEletronicosIntegrados"><span></span>Sist. e comando eletrônicos integrados</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="sonar">
-                            <label class="form-check-label" for="sonar">Sonar</label>
+                        <div class="col-4">
+                            <input id="sonar" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="sonar"><span></span>Sonar</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="bote">
-                            <label class="form-check-label" for="bote">Bote</label>
+                        <div class="col-4">
+                            <input id="bote" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="bote"><span></span>Bote</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="sistemaDeSomeTvIntegrados">
-                            <label class="form-check-label" for="sistemaDeSomeTvIntegrados">Sistema de som e TV integrados</label>
+                        <div class="col-4">
+                            <input id="sistDeSomeTvIntegrados" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="sistDeSomeTvIntegrados"><span></span>Sist. de som e TV integrados</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="velaGrande">
-                            <label class="form-check-label" for="velaGrande">Vela grande</label>
+                        <div class="col-4">
+                            <input id="velaGrande" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="velaGrande"><span></span>Vela grande</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="boiler">
-                            <label class="form-check-label" for="boiler">Boiler</label>
+                        <div class="col-4">
+                            <input id="boiler" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="boiler"><span></span>Boiler</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="inversor">
-                            <label class="form-check-label" for="inversor">Inversor</label>
+                        <div class="col-4">
+                            <input id="inversor" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="inversor"><span></span>Inversor</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="estabilizadoresEmPas">
-                            <label class="form-check-label" for="estabilizadoresEmPas">Estabilizadores em pás</label>
+                        <div class="col-4">
+                            <input id="estabilizadoresEmPas" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="estabilizadoresEmPas"><span></span>Estabilizadores em pás</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="salvatagemCompleta">
-                            <label class="form-check-label" for="salvatagemCompleta">Salvatagem completa</label>
+                        <div class="col-4">
+                            <input id="salvatagemCompleta" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="salvatagemCompleta"><span></span>Salvatagem completa</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="jacuzzi">
-                            <label class="form-check-label" for="jacuzzi">Jacuzzi</label>
+                        <div class="col-4">
+                            <input id="jacuzzi" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="jacuzzi"><span></span>Jacuzzi</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="plataformaSubmergivel">
-                            <label class="form-check-label" for="plataformaSubmergivel">Plataforma submergível</label>
+                        <div class="col-4">
+                            <input id="plataformaSubmergivel" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="plataformaSubmergivel"><span></span>Plataforma submergível</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="fogao">
-                            <label class="form-check-label" for="fogao">Fogão</label>
+                        <div class="col-4">
+                            <input id="fogao" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="fogao"><span></span>Fogão</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="cozinhaGourmet">
-                            <label class="form-check-label" for="cozinhaGourmet">Cozinha gourmet</label>
+                        <div class="col-4">
+                            <input id="cozinhaGourmet" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="cozinhaGourmet"><span></span>Cozinha gourmet</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="toiletes">
-                            <label class="form-check-label" for="toiletes">Toiletes</label>
+                        <div class="col-4">
+                            <input id="toiletes" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="toiletes"><span></span>Toiletes</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="duploCascoAntiRuptura">
-                            <label class="form-check-label" for="duploCascoAntiRuptura">Duplo casco anti-ruptura</label>
+                        <div class="col-4">
+                            <input id="duploCascoAntiRuptura" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="duploCascoAntiRuptura"><span></span>Duplo casco anti-ruptura</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="microondas">
-                            <label class="form-check-label" for="microondas">Microondas</label>
+                        <div class="col-4">
+                            <input id="microondas" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="microondas"><span></span>Microondas</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="televisao">
-                            <label class="form-check-label" for="televisao">Televisão</label>
+                        <div class="col-4">
+                            <input id="televisao" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="televisao"><span></span>Televisão</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="ecoSonda">
-                            <label class="form-check-label" for="ecoSonda">Eco sonda</label>
+                        <div class="col-4">
+                            <input id="ecoSonda" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="ecoSonda"><span></span>Eco sonda</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="garagemNautica">
-                            <label class="form-check-label" for="garagemNautica">Garagem náutica</label>
+                        <div class="col-4">
+                            <input id="garagemNautica" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="garagemNautica"><span></span>Garagem náutica</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="videoDvd">
-                            <label class="form-check-label" for="videoDvd">Video DVD</label>
+                        <div class="col-4">
+                            <input id="videoDvd" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="videoDvd"><span></span>Video DVD</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="bombaDeAguaDoce">
-                            <label class="form-check-label" for="bombaDeAguaDoce">Bomba de água doce</label>
+                        <div class="col-4">
+                            <input id="bombaDeAguaDoce" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="bombaDeAguaDoce"><span></span>Bomba de água doce</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="sistemaDeProtecaodehelices">
-                            <label class="form-check-label" for="sistemaDeProtecaodehelices">Sistema de proteção de hélices</label>
+                        <div class="col-4">
+                            <input id="sistDeProtecaodehelices" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="sistDeProtecaodehelices"><span></span>Sist. de proteção de hélices</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="wcEletrico">
-                            <label class="form-check-label" for="wcEletrico">WC elétrico</label>
+                        <div class="col-4">
+                            <input id="wcEletrico" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="wcEletrico"><span></span>WC elétrico</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="rodaLeme">
-                            <label class="form-check-label" for="rodaLeme">Roda leme</label>
+                        <div class="col-4">
+                            <input id="rodaLeme" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="rodaLeme"><span></span>Roda leme</label>
                         </div>
-                        <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="enrolador">
-                            <label class="form-check-label" for="enrolador">Enrolador</label>
-                        </div>
+                        <div class="col-4">
+                            <input id="enrolador" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="enrolador"><span></span>Enrolador</label>
+                        </div>                      
                     </div>
                 </div>
                 <!-- Preço e anexos -->
                 <div class="row my-3">
-                <div class="col-3 form-group text-center">
-                    <label>Moeda</label>
-                    <div class="form-check font-weight-normal">
-                        <div class="d-inline mx-4">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="moedaReal" value="option1">
-                            <label class="form-check-label" for="moedaReal">Real</label>
-                        </div>
-                        <div class="d-inline mx-4">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="moedaDolar" value="option1">
-                            <label class="form-check-label" for="moedaDolar">Dolar</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 form-group">
-                    <label for="preco">Preço</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="col-3 form-group text-center">
-                    <label>Financiado</label>
-                    <div class="form-check font-weight-normal">
-                        <div class="d-inline mx-4">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="financiadoSim" value="option1">
-                            <label class="form-check-label" for="financiadoSim">Sim</label>
-                        </div>
-                        <div class="d-inline mx-4">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="financiadoNao" value="option1">
-                            <label class="form-check-label" for="financiadoNao">Não</label>
+                    <div class="col-3 form-group text-center">
+                        <label>Moeda</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="moedaReal" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="moedaReal"><span><span></span></span>Real</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input id="moedaDolar" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="moedaDolar" class="radio-orange"><span><span></span></span>Dolar</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-3 form-group text-center">
-                    <label>Alienado</label>
-                    <div class="form-check font-weight-normal">
-                        <div class="d-inline mx-4">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="alienadoSim" value="option1">
-                            <label class="form-check-label" for="alienadoSim">Sim</label>
-                        </div>
-                        <div class="d-inline mx-4">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="alienadoNao" value="option1">
-                            <label class="form-check-label" for="alienadoNao">Não</label>
+                    <div class="col-3 form-group">
+                        <label for="preco">Preço</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-3 form-group text-center">
+                        <label>Financiado</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="financiadoSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="financiadoSim"><span><span></span></span>Sim</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input id="financiadoNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="financiadoNao" class="radio-orange"><span><span></span></span>Não</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6 form-group">
-                    <label for="fotos">Fotos</label>
-                    <div class="input-group mb-3">
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="arquivosFotos">
-                            <label class="custom-file-label" for="arquivosFotos">Escolher os arquivos</label>
+                    <div class="col-3 form-group text-center">
+                        <label>Alienado</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="alienadoSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="alienadoSim"><span><span></span></span>Sim</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input id="alienadoNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="alienadoNao" class="radio-orange"><span><span></span></span>Não</label>
+                            </div>
                         </div>
                     </div>
-                    <small><p>Ao escolher, mantenha CTRL precionado para selecionar mais de 1 imagem se necessário. Máximo de 15 fotos</p></small>
-                </div>
-                <div class="col-6 form-group">
-                    <label for="documentos">Documentos*</label>
-                    <div class="input-group mb-3">
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="arquivosDocumentos">
-                            <label class="custom-file-label" for="arquivosDocumentos">Escolher os arquivos</label>
+                    <div class="col-6 form-group">
+                        <label for="fotos">Fotos</label>
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="arquivosFotos">
+                                <label class="custom-file-label" for="arquivosFotos">Escolher os arquivos</label>
+                            </div>
                         </div>
+                        <small><p>Ao escolher, mantenha CTRL precionado para selecionar mais de 1 imagem se necessário. Máximo de 15 fotos</p></small>
                     </div>
-                    <small><p>Ao escolher, mantenha CTRL precionado para selecionar mais de 1 imagem se necessário.</p></small>
-                </div>
-                <div class="col-12 form-group">
-                    <label for="descricao">Descrição</label>
-                    <textarea type="text" class="form-control" name="paragraph" rows="5"></textarea>
-                </div>
-                <div class="col-12 form-group">
-                    <label for="observacoes">Observações</label>
-                    <textarea type="text" class="form-control" name="paragraph" rows="5"></textarea>
-                    <small><p>*Somente a Unik HB e usuário que cadastrou o produto visualizarão esse campo</p></small>
-                </div>
-                
+                    <div class="col-6 form-group">
+                        <label for="documentos">Documentos*</label>
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="arquivosDocumentos">
+                                <label class="custom-file-label" for="arquivosDocumentos">Escolher os arquivos</label>
+                            </div>
+                        </div>
+                        <small><p>Ao escolher, mantenha CTRL precionado para selecionar mais de 1 imagem se necessário.</p></small>
+                    </div>
+                    <div class="col-12 form-group">
+                        <label for="descricao">Descrição</label>
+                        <textarea type="text" class="form-control" name="paragraph" rows="5"></textarea>
+                    </div>
+                    <div class="col-12 form-group">
+                        <label for="observacoes">Observações</label>
+                        <textarea type="text" class="form-control" name="paragraph" rows="5"></textarea>
+                        <small><p>*Somente a Unik HB e usuário que cadastrou o produto visualizarão esse campo</p></small>
+                    </div>
+                    
                 </div>
                 <!-- DADOS DE LOCALIZAÇÃO -->
                 <div class="col-12 text-center my-4">

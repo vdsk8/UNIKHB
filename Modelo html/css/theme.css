@@ -39,7 +39,7 @@ small {
 	color: #fff000!important;
 }
 
-/* MAIN TITLE */
+/* main title */
 
 .main-title {
 	text-transform: uppercase;
@@ -121,6 +121,101 @@ small {
 
 .border-primary {
 	border-color: #80D6ff!important;
+}
+
+/* RADIO AND CHECKBOX */
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old) {
+width: 2em;
+margin: 0;
+padding: 0;
+font-size: 1em;
+opacity: 0;
+}
+
+input[type=checkbox]:not(old) + label, 
+input[type=radio   ]:not(old) + label {
+display: inline-block;
+margin-left: -2em;
+line-height: 1.5em;
+}
+
+ /* ORANGE CHECKBOX */
+ /* unselected and border */
+.checkbox-orange[type=checkbox]:not(old) + label > span {
+display: inline-block;
+width: 0.875em;
+height: 0.875em;
+margin: 0.25em 0.5em 0.25em 0.25em;
+border: 0.1em solid #a5a5a5;
+border-radius: 0em;
+background: #ffffff;
+vertical-align: bottom;
+}
+ /* checked */
+.checkbox-orange[type=checkbox]:not(old):checked + label > span:before{
+content: '✓';
+display: block;
+width: 1em;
+color: #ffa200;
+font-size: 0.7em;
+line-height: 0.9em;
+text-align: center;
+text-shadow: 0 0 0.0714em #775417;
+font-weight: bold;
+}
+
+/* WHITE CHECKBOX */
+/* unselected and border */
+.checkbox-white[type=checkbox]:not(old) + label > span {
+display: inline-block;
+width: 0.875em;
+height: 0.875em;
+margin: 0.25em 0.5em 0.25em 0.25em;
+border: 0.1em solid #ffffff;
+border-radius: 0em;
+background: transparent;
+vertical-align: bottom;
+}
+/* checked */
+.checkbox-white[type=checkbox]:not(old):checked + label > span:before{
+content: '✓';
+display: block;
+width: 1em;
+color: #f1f1f1;
+font-size: 0.7em;
+line-height: 0.9em;
+text-align: center;
+text-shadow: 0 0 0.0714em #dfdfdf;
+font-weight: bold;
+}
+
+/* ORANGE RADIO */
+/* unselected and border */
+.radio-orange[type=radio]:not(old) + label > span{
+display: inline-block;
+width: 0.875em;
+height: 0.875em;
+margin: 0.25em 0.5em 0.25em 0.25em;
+border: 0.07em solid #a5a5a5;
+border-radius: 1em;
+background: #ffffff;
+vertical-align: bottom;
+}
+/* selected */
+.radio-orange[type=radio]:not(old):checked +  label > span > span{
+display: block;
+width: 0.5em;
+height: 0.5em;
+margin: 0.125em;
+border: 0.0625em solid #ffa200;
+border-radius: 1em;
+background: #ffa200;
+background-image:    -moz-linear-gradient(#fdb63b,#e28f00);
+background-image:     -ms-linear-gradient(#fdb63b,#e28f00);
+background-image:      -o-linear-gradient(#fdb63b,#e28f00);
+background-image: -webkit-linear-gradient(#fdb63b,#e28f00);
+background-image:         linear-gradient(#fdb63b,#e28f00);
 }
 
 /* NAVBAR */

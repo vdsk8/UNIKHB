@@ -32,17 +32,19 @@
             <form class="container">
                 <div class="col-12 form-group text-center">
                     <h5 class="font-weight-bold">Tipo de Publicidade</h5>
-                    <div class="row mt-3">
-                        <div class="col-6">
-                            <div class="form-check font-weight-normal">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="produtoCadastrado" value="option1">
-                                <label class="form-check-label" for="produtoCadastrado"><h5>Produto cadastrado no site</h5></label>
-                            </div>
+                    <div class="row d-flex justify-content-center mt-3">
+                        <div class="d-inline mx-2">
+                            <input id="produtoCadastrado" class="radio-orange" type="radio" name="radio" value="1"/>
+                            <label for="produtoCadastrado"><span><span></span></span>
+                                <h5 class="font-weight-normal d-inline">Produto cadastrado no site</h5>
+                            </label>
                         </div>
-                        <div class="col-6">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="bannerComUrlExterna" value="option1">
-                            <label class="form-check-label" for="bannerComUrlExterna"><h5>Banner com URL externa</h5></label>                            
-                        </div>
+                        <div class="d-inline mx-2">
+                            <input id="bannerComUrlExterna" class="radio-orange" type="radio" name="radio" value="2"/>
+                            <label for="bannerComUrlExterna"><span><span></span></span>
+                                <h5 class="font-weight-normal d-inline">Banner com URL externa</h5>
+                            </label>
+                        </div>                        
                     </div>
                 </div>
                 <!-- ESPECIFICIDADES -->
@@ -83,17 +85,17 @@
                         <button type="button" class="btn btn-link text-secondary">Categorias</button>
                         <button type="button" class="btn btn-link text-secondary">Páginas</button>
                         <button type="button" class="btn btn-link text-secondary">Buscas</button>
-                        <!-- DESTAQUE HOME-->
+                        <!-- DESTAQUE HOME -->
                         <div class="card font-weight-normal my-3">
                             <div class="row d-flex justify-content-center m-4">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="destaqueHome" value="Destaque-Home">
-                                    <label class="form-check-label" for="destaqueHome">Destaque Home</label>
+                                <div class="mx-2">
+                                    <input id="destaqueHome" class="checkbox-orange" type="checkbox" name="checkbox" value="destaque-home"/>
+                                    <label for="destaqueHome"><span></span>Destaque Home</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="bannerSecundarioHome" value="Banner-Seccundario-Home">
-                                    <label class="form-check-label" for="bannerSecundarioHome">Banner Secundário Home</label>
-                                </div>
+                                <div class="mx-2">
+                                    <input id="bannerSecundarioHome" class="checkbox-orange" type="checkbox" name="checkbox" value="banner-secundario-home"/>
+                                    <label for="bannerSecundarioHome"><span></span>Banner Secundário Home</label>
+                                </div>                            
                             </div>
                         </div>
                         <!-- DESTAQUE CATEGORIAS -->
@@ -102,41 +104,41 @@
                                 Destaque Superior
                             </div>
                             <div class="row d-flex justify-content-center m-4">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="categoriaAleatoria" value="Categoria-Aleatoria">
-                                    <label class="form-check-label" for="categoriaAleatoria">Categoria Aleatória</label>
+                                <div class="mx-2">
+                                    <input id="categoriaAleatoria" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                                    <label for="categoriaAleatoria"><span></span>Categoria Aleatória</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="imovel" value="Imovel">
-                                    <label class="form-check-label" for="imovel">Imóvel</label>
+                                <div class="mx-2">
+                                    <input id="imovel" class="checkbox-orange" type="checkbox" name="checkbox" value="imovel"/>
+                                    <label for="imovel"><span></span>Imóvel</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="automovel" value="Automovel">
-                                    <label class="form-check-label" for="automovel">Automóvel</label>
+                                <div class="mx-2">
+                                    <input id="automovel" class="checkbox-orange" type="checkbox" name="checkbox" value="automovel"/>
+                                    <label for="automovel"><span></span>Automóvel</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="motocicleta" value="Motocicleta">
-                                    <label class="form-check-label" for="motocicleta">Motocicleta</label>
+                                <div class="mx-2">
+                                    <input id="motocicleta" class="checkbox-orange" type="checkbox" name="checkbox" value="motocicleta"/>
+                                    <label for="motocicleta"><span></span>Motocicleta</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="embarcacao" value="Embarcacao">
-                                    <label class="form-check-label" for="embarcacao">Embarcação</label>
+                                <div class="mx-2">
+                                    <input id="embarcacao" class="checkbox-orange" type="checkbox" name="checkbox" value="embarcacao"/>
+                                    <label for="embarcacao"><span></span>Embarcação</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="aeronave" value="Aeronave">
-                                    <label class="form-check-label" for="aeronave">Aeronave</label>
+                                <div class="mx-2">
+                                    <input id="aeronave" class="checkbox-orange" type="checkbox" name="checkbox" value="aeronave"/>
+                                    <label for="aeronave"><span></span>Aeronave</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="maquinaAgricolaConstrucao" value="Maquina-Agricola-Construcao">
-                                    <label class="form-check-label" for="maquinaAgricolaConstrucao">Máquina agrícola/construção</label>
+                                <div class="mx-2">
+                                    <input id="maquinaAgricolaConstrucao" class="checkbox-orange" type="checkbox" name="checkbox" value="maquina-agricola-Construcao"/>
+                                    <label for="maquinaAgricolaConstrucao"><span></span>Máquina agrícola/construção</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="maquinaIndustrial" value="Maquina-Industrial">
-                                    <label class="form-check-label" for="maquinaIndustrial">Máquina industrial</label>
+                                <div class="mx-2">
+                                    <input id="maquinaIndustrial" class="checkbox-orange" type="checkbox" name="checkbox" value="maquina-industrial"/>
+                                    <label for="maquinaIndustrial"><span></span>Máquina industrial</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="outros" value="Outros">
-                                    <label class="form-check-label" for="outros">Outros</label>
+                                <div class="mx-2">
+                                    <input id="outros" class="checkbox-orange" type="checkbox" name="checkbox" value="outros"/>
+                                    <label for="outros"><span></span>Outros</label>
                                 </div>
                             </div>
                         </div>
@@ -145,111 +147,111 @@
                                 Destaque Principal
                             </div>
                             <div class="row d-flex justify-content-center m-4">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="categoriaAleatoria" value="Categoria-Aleatoria">
-                                    <label class="form-check-label" for="categoriaAleatoria">Categoria Aleatória</label>
+                                <div class="mx-2">
+                                    <input id="categoriaAleatoria" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                                    <label for="categoriaAleatoria"><span></span>Categoria Aleatória</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="imovel" value="Imovel">
-                                    <label class="form-check-label" for="imovel">Imóvel</label>
+                                <div class="mx-2">
+                                    <input id="imovel" class="checkbox-orange" type="checkbox" name="checkbox" value="imovel"/>
+                                    <label for="imovel"><span></span>Imóvel</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="automovel" value="Automovel">
-                                    <label class="form-check-label" for="automovel">Automóvel</label>
+                                <div class="mx-2">
+                                    <input id="automovel" class="checkbox-orange" type="checkbox" name="checkbox" value="automovel"/>
+                                    <label for="automovel"><span></span>Automóvel</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="motocicleta" value="Motocicleta">
-                                    <label class="form-check-label" for="motocicleta">Motocicleta</label>
+                                <div class="mx-2">
+                                    <input id="motocicleta" class="checkbox-orange" type="checkbox" name="checkbox" value="motocicleta"/>
+                                    <label for="motocicleta"><span></span>Motocicleta</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="embarcacao" value="Embarcacao">
-                                    <label class="form-check-label" for="embarcacao">Embarcação</label>
+                                <div class="mx-2">
+                                    <input id="embarcacao" class="checkbox-orange" type="checkbox" name="checkbox" value="embarcacao"/>
+                                    <label for="embarcacao"><span></span>Embarcação</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="aeronave" value="Aeronave">
-                                    <label class="form-check-label" for="aeronave">Aeronave</label>
+                                <div class="mx-2">
+                                    <input id="aeronave" class="checkbox-orange" type="checkbox" name="checkbox" value="aeronave"/>
+                                    <label for="aeronave"><span></span>Aeronave</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="maquinaAgricolaConstrucao" value="Maquina-Agricola-Construcao">
-                                    <label class="form-check-label" for="maquinaAgricolaConstrucao">Máquina agrícola/construção</label>
+                                <div class="mx-2">
+                                    <input id="maquinaAgricolaConstrucao" class="checkbox-orange" type="checkbox" name="checkbox" value="maquina-agricola-construcao"/>
+                                    <label for="maquinaAgricolaConstrucao"><span></span>Máquina agrícola/construção</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="maquinaIndustrial" value="Maquina-Industrial">
-                                    <label class="form-check-label" for="maquinaIndustrial">Máquina industrial</label>
+                                <div class="mx-2">
+                                    <input id="maquinaIndustrial" class="checkbox-orange" type="checkbox" name="checkbox" value="maquina-industrial"/>
+                                    <label for="maquinaIndustrial"><span></span>Máquina industrial</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="outros" value="Outros">
-                                    <label class="form-check-label" for="outros">Outros</label>
-                                </div>
+                                <div class="mx-2">
+                                    <input id="outros" class="checkbox-orange" type="checkbox" name="checkbox" value="outros"/>
+                                    <label for="outros"><span></span>Outros</label>
+                                </div>                                
                             </div>
                         </div>
                         <!-- DESTAQUE PÁGINAS -->
                         <div class="card font-weight-normal my-3">
                             <div class="row d-flex justify-content-center m-4">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="paginaAleatoria" value="Pagina-Aleatoria">
-                                    <label class="form-check-label" for="paginaAleatoria">Página Aleatória</label>
+                                <div class="mx-2">
+                                    <input id="paginaAleatoria" class="checkbox-orange" type="checkbox" name="checkbox" value="pagina-aleatoria"/>
+                                    <label for="paginaAleatoria"><span></span>Página Aleatória</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="vantagens" value="Vantagens">
-                                    <label class="form-check-label" for="vantagens">Vantagens</label>
+                                <div class="mx-2">
+                                    <input id="vantagens" class="checkbox-orange" type="checkbox" name="checkbox" value="vantagens"/>
+                                    <label for="vantagens"><span></span>Vantagens</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="comoFunciona" value="Como-Funciona">
-                                    <label class="form-check-label" for="comoFunciona">Como Funciona</label>
+                                <div class="mx-2">
+                                    <input id="comoFunciona" class="checkbox-orange" type="checkbox" name="checkbox" value="como-funciona"/>
+                                    <label for="comoFunciona"><span></span>Como Funciona</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="assessoriaJuridica" value="Assessoria-Juridica">
-                                    <label class="form-check-label" for="assessoriaJuridica">Assessoria Jurídica</label>
+                                <div class="mx-2">
+                                    <input id="assessoriaJuridica" class="checkbox-orange" type="checkbox" name="checkbox" value="assessoria-juridica"/>
+                                    <label for="assessoriaJuridica"><span></span>Assessoria Jurídica</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="contato" value="Contato">
-                                    <label class="form-check-label" for="contato">Contato</label>
+                                <div class="mx-2">
+                                    <input id="contato" class="checkbox-orange" type="checkbox" name="checkbox" value="contato"/>
+                                    <label for="contato"><span></span>Contato</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="linksUteis" value="Links-Uteis">
-                                    <label class="form-check-label" for="linksUteis">Links Úteis</label>
+                                <div class="mx-2">
+                                    <input id="linksUteis" class="checkbox-orange" type="checkbox" name="checkbox" value="links-uteis"/>
+                                    <label for="linksUteis"><span></span>Links Úteis</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="documentos" value="Documentos">
-                                    <label class="form-check-label" for="documentos">Documentos</label>
+                                <div class="mx-2">
+                                    <input id="documentos" class="checkbox-orange" type="checkbox" name="checkbox" value="documentos"/>
+                                    <label for="documentos"><span></span>Documentos</label>                                    
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="procedimentos" value="Procedimentos">
-                                    <label class="form-check-label" for="procedimentos">Procedimentos</label>
+                                <div class="mx-2">
+                                    <input id="procedimentos" class="checkbox-orange" type="checkbox" name="checkbox" value="procedimentos"/>
+                                    <label for="procedimentos"><span></span>Procedimentos</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="quemSomos" value="Quem-somos">
-                                    <label class="form-check-label" for="quemSomos">Quem Somos</label>
+                                <div class="mx-2">
+                                    <input id="quemSomos" class="checkbox-orange" type="checkbox" name="checkbox" value="quem-somos"/>
+                                    <label for="quemSomos"><span></span>Quem Somos</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="duvidasfrequentes" value="Duvidas-Frequentes">
-                                    <label class="form-check-label" for="duvidasfrequentes">Dúvidas Frequentes</label>
+                                <div class="mx-2">
+                                    <input id="duvidasFrequentes" class="checkbox-orange" type="checkbox" name="checkbox" value="duvidas-frequentes"/>
+                                    <label for="duvidasFrequentes"><span></span>Dúvidas Frequentes</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="dicionarios" value="Dicionarios">
-                                    <label class="form-check-label" for="dicionarios">Dicionários</label>
+                                <div class="mx-2">
+                                    <input id="dicionarios" class="checkbox-orange" type="checkbox" name="checkbox" value="dicionarios"/>
+                                    <label for="dicionarios"><span></span>Dicionários</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="publicidade" value="Publicidade">
-                                    <label class="form-check-label" for="publicidade">Publicidade</label>
+                                <div class="mx-2">
+                                    <input id="publidicade" class="checkbox-orange" type="checkbox" name="checkbox" value="publicidade"/>
+                                    <label for="publicidade"><span></span>Publicidade</label>
                                 </div>
                             </div>
                         </div>
                         <!-- DESTAQUE BUSCAS-->
                         <div class="card font-weight-normal my-3">
                             <div class="row d-flex justify-content-center m-4">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="bannerLateral" value="Banner-Lateral">
-                                    <label class="form-check-label" for="bannerLateral">Banner Lateral</label>
+                                <div class="mx-2">
+                                    <input id="bannerLateral" class="checkbox-orange" type="checkbox" name="checkbox" value="banner-lateral"/>
+                                    <label for="bannerLateral"><span></span>Banner Lateral</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="bannerProdutos" value="Banner-Produtos">
-                                    <label class="form-check-label" for="bannerProdutos">Banner Produtos</label>
+                                <div class="mx-2">
+                                    <input id="bannerProdutos" class="checkbox-orange" type="checkbox" name="checkbox" value="banner-produtos"/>
+                                    <label for="bannerProdutos"><span></span>Banner Produtos</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="bannerSuperior" value="Banner-Superior">
-                                    <label class="form-check-label" for="bannerSuperior">Banner Superior</label>
+                                <div class="mx-2">
+                                    <input id="bannerSuperior" class="checkbox-orange" type="checkbox" name="checkbox" value="banner-superior"/>
+                                    <label for="bannerSuperior"><span></span>Banner Superior</label>
                                 </div>
                             </div>
                         </div>

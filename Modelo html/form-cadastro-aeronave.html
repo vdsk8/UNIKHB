@@ -37,19 +37,15 @@
                 <!-- CADASTRO COMUM -->
                 <div class="col-12 text-center my-2">
                     <h2 class="font-weight-bold">Você é mandatário?</h2>
-                    <div class="d-flex justify-content-center">
-                        <div class="row">
-                            <div class="col-3 mx-4">
-                                <div class="form-check font-weight-normal">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mandatarioSim" value="option1">
-                                    <label class="form-check-label" for="mandatarioSim"><h5>Sim</h5></label>
-                                </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col">
+                            <div class="d-inline mx-auto">
+                                <input id="mandatarioSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="mandatarioSim"><span><span></span></span>Sim</label>
                             </div>
-                            <div class="col-3 mx-4">
-                                <div class="form-check font-weight-normal">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mandatarioNao" value="option1">
-                                    <label class="form-check-label" for="mandatarioNao"><h5>Não</h5></label>
-                                </div>                         
+                            <div class="d-inline mx-auto">
+                                <input id="mandatarioNao" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="mandatarioNao"><span><span></span></span>Não</label>
                             </div>
                         </div>
                     </div>
@@ -64,14 +60,14 @@
                 <div class="row my-3">
                     <div class="col-4 form-group text-center">
                         <label for="condicao">Condição</label>
-                        <div class="form-check font-weight-normal">
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="novo" value="option1">
-                                <label class="form-check-label" for="novo">Novo</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="condicaoNovo" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="condicaoNovo"><span><span></span></span>Novo</label>
                             </div>
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="usado" value="option1">
-                                <label class="form-check-label" for="usado">Usado</label>
+                            <div class="d-inline mx-auto">
+                                <input id="condicaoUsado" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="condicaoUsado" class="radio-orange"><span><span></span></span>Usado</label>
                             </div>
                         </div>
                     </div>
@@ -136,27 +132,27 @@
                 <div class="row my-3">
                     <div class="col-4 form-group text-center">
                         <label>Hangarada</label>
-                        <div class="form-check font-weight-normal">
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="hangaradaSim" value="option1">
-                                <label class="form-check-label" for="hangaradaSim">Sim</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="hangaradaSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="hangaradaSim"><span><span></span></span>Sim</label>
                             </div>
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="hangaradaNao" value="option1">
-                                <label class="form-check-label" for="hangaradaNao">Não</label>
+                            <div class="d-inline mx-auto">
+                                <input id="hangaradaNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="hangaradaNao" class="radio-orange"><span><span></span></span>Não</label>
                             </div>
                         </div>
                     </div>
                     <div class="col-4 form-group text-center">
                         <label>Histórico de acidente</label>
-                        <div class="form-check font-weight-normal">
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="historicoDeAcicenteSim" value="option1">
-                                <label class="form-check-label" for="historicoDeAcicenteSim">Sim</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="historicoDeAcicenteSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="historicoDeAcicenteSim"><span><span></span></span>Sim</label>
                             </div>
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="historicoDeAcicenteNao" value="option1">
-                                <label class="form-check-label" for="historicoDeAcicenteNao">Não</label>
+                            <div class="d-inline mx-auto">
+                                <input id="historicoDeAcicenteNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="historicoDeAcicenteNao" class="radio-orange"><span><span></span></span>Não</label>
                             </div>
                         </div>
                     </div>
@@ -187,14 +183,14 @@
                 <div class="row my-3">
                     <div class="col-3 form-group text-center">
                         <label>Moeda</label>
-                        <div class="form-check font-weight-normal">
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="moedaReal" value="option1">
-                                <label class="form-check-label" for="moedaReal">Real</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="moedaReal" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="moedaReal"><span><span></span></span>Real</label>
                             </div>
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="moedaDolar" value="option1">
-                                <label class="form-check-label" for="moedaDolar">Dolar</label>
+                            <div class="d-inline mx-auto">
+                                <input id="moedaDolar" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="moedaDolar" class="radio-orange"><span><span></span></span>Dolar</label>
                             </div>
                         </div>
                     </div>
@@ -204,27 +200,27 @@
                     </div>
                     <div class="col-3 form-group text-center">
                         <label>Financiado</label>
-                        <div class="form-check font-weight-normal">
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="financiadoSim" value="option1">
-                                <label class="form-check-label" for="financiadoSim">Sim</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="financiadoSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="financiadoSim"><span><span></span></span>Sim</label>
                             </div>
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="financiadoNao" value="option1">
-                                <label class="form-check-label" for="financiadoNao">Não</label>
+                            <div class="d-inline mx-auto">
+                                <input id="financiadoNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="financiadoNao" class="radio-orange"><span><span></span></span>Não</label>
                             </div>
                         </div>
                     </div>
                     <div class="col-3 form-group text-center">
                         <label>Alienado</label>
-                        <div class="form-check font-weight-normal">
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="alienadoSim" value="option1">
-                                <label class="form-check-label" for="alienadoSim">Sim</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="alienadoSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="alienadoSim"><span><span></span></span>Sim</label>
                             </div>
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="alienadoNao" value="option1">
-                                <label class="form-check-label" for="alienadoNao">Não</label>
+                            <div class="d-inline mx-auto">
+                                <input id="alienadoNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="alienadoNao" class="radio-orange"><span><span></span></span>Não</label>
                             </div>
                         </div>
                     </div>

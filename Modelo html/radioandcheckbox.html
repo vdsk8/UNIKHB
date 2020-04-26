@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8">
+    <title>Example - pure CSS</title>
+    <style>
+
+        /* RADIO AND CHECKBOX */
+        input[type=checkbox]:not(old),
+        input[type=radio   ]:not(old) {
+        width     : 2em;
+        margin    : 0;
+        padding   : 0;
+        font-size : 1em;
+        opacity   : 0;
+        }
+
+        input[type=checkbox]:not(old) + label, 
+        input[type=radio   ]:not(old) + label {
+        display      : inline-block;
+        margin-left  : -2em;
+        line-height  : 1.5em;
+        }
+
+         /* ORANGE CHECKBOX */
+         /* unselected and border */
+        .checkbox-orange[type=checkbox]:not(old) + label > span {
+        display          : inline-block;
+        width            : 0.875em;
+        height           : 0.875em;
+        margin           : 0.25em 0.5em 0.25em 0.25em;
+        border           : 0.1em solid #888888;
+        border-radius    : 0em;
+        background       : #ffffff;
+        vertical-align   : bottom;
+        }
+         /* checked */
+        .checkbox-orange[type=checkbox]:not(old):checked + label > span:before{
+        content     : '✓';
+        display     : block;
+        width       : 1em;
+        color       : #ffa200;
+        font-size   : 0.875em;
+        line-height : 1em;
+        text-align  : center;
+        text-shadow : 0 0 0.0714em #775417;
+        font-weight : bold;
+        }
+
+        /* WHITE CHECKBOX */
+        /* unselected and border */
+        .checkbox-white[type=checkbox]:not(old) + label > span {
+        display          : inline-block;
+        width            : 0.875em;
+        height           : 0.875em;
+        margin           : 0.25em 0.5em 0.25em 0.25em;
+        border           : 0.1em solid #ffffff;
+        border-radius    : 0em;
+        background       : transparent;
+        vertical-align   : bottom;
+        }
+        /* checked */
+        .checkbox-white[type=checkbox]:not(old):checked + label > span:before{
+        content     : '✓';
+        display     : block;
+        width       : 1em;
+        color       : #f1f1f1;
+        font-size   : 0.875em;
+        line-height : 1em;
+        text-align  : center;
+        text-shadow : 0 0 0.0714em #dfdfdf;
+        font-weight : bold;
+        }
+        
+        /* ORANGE RADIO */
+        /* unselected and border */
+        .radio-orange[type=radio]:not(old) + label > span{
+        display          : inline-block;
+        width            : 0.875em;
+        height           : 0.875em;
+        margin           : 0.25em 0.5em 0.25em 0.25em;
+        border           : 0.07em solid #d1d1d1;
+        border-radius    : 1em;
+        background       : #ffffff;
+        vertical-align   : bottom;
+        }
+        /* selected */
+        .radio-orange[type=radio]:not(old):checked +  label > span > span{
+        display          : block;
+        width            : 0.5em;
+        height           : 0.5em;
+        margin           : 0.125em;
+        border           : 0.0625em solid #ffa200;
+        border-radius    : 1em;
+        background       : #ffa200;
+        background-image :    -moz-linear-gradient(#fdb63b,#e28f00);
+        background-image :     -ms-linear-gradient(#fdb63b,#e28f00);
+        background-image :      -o-linear-gradient(#fdb63b,#e28f00);
+        background-image : -webkit-linear-gradient(#fdb63b,#e28f00);
+        background-image :         linear-gradient(#fdb63b,#e28f00);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="example">
+      <div>
+        <input id="checkbox1" class="checkbox-white" type="checkbox" name="checkbox" value="1" checked="checked"><label for="checkbox1"><span></span>Option 1</label>
+      </div>
+      <div>
+        <input id="checkbox1" class="checkbox-orange" type="checkbox" name="checkbox" value="1" checked="checked"><label for="checkbox1"><span></span>Option 1</label>
+      </div>
+      <div>
+        <input id="checkbox2" class="checkbox-orange" type="checkbox" name="checkbox" value="2"><label for="checkbox2"><span></span>Option 2</label>
+      </div>
+      <div>
+        <input id="checkbox3" class="checkbox-orange" type="checkbox" name="checkbox" value="3"><label for="checkbox3"><span></span>Option 3</label>
+      </div>
+    </div>
+    <div class="example">
+      <div>
+        <input id="radio1" class="radio-orange" type="radio" name="radio" value="1" checked="checked"><label for="radio1"><span><span></span></span>Option 1</label>
+      </div>
+      <div>
+        <input id="radio2" class="radio-orange" type="radio" name="radio" value="2"><label for="radio2"><span><span></span></span>Option 2</label>
+      </div>
+      <div>
+        <input id="radio3" class="radio-orange" type="radio" name="radio" value="3"><label for="radio3"><span><span></span></span>Option 3</label>
+      </div>
+    </div>
+
+
+
+    <div class="mx-2">
+      <input id="categoriaAleatoria" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+      <label for="categoriaAleatoria"><span></span>Categoria Aleatória</label>
+    </div>
+
+    <div class="d-inline mx-2">
+      <input id="produtoCadastrado" class="radio-orange" type="radio" name="radio" value="1"/>
+      <label for="produtoCadastrado"><span><span></span></span>Nome</label>
+    </div>
+
+  </body>
+</html>

@@ -37,19 +37,15 @@
                 <!-- CADASTRO COMUM -->
                 <div class="col-12 text-center my-2">
                     <h2 class="font-weight-bold">Você é mandatário?</h2>
-                    <div class="d-flex justify-content-center">
-                        <div class="row">
-                            <div class="col-3 mx-4">
-                                <div class="form-check font-weight-normal">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mandatarioSim" value="option1">
-                                    <label class="form-check-label" for="mandatarioSim"><h5>Sim</h5></label>
-                                </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col">
+                            <div class="d-inline mx-auto">
+                                <input id="mandatarioSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="mandatarioSim"><span><span></span></span>Sim</label>
                             </div>
-                            <div class="col-3 mx-4">
-                                <div class="form-check font-weight-normal">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mandatarioNao" value="option1">
-                                    <label class="form-check-label" for="mandatarioNao"><h5>Não</h5></label>
-                                </div>                         
+                            <div class="d-inline mx-auto">
+                                <input id="mandatarioNao" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="mandatarioNao"><span><span></span></span>Não</label>
                             </div>
                         </div>
                     </div>
@@ -64,38 +60,38 @@
                 <div class="row my-3">
                     <div class="col-4 form-group text-center">
                         <label for="condicao">Condição</label>
-                        <div class="form-check font-weight-normal">
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="novo" value="option1">
-                                <label class="form-check-label" for="novo">Novo</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="condicaoNovo" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="condicaoNovo"><span><span></span></span>Novo</label>
                             </div>
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="usado" value="option1">
-                                <label class="form-check-label" for="usado">Usado</label>
+                            <div class="d-inline mx-auto">
+                                <input id="condicaoUsado" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="condicaoUsado" class="radio-orange"><span><span></span></span>Usado</label>
                             </div>
                         </div>
                     </div>
                     <div class="col-4 form-group text-center">
                         <label for="condicao">Imóvel</label>
-                        <div class="form-check font-weight-normal">
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rural" value="option1">
-                                <label class="form-check-label" for="rural">Rural</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="rural"class="radio-orange" type="radio" name="inlineRadioOptions" value="option1">
+                                <label for="rural" class="radio-orange"><span><span></span></span>Rural</label>
                             </div>
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="urbano" value="option1">
-                                <label class="form-check-label" for="urbano">Urbano</label>
+                            <div class="d-inline mx-auto">
+                                <input  id="urbano" class="radio-orange" type="radio" name="inlineRadioOptions" value="option1">
+                                <label for="urbano" class="radio-orange"><span><span></span></span>Urbano</label>
                             </div>
                         </div>
                     </div>
                     <div class="col-4 form-group form-check">
-                        <div>
-                            <input type="checkbox" class="form-check-input" id="lancamento">
-                            <label class="form-check-label" for="lancamento">Lançamento</label>
+                        <div class="mx-2">
+                            <input id="lancamento" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="lancamento"><span></span>Lançamento</label>
                         </div>
-                        <div>
-                            <input type="checkbox" class="form-check-input" id="mobiliado">
-                            <label class="form-check-label" for="mobiliado">Mobiliado</label>
+                        <div class="mx-2">
+                            <input id="mobiliado" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="mobiliado"><span></span>Mobiliado</label>
                         </div>
                     </div>
                     <div class="col-4 form-group">
@@ -166,160 +162,160 @@
                 <div class="container my-3">
                     <div class="row">
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="animais">
-                            <label class="form-check-label" for="animais">Animais</label>
+                            <input id="animais" type="checkbox" class="checkbox-orange">
+                            <label for="animais"><span></span>Animais</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="apartamentoDeFundo">
-                            <label class="form-check-label" for="apartamentoDeFundo">Arpatamento de fundo</label>
+                            <input id="apartamentoDeFundo" type="checkbox" class="checkbox-orange">
+                            <label for="apartamentoDeFundo"><span></span>Arpatamento de fundo</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="churrasqueira">
-                            <label class="form-check-label" for="churrasqueira">Churrasqueira</label>
+                            <input id="churrasqueira" type="checkbox" class="checkbox-orange">
+                            <label for="churrasqueira"><span></span>Churrasqueira</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="bicicletaria">
-                            <label class="form-check-label" for="bicicletaria">Biciletaria</label>
+                            <input id="bicicletaria" type="checkbox" class="checkbox-orange">
+                            <label for="bicicletaria"><span></span>Biciletaria</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="academiaDeGinástica">
-                            <label class="form-check-label" for="academiaDeGinástica">Academia de ginástica</label>
+                            <input id="academiaDeGinástica" type="checkbox" class="checkbox-orange">
+                            <label for="academiaDeGinástica"><span></span>Academia de ginástica</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="cozinhaPlanejada">
-                            <label class="form-check-label" for="cozinhaPlanejada">Cozinha planejada</label>
+                            <input id="cozinhaPlanejada" type="checkbox" class="checkbox-orange">
+                            <label for="cozinhaPlanejada"><span></span>Cozinha planejada</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="campoDeFutebol">
-                            <label class="form-check-label" for="campoDeFutebol">Campo de futebol</label>
+                            <input id="campoDeFutebol" type="checkbox" class="checkbox-orange">
+                            <label for="campoDeFutebol"><span></span>Campo de futebol</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="apartamentoDeFrente">
-                            <label class="form-check-label" for="apartamentoDeFrente">Apartamento de Frente</label>
+                            <input id="apartamentoDeFrente" type="checkbox" class="checkbox-orange">
+                            <label for="apartamentoDeFrente"><span></span>Apartamento de Frente</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="quadraDeFutsal">
-                            <label class="form-check-label" for="quadraDeFutsal">Quadra de futsal</label>
+                            <input id="quadraDeFutsal" type="checkbox" class="checkbox-orange">
+                            <label for="quadraDeFutsal"><span></span>Quadra de futsal</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="salaoDeJogos">
-                            <label class="form-check-label" for="salaoDeJogos">Salão de jogos</label>
+                            <input id="salaoDeJogos" type="checkbox" class="checkbox-orange">
+                            <label for="salaoDeJogos"><span></span>Salão de jogos</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="gasEncanado">
-                            <label class="form-check-label" for="gasEncanado">Gás encanado</label>
+                            <input id="gasEncanado" type="checkbox" class="checkbox-orange">
+                            <label for="gasEncanado"><span></span>Gás encanado</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="lago">
-                            <label class="form-check-label" for="lago">Lago</label>
+                            <input id="lago" type="checkbox" class="checkbox-orange">
+                            <label for="lago"><span></span>Lago</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="hidromassagem">
-                            <label class="form-check-label" for="hidromassagem">Hidromassagem</label>
+                            <input id="hidromassagem" type="checkbox" class="checkbox-orange">
+                            <label for="hidromassagem"><span></span>Hidromassagem</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="televisao">
-                            <label class="form-check-label" for="televisao">Televisão</label>
+                            <input id="televisao" type="checkbox" class="checkbox-orange">
+                            <label for="televisao"><span></span>Televisão</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="boliche">
-                            <label class="form-check-label" for="boliche">Boliche</label>
+                            <input id="boliche" type="checkbox" class="checkbox-orange">
+                            <label for="boliche"><span></span>Boliche</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="armariosEmbutidos">
-                            <label class="form-check-label" for="armariosEmbutidos">Armários embutidos</label>
+                            <input id="armariosEmbutidos" type="checkbox" class="checkbox-orange">
+                            <label for="armariosEmbutidos"><span></span>Armários embutidos</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="portaria24H">
-                            <label class="form-check-label" for="portaria24H">Portaria 24h</label>
+                            <input id="portaria24H" type="checkbox" class="checkbox-orange">
+                            <label for="portaria24H"><span></span>Portaria 24h</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="copa">
-                            <label class="form-check-label" for="copa">Copa</label>
+                            <input id="copa" type="checkbox" class="checkbox-orange">
+                            <label for="copa"><span></span>Copa</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="comMaisDe1Andar">
-                            <label class="form-check-label" for="comMaisDe1Andar">Com mais de 1 andar</label>
+                            <input id="comMaisDe1Andar" type="checkbox" class="checkbox-orange">
+                            <label for="comMaisDe1Andar"><span></span>Com mais de 1 andar</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="salaDeCinema">
-                            <label class="form-check-label" for="salaDeCinema">Sala de cinema</label>
+                            <input id="salaDeCinema" type="checkbox" class="checkbox-orange">
+                            <label for="salaDeCinema"><span></span>Sala de cinema</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="escritorio">
-                            <label class="form-check-label" for="escritorio">Escritório</label>
+                            <input id="escritorio" type="checkbox" class="checkbox-orange">
+                            <label for="escritorio"><span></span>Escritório</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="umPorAndar">
-                            <label class="form-check-label" for="umPorAndar">Um por andar</label>
+                            <input id="umPorAndar" type="checkbox" class="checkbox-orange">
+                            <label for="umPorAndar"><span></span>Um por andar</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="despensa">
-                            <label class="form-check-label" for="despensa">Despensa</label>
+                            <input id="despensa" type="checkbox" class="checkbox-orange">
+                            <label for="despensa"><span></span>Despensa</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="salaoDeFestas">
-                            <label class="form-check-label" for="salaoDeFestas">Salão de festas</label>
+                            <input id="salaoDeFestas" type="checkbox" class="checkbox-orange">
+                            <label for="salaoDeFestas"><span></span>Salão de festas</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="playground">
-                            <label class="form-check-label" for="playground">Playground</label>
+                            <input id="playground" type="checkbox" class="checkbox-orange">
+                            <label for="playground"><span></span>Playground</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="piscina">
-                            <label class="form-check-label" for="animais">Piscina</label>
+                            <input id="piscina" type="checkbox" class="checkbox-orange">
+                            <label for="piscina"><span></span>Piscina</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="sauna">
-                            <label class="form-check-label" for="sauna">Sauna</label>
+                            <input id="sauna" type="checkbox" class="checkbox-orange">
+                            <label for="sauna"><span></span>Sauna</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="areaDeServico">
-                            <label class="form-check-label" for="areaDeServico">Area de serviço</label>
+                            <input id="areaDeServico" type="checkbox"  class="checkbox-orange">
+                            <label for="areaDeServico"><span></span>Area de serviço</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="dce">
-                            <label class="form-check-label" for="dce">DCE</label>
+                            <input id="dce" type="checkbox" class="checkbox-orange">
+                            <label for="dce"><span></span>DCE</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="porteiro">
-                            <label class="form-check-label" for="porteiro">Porteiro</label>
+                            <input id="porteiro" type="checkbox" class="checkbox-orange">
+                            <label for="porteiro"><span></span>Porteiro</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="elevador">
-                            <label class="form-check-label" for="elevador">Elevador</label>
+                            <input id="elevador" type="checkbox" class="checkbox-orange">
+                            <label for="elevador"><span></span>Elevador</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="areaExterna">
-                            <label class="form-check-label" for="areaExterna">Área externa</label>
+                            <input id="areaExterna" type="checkbox" class="checkbox-orange">
+                            <label for="areaExterna"><span></span>Área externa</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="lareira">
-                            <label class="form-check-label" for="lareira">Lareira</label>
+                            <input id="lareira" type="checkbox" class="checkbox-orange">
+                            <label for="lareira"><span></span>Lareira</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="aquecedorSolar">
-                            <label class="form-check-label" for="aquecedorSolar">Aquecedor solar</label>
+                            <input id="aquecedorSolar" type="checkbox" class="checkbox-orange">
+                            <label for="aquecedorSolar"><span></span>Aquecedor solar</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="quadraDeTenis">
-                            <label class="form-check-label" for="quadraDeTenis">Quadra de Tênis</label>
+                            <input id="quadraDeTenis" type="checkbox" class="checkbox-orange">
+                            <label for="quadraDeTenis"><span></span>Quadra de Tênis</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="sala2Ambientes">
-                            <label class="form-check-label" for="sala2Ambientes">Sala 2 ambientes</label>
+                            <input id="sala2Ambientes" type="checkbox" class="checkbox-orange">
+                            <label for="sala2Ambientes"><span></span>Sala 2 ambientes</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="2porAndar">
-                            <label class="form-check-label" for="2porAndar">2 por andar</label>
+                            <input id="2porAndar" type="checkbox"  class="checkbox-orange">
+                            <label for="2porAndar"><span></span>2 por andar</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="vistaParaoMar">
-                            <label class="form-check-label" for="vistaParaoMar">Vista para o mar</label>
+                            <input id="vistaParaoMar" type="checkbox"  class="checkbox-orange">
+                            <label for="vistaParaoMar"><span></span>Vista para o mar</label>
                         </div>
                         <div class="col-4 form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="quadraDeVolei">
-                            <label class="form-check-label" for="quadraDeVolei">Quadra de vôler</label>
+                            <input id="quadraDeVolei" type="checkbox"  class="checkbox-orange">
+                            <label for="quadraDeVolei"><span></span>Quadra de vôler</label>
                         </div>
                     </div>
                 </div>
@@ -335,14 +331,14 @@
                     </div>
                     <div class="col-4 form-group text-center">
                         <label for="iptuPago">IPTU pago</label>
-                        <div class="form-check font-weight-normal">
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="iptuPagoSim" value="option1">
-                                <label class="form-check-label" for="iptuPagoSim">Sim</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="iptuPagoSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="iptuPagoSim"><span><span></span></span>Sim</label>
                             </div>
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="iptuPagoNao" value="option1">
-                                <label class="form-check-label" for="iptuPagoNao">Não</label>
+                            <div class="d-inline mx-auto">
+                                <input id="iptuPagoNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="iptuPagoNao" class="radio-orange"><span><span></span></span>Não</label>
                             </div>
                         </div>
                     </div>
@@ -356,27 +352,27 @@
                     </div>
                     <div class="col-3 form-group text-center">
                         <label for="aceitaFinanciamento">Aceita financiamento</label>
-                        <div class="form-check font-weight-normal">
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="aceitaFinanciamentoSim" value="option1">
-                                <label class="form-check-label" for="aceitaFinanciamentoSim">Sim</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="aceitaFinanciamentoSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="aceitaFinanciamentoSim"><span><span></span></span>Sim</label>
                             </div>
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="aceitaFinanciamentoNao" value="option1">
-                                <label class="form-check-label" for="aceitaFinanciamentoNao">Não</label>
+                            <div class="d-inline mx-auto">
+                                <input id="aceitaFinanciamentoNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="aceitaFinanciamentoNao" class="radio-orange"><span><span></span></span>Não</label>
                             </div>
                         </div>
                     </div>
                     <div class="col-3 form-group text-center">
                         <label for="registroDeImoveis">Registro de imóveis</label>
-                        <div class="form-check font-weight-normal">
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="registroDeImoveisSim" value="option1">
-                                <label class="form-check-label" for="registroDeImoveisSim">Sim</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="registroDeImoveisSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="registroDeImoveisSim"><span><span></span></span>Sim</label>
                             </div>
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="registroDeImoveisNao" value="option1">
-                                <label class="form-check-label" for="registroDeImoveisNao">Não</label>
+                            <div class="d-inline mx-auto">
+                                <input id="registroDeImoveisNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="registroDeImoveisNao" class="radio-orange"><span><span></span></span>Não</label>
                             </div>
                         </div>
                     </div>
@@ -385,14 +381,14 @@
                 <div class="row my-3">
                     <div class="col-3 form-group text-center">
                         <label>Moeda</label>
-                        <div class="form-check font-weight-normal">
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="moedaReal" value="option1">
-                                <label class="form-check-label" for="moedaReal">Real</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="moedaReal" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="moedaReal"><span><span></span></span>Real</label>
                             </div>
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="moedaDolar" value="option1">
-                                <label class="form-check-label" for="moedaDolar">Dolar</label>
+                            <div class="d-inline mx-auto">
+                                <input id="moedaDolar" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="moedaDolar" class="radio-orange"><span><span></span></span>Dolar</label>
                             </div>
                         </div>
                     </div>
@@ -402,27 +398,27 @@
                     </div>
                     <div class="col-3 form-group text-center">
                         <label>Financiado</label>
-                        <div class="form-check font-weight-normal">
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="financiadoSim" value="option1">
-                                <label class="form-check-label" for="financiadoSim">Sim</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="financiadoSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="financiadoSim"><span><span></span></span>Sim</label>
                             </div>
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="financiadoNao" value="option1">
-                                <label class="form-check-label" for="financiadoNao">Não</label>
+                            <div class="d-inline mx-auto">
+                                <input id="financiadoNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="financiadoNao" class="radio-orange"><span><span></span></span>Não</label>
                             </div>
                         </div>
                     </div>
                     <div class="col-3 form-group text-center">
                         <label>Alienado</label>
-                        <div class="form-check font-weight-normal">
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="alienadoSim" value="option1">
-                                <label class="form-check-label" for="alienadoSim">Sim</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="alienadoSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="alienadoSim"><span><span></span></span>Sim</label>
                             </div>
-                            <div class="d-inline mx-4">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="alienadoNao" value="option1">
-                                <label class="form-check-label" for="alienadoNao">Não</label>
+                            <div class="d-inline mx-auto">
+                                <input id="alienadoNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="alienadoNao" class="radio-orange"><span><span></span></span>Não</label>
                             </div>
                         </div>
                     </div>
