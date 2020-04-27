@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>INSERIR CADASTRO AERONAVES</title>
+	<title>INSERIR CADASTRO AUTOMÓVEL</title>
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,11 +26,11 @@
 <div class="container">
     <div class="card formulario my-5">
         <!-- INTRODUCTION -->
-        <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Inserir Aeronave</h1>
+        <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Inserir Automovel</h1>
         <hr class="mx-5"/>
         <div class="mx-5">
             <p class="text-center text-muted">A UNIK HB atua como divulgadora e intermediadora de vendas e anúncios feitos por proprietários e/ou mandatários mediante comissão sobre as vendas realizadas através do site, conforme tabela de comissões presente no termo de adesão, variando de 5% a 10%.</p>
-            <p class="text-center text-muted">O valor mínimo para anunciar produtos nessa categora é de <span class="font-weight-bold">R$ 150.000,00</span></p>
+            <p class="text-center text-muted">O valor mínimo para anunciar produtos nessa categora é de <span class="font-weight-bold">R$ 60.000,00</span></p>
         </div>
         <div class="card-body text-secondary">
             <form class="container font-weight-bold">
@@ -72,8 +72,8 @@
                         </div>
                     </div>
                     <div class="col-4 form-group">
-                        <label for="categoria">Categoria</label>
-                        <select class="custom-select" id="inlineFormCustomSelect">
+                        <label for="tipo">Tipo</label>
+                        <select class="custom-select" id="tipo">
                             <option selected>Choose...</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
@@ -89,94 +89,158 @@
                         <input type="text" class="form-control">
                     </div>
                     <div class="col-4 form-group">
-                        <label for="ano">Ano</label>
+                        <label for="cor">Cor</label>
                         <input type="text" class="form-control">
                     </div>
                     <div class="col-4 form-group">
-                        <label for="horasTotais">Horas totais</label>
+                        <label for="anoDeFabricacao">Ano de fabricação</label>
                         <input type="text" class="form-control">
                     </div>
                     <div class="col-4 form-group">
-                        <label for="numeroDeAssentos">Número de assentos</label>
+                        <label for="anoDoModelo">Ano do modelo</label>
                         <input type="text" class="form-control">
                     </div>
                     <div class="col-4 form-group">
-                        <label for="exterior">Exterior</label>
+                        <label for="quilometragem">Quilometriagem</label>
                         <input type="text" class="form-control">
                     </div>
                     <div class="col-4 form-group">
-                        <label for="interior">Interior</label>
+                        <label for="numeroDePortas">Número de portas</label>
                         <input type="text" class="form-control">
                     </div>
                     <div class="col-4 form-group">
-                        <label for="motor">Motor</label>
-                        <input type="text" class="form-control">
+                        <label for="cambio">Câmbio</label>
+                        <select class="custom-select" id="combustivel">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
                     </div>
                     <div class="col-4 form-group">
-                        <label for="potencia">Potência</label>
-                        <input type="text" class="form-control">
+                        <label for="combustivel">Combustível</label>
+                        <select class="custom-select" id="combustivel">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
                     </div>
                     <div class="col-4 form-group">
-                        <label for="horasTotaisDoMotor">Horas totais do motor</label>
-                        <input type="text" class="form-control">
+                        <label for="unicoDono">Único dono</label>
+                        <select class="custom-select" id="unicoDono">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
                     </div>
-                    <div class="col-4 form-group">
-                        <label for="helice">Hélice</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="col-4 form-group">
-                        <label for="horasTotaisDaHelice">Horas totais da hélice</label>
-                        <input type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="row my-3">
-                    <div class="col-4 form-group text-center">
-                        <label>Hangarada</label>
+                    <div class="col-3 form-group text-center">
+                        <label>Blindado</label>
                         <div class="font-weight-normal">
                             <div class="d-inline mx-auto">
-                                <input id="hangaradaSim" class="radio-orange" type="radio" name="radio" value="1"/>
-                                <label for="hangaradaSim"><span><span></span></span>Sim</label>
+                                <input id="blindadoSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="blidadoSim"><span><span></span></span>Sim</label>
                             </div>
                             <div class="d-inline mx-auto">
-                                <input id="hangaradaNao" class="radio-orange" type="radio" name="radio" value="option1"/>
-                                <label for="hangaradaNao" class="radio-orange"><span><span></span></span>Não</label>
+                                <input id="blindadoNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="blindadoNao" class="radio-orange"><span><span></span></span>Não</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 form-group text-center">
+                        <label>Periciado</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="periciadoSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="periciadoSim"><span><span></span></span>Sim</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input id="periciadoNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="periciadoNao" class="radio-orange"><span><span></span></span>Não</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 form-group text-center">
+                        <label>Garantia de fábrica</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="garantiaDeFabricaSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="garantiaDeFabricaSim"><span><span></span></span>Sim</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input id="garantiaDeFabricaNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="garantiaDeFabricaNao" class="radio-orange"><span><span></span></span>Não</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 form-group text-center">
+                        <label>Possui Seguro</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="possuiSeguroSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="possuiSeguroSim"><span><span></span></span>Sim</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input id="possuiSeguroNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="possuiSeguroNao" class="radio-orange"><span><span></span></span>Não</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 form-group">
+                        <label for="placa">Placa*</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-3 form-group">
+                        <label for="numeroDoRenavam">Número do RENAVAM*</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-3 form-group">
+                        <label for="numeroDoChassi">Número do Chassi*</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-3 form-group">
+                        <label for="numeroDoMotor">Número do Motor*</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-4 form-group text-center">
+                        <label>IPVA pago</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="ipvaPagoSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="ipvaPagoSim"><span><span></span></span>Sim</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input id="ipvaNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="ipvaNao" class="radio-orange"><span><span></span></span>Não</label>
                             </div>
                         </div>
                     </div>
                     <div class="col-4 form-group text-center">
-                        <label>Histórico de acidente</label>
+                        <label>Taxas Pagas</label>
                         <div class="font-weight-normal">
                             <div class="d-inline mx-auto">
-                                <input id="historicoDeAcicenteSim" class="radio-orange" type="radio" name="radio" value="1"/>
-                                <label for="historicoDeAcicenteSim"><span><span></span></span>Sim</label>
+                                <input id="taxasPagasSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="taxasPagasSim"><span><span></span></span>Sim</label>
                             </div>
                             <div class="d-inline mx-auto">
-                                <input id="historicoDeAcicenteNao" class="radio-orange" type="radio" name="radio" value="option1"/>
-                                <label for="historicoDeAcicenteNao" class="radio-orange"><span><span></span></span>Não</label>
+                                <input id="taxasPagasNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="taxasPagasNao" class="radio-orange"><span><span></span></span>Não</label>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row my-3">
-                    <div class="col-4 form-group">
-                        <label for="numeroDeRegistro">Número de Registro*</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="col-4 form-group">
-                        <label for="validadeRiam">Validade RIAM</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="col-4 form-group">
-                        <label for="validadeSeguro">Validade Seguro</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="col-12 form-group">
-                        <label for="avionicoseRadios">Aviônicos e rádios</label>
-                        <textarea type="text" class="form-control" name="paragraph" rows="3"></textarea>
-                    </div>
-                    <div class="col-12 form-group">
-                        <label for="equipamentosAdicionais">Equipamentos adicionais</label>
-                        <textarea type="text" class="form-control" name="paragraph" rows="3"></textarea>
+                    <div class="col-4 form-group text-center">
+                        <label>Seguro Obrigatório Pago</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="seguroObrigatorioPagoSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="seguroObrigatorioPagoSim"><span><span></span></span>Sim</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input id="seguroObrigatorioPagoNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="seguroObrigatorioPagoNao" class="radio-orange"><span><span></span></span>Não</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Preço e anexos -->
