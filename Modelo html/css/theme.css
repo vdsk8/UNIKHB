@@ -72,6 +72,14 @@ small {
 	background-color: #dcdcdc!important;
 }
 
+.bg-warning {
+	background-color: #3398d8!important;
+}
+
+.bg-dark {
+	background-color: #373737!important;
+}
+
 .bg-gradient-dark {
 	background-color: rgba(0, 0, 0, 0.6)!important;
 }
@@ -97,6 +105,21 @@ small {
 	border: 0;
 }
 
+.btn-success {
+	background-color: #00729b;
+	border: 0;
+}
+
+.btn-success:hover {
+	background-color: #12a7dd!important;
+	border: 0;
+}
+
+.btn-success:active {
+	background-color: #00729b!important;
+	border: 0;
+}
+
 .btn-info {
 	background-color: grey;
 	border: 0;
@@ -115,6 +138,16 @@ small {
 .btn-link:hover {
     color:  #ffa200!important;
     text-decoration: none;
+}
+
+.btn-facebook {
+	background-color: #425599;
+	border: 0;
+}
+
+.btn-google {
+	background-color: #d85133;
+	border: 0;
 }
 
 /* BORDER */
