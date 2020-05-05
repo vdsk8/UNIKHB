@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ANUNCIE EM NOSSO SITE</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Bootstrap core CSS -->
+	<link href="bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+    <link type="text/css" href="css/theme.css" rel="stylesheet">
+        
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ 
+<!-- ANUNCIE EM NOSSO SITE -->
+<div class="container">
+    <div class="card formulario-2 my-5">
+        <h1 class="card-title text-center text-uppercase text-primary font-weight-bold mt-4">Anuncie em nosso site</h1>
+        <hr class="mx-5"/>
+        <div class="card-body text-secondary">
+            <p class="text-center mx-5">Nesse primeiro momento, envie apenas a sua ideia básica de anúncio. Através dela, nossa equipe irá avaliar a melhor opção para que seu anúncio atinja o seu público específico da maneira mais eficiente. Nosso compromisso é com o seu resultado!</p>
+            <form class="container">
+                <div class="col-12 form-group text-center">
+                    <h5 class="font-weight-bold">Tipo de Publicidade</h5>
+                    <div class="row d-flex justify-content-center mt-3">
+                        <div class="d-inline mx-2">
+                            <input id="produtoCadastrado" class="radio-orange" type="radio" name="radio" value="1"/>
+                            <label for="produtoCadastrado"><span><span></span></span>
+                                <h5 class="font-weight-normal d-inline">Produto cadastrado no site</h5>
+                            </label>
+                        </div>
+                        <div class="d-inline mx-2">
+                            <input id="bannerComUrlExterna" class="radio-orange" type="radio" name="radio" value="2"/>
+                            <label for="bannerComUrlExterna"><span><span></span></span>
+                                <h5 class="font-weight-normal d-inline">Banner com URL externa</h5>
+                            </label>
+                        </div>                        
+                    </div>
+                </div>
+                <!-- ESPECIFICIDADES -->
+                <div class="row">
+                    <div class="col-12 form-group">
+                        <label for="produtos">Produtos</label>
+                        <select class="custom-select" id="pordutos">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-12 form-group">
+                        <label for="titulo">Título</label>
+                        <input type="text" class="form-control" id="titulo">
+                    </div>
+                    <div class="col-12 form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea type="text" class="form-control" name="paragraph" rows="9" cols="50"></textarea>
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="cpf">CPF</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <!-- local banners -->
+                    <div class="col-12">
+                        <h5 class="font-weight-bold">Local</h5>
+                        <button type="button" class="btn btn-link text-secondary">Home</button>
+                        <button type="button" class="btn btn-link text-secondary">Categorias</button>
+                        <button type="button" class="btn btn-link text-secondary">Páginas</button>
+                        <button type="button" class="btn btn-link text-secondary">Buscas</button>
+                        <!-- DESTAQUE HOME -->
+                        <div class="card font-weight-normal my-3">
+                            <div class="row d-flex justify-content-center m-4">
+                                <div class="mx-2">
+                                    <input id="destaqueHome" class="checkbox-orange" type="checkbox" name="checkbox" value="destaque-home"/>
+                                    <label for="destaqueHome"><span></span>Destaque Home</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="bannerSecundarioHome" class="checkbox-orange" type="checkbox" name="checkbox" value="banner-secundario-home"/>
+                                    <label for="bannerSecundarioHome"><span></span>Banner Secundário Home</label>
+                                </div>                            
+                            </div>
+                        </div>
+                        <!-- DESTAQUE CATEGORIAS -->
+                        <div class="card font-weight-normal my-3">
+                            <div class="card-header text-primary bg-white">
+                                Destaque Superior
+                            </div>
+                            <div class="row d-flex justify-content-center m-4">
+                                <div class="mx-2">
+                                    <input id="categoriaAleatoria" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                                    <label for="categoriaAleatoria"><span></span>Categoria Aleatória</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="imovel" class="checkbox-orange" type="checkbox" name="checkbox" value="imovel"/>
+                                    <label for="imovel"><span></span>Imóvel</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="automovel" class="checkbox-orange" type="checkbox" name="checkbox" value="automovel"/>
+                                    <label for="automovel"><span></span>Automóvel</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="motocicleta" class="checkbox-orange" type="checkbox" name="checkbox" value="motocicleta"/>
+                                    <label for="motocicleta"><span></span>Motocicleta</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="embarcacao" class="checkbox-orange" type="checkbox" name="checkbox" value="embarcacao"/>
+                                    <label for="embarcacao"><span></span>Embarcação</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="aeronave" class="checkbox-orange" type="checkbox" name="checkbox" value="aeronave"/>
+                                    <label for="aeronave"><span></span>Aeronave</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="maquinaAgricolaConstrucao" class="checkbox-orange" type="checkbox" name="checkbox" value="maquina-agricola-Construcao"/>
+                                    <label for="maquinaAgricolaConstrucao"><span></span>Máquina agrícola/construção</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="maquinaIndustrial" class="checkbox-orange" type="checkbox" name="checkbox" value="maquina-industrial"/>
+                                    <label for="maquinaIndustrial"><span></span>Máquina industrial</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="outros" class="checkbox-orange" type="checkbox" name="checkbox" value="outros"/>
+                                    <label for="outros"><span></span>Outros</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card font-weight-normal my-3">
+                            <div class="card-header text-primary bg-white">
+                                Destaque Principal
+                            </div>
+                            <div class="row d-flex justify-content-center m-4">
+                                <div class="mx-2">
+                                    <input id="categoriaAleatoria" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                                    <label for="categoriaAleatoria"><span></span>Categoria Aleatória</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="imovel" class="checkbox-orange" type="checkbox" name="checkbox" value="imovel"/>
+                                    <label for="imovel"><span></span>Imóvel</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="automovel" class="checkbox-orange" type="checkbox" name="checkbox" value="automovel"/>
+                                    <label for="automovel"><span></span>Automóvel</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="motocicleta" class="checkbox-orange" type="checkbox" name="checkbox" value="motocicleta"/>
+                                    <label for="motocicleta"><span></span>Motocicleta</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="embarcacao" class="checkbox-orange" type="checkbox" name="checkbox" value="embarcacao"/>
+                                    <label for="embarcacao"><span></span>Embarcação</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="aeronave" class="checkbox-orange" type="checkbox" name="checkbox" value="aeronave"/>
+                                    <label for="aeronave"><span></span>Aeronave</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="maquinaAgricolaConstrucao" class="checkbox-orange" type="checkbox" name="checkbox" value="maquina-agricola-construcao"/>
+                                    <label for="maquinaAgricolaConstrucao"><span></span>Máquina agrícola/construção</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="maquinaIndustrial" class="checkbox-orange" type="checkbox" name="checkbox" value="maquina-industrial"/>
+                                    <label for="maquinaIndustrial"><span></span>Máquina industrial</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="outros" class="checkbox-orange" type="checkbox" name="checkbox" value="outros"/>
+                                    <label for="outros"><span></span>Outros</label>
+                                </div>                                
+                            </div>
+                        </div>
+                        <!-- DESTAQUE PÁGINAS -->
+                        <div class="card font-weight-normal my-3">
+                            <div class="row d-flex justify-content-center m-4">
+                                <div class="mx-2">
+                                    <input id="paginaAleatoria" class="checkbox-orange" type="checkbox" name="checkbox" value="pagina-aleatoria"/>
+                                    <label for="paginaAleatoria"><span></span>Página Aleatória</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="vantagens" class="checkbox-orange" type="checkbox" name="checkbox" value="vantagens"/>
+                                    <label for="vantagens"><span></span>Vantagens</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="comoFunciona" class="checkbox-orange" type="checkbox" name="checkbox" value="como-funciona"/>
+                                    <label for="comoFunciona"><span></span>Como Funciona</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="assessoriaJuridica" class="checkbox-orange" type="checkbox" name="checkbox" value="assessoria-juridica"/>
+                                    <label for="assessoriaJuridica"><span></span>Assessoria Jurídica</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="contato" class="checkbox-orange" type="checkbox" name="checkbox" value="contato"/>
+                                    <label for="contato"><span></span>Contato</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="linksUteis" class="checkbox-orange" type="checkbox" name="checkbox" value="links-uteis"/>
+                                    <label for="linksUteis"><span></span>Links Úteis</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="documentos" class="checkbox-orange" type="checkbox" name="checkbox" value="documentos"/>
+                                    <label for="documentos"><span></span>Documentos</label>                                    
+                                </div>
+                                <div class="mx-2">
+                                    <input id="procedimentos" class="checkbox-orange" type="checkbox" name="checkbox" value="procedimentos"/>
+                                    <label for="procedimentos"><span></span>Procedimentos</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="quemSomos" class="checkbox-orange" type="checkbox" name="checkbox" value="quem-somos"/>
+                                    <label for="quemSomos"><span></span>Quem Somos</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="duvidasFrequentes" class="checkbox-orange" type="checkbox" name="checkbox" value="duvidas-frequentes"/>
+                                    <label for="duvidasFrequentes"><span></span>Dúvidas Frequentes</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="dicionarios" class="checkbox-orange" type="checkbox" name="checkbox" value="dicionarios"/>
+                                    <label for="dicionarios"><span></span>Dicionários</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="publidicade" class="checkbox-orange" type="checkbox" name="checkbox" value="publicidade"/>
+                                    <label for="publicidade"><span></span>Publicidade</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- DESTAQUE BUSCAS-->
+                        <div class="card font-weight-normal my-3">
+                            <div class="row d-flex justify-content-center m-4">
+                                <div class="mx-2">
+                                    <input id="bannerLateral" class="checkbox-orange" type="checkbox" name="checkbox" value="banner-lateral"/>
+                                    <label for="bannerLateral"><span></span>Banner Lateral</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="bannerProdutos" class="checkbox-orange" type="checkbox" name="checkbox" value="banner-produtos"/>
+                                    <label for="bannerProdutos"><span></span>Banner Produtos</label>
+                                </div>
+                                <div class="mx-2">
+                                    <input id="bannerSuperior" class="checkbox-orange" type="checkbox" name="checkbox" value="banner-superior"/>
+                                    <label for="bannerSuperior"><span></span>Banner Superior</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-right mt-2">
+                        <button type="submit" class="btn btn-warning text-white text-uppercase p-3">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+	integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+	crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	crossorigin="anonymous"></script>
+<script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

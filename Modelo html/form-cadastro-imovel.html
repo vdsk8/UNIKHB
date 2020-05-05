@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>INSERIR CADASTRO IMÓVEL</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Bootstrap core CSS -->
+	<link href="bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link type="text/css" href="css/theme.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ 
+<!-- INSERIR CADASTRO IMÓVEL-->
+<div class="container">
+    <div class="card formulario my-5">
+        <!-- INTRODUCTION -->
+        <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Inserir Imóvel</h1>
+        <hr class="mx-5"/>
+        <div class="mx-5">
+            <p class="text-center text-muted">A UNIK HB atua como divulgadora e intermediadora de vendas e anúncios feitos por proprietários e/ou mandatários mediante comissão sobre as vendas realizadas através do site, conforme tabela de comissões presente no termo de adesão, variando de 5% a 10%.</p>
+            <p class="text-center text-muted">O valor mínimo para anunciar produtos nessa categora é de <span class="font-weight-bold">R$ 600.000,00</span></p>
+        </div>
+        <div class="card-body text-secondary">
+            <form class="container font-weight-bold">
+                <!-- CADASTRO COMUM -->
+                <div class="col-12 text-center my-2">
+                    <h2 class="font-weight-bold">Você é mandatário?</h2>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col">
+                            <div class="d-inline mx-auto">
+                                <input id="mandatarioSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="mandatarioSim"><span><span></span></span>Sim</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input id="mandatarioNao" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="mandatarioNao"><span><span></span></span>Não</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-warning text-white border-0 rounded-0 py-1">Simulador de gratificação</button>
+                </div>
+                <!-- título -->
+                <div class="form-group">
+                    <label for="titulo">Título</label>
+                    <input type="text" class="form-control">
+                </div>
+                <!-- ESPECIFICIDADE -->
+                <div class="row my-3">
+                    <div class="col-4 form-group text-center">
+                        <label for="condicao">Condição</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="condicaoNovo" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="condicaoNovo"><span><span></span></span>Novo</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input id="condicaoUsado" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="condicaoUsado" class="radio-orange"><span><span></span></span>Usado</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 form-group text-center">
+                        <label for="condicao">Imóvel</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="rural"class="radio-orange" type="radio" name="inlineRadioOptions" value="option1">
+                                <label for="rural" class="radio-orange"><span><span></span></span>Rural</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input  id="urbano" class="radio-orange" type="radio" name="inlineRadioOptions" value="option1">
+                                <label for="urbano" class="radio-orange"><span><span></span></span>Urbano</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 form-group form-check">
+                        <div class="mx-2">
+                            <input id="lancamento" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="lancamento"><span></span>Lançamento</label>
+                        </div>
+                        <div class="mx-2">
+                            <input id="mobiliado" class="checkbox-orange" type="checkbox" name="checkbox" value="categoria-aleatoria"/>
+                            <label for="mobiliado"><span></span>Mobiliado</label>
+                        </div>
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="tipo">Tipo</label>
+                        <select class="custom-select" id="tipo">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="quartos">Quartos</label>
+                        <select class="custom-select" id="tipo">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="suites">Suítes</label>
+                        <select class="custom-select" id="tipo">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="banheiros">Banheiros</label>
+                        <select class="custom-select" id="tipo">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="ocupacoes">Ocupações</label>
+                        <select class="custom-select" id="tipo">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="areaTotal">Área total</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="areaUtil">Área útil</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="lanceDeEscadas">Lance de escadas</label>
+                        <select class="custom-select" id="tipo">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Características do Imóvel -->
+                <h5 class="font-weight-bold my-2">Equipamentos e Acessórios</h5>
+                <div class="container my-3">
+                    <div class="row">
+                        <div class="col-4 form-group form-check">
+                            <input id="animais" type="checkbox" class="checkbox-orange">
+                            <label for="animais"><span></span>Animais</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="apartamentoDeFundo" type="checkbox" class="checkbox-orange">
+                            <label for="apartamentoDeFundo"><span></span>Arpatamento de fundo</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="churrasqueira" type="checkbox" class="checkbox-orange">
+                            <label for="churrasqueira"><span></span>Churrasqueira</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="bicicletaria" type="checkbox" class="checkbox-orange">
+                            <label for="bicicletaria"><span></span>Biciletaria</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="academiaDeGinástica" type="checkbox" class="checkbox-orange">
+                            <label for="academiaDeGinástica"><span></span>Academia de ginástica</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="cozinhaPlanejada" type="checkbox" class="checkbox-orange">
+                            <label for="cozinhaPlanejada"><span></span>Cozinha planejada</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="campoDeFutebol" type="checkbox" class="checkbox-orange">
+                            <label for="campoDeFutebol"><span></span>Campo de futebol</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="apartamentoDeFrente" type="checkbox" class="checkbox-orange">
+                            <label for="apartamentoDeFrente"><span></span>Apartamento de Frente</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="quadraDeFutsal" type="checkbox" class="checkbox-orange">
+                            <label for="quadraDeFutsal"><span></span>Quadra de futsal</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="salaoDeJogos" type="checkbox" class="checkbox-orange">
+                            <label for="salaoDeJogos"><span></span>Salão de jogos</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="gasEncanado" type="checkbox" class="checkbox-orange">
+                            <label for="gasEncanado"><span></span>Gás encanado</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="lago" type="checkbox" class="checkbox-orange">
+                            <label for="lago"><span></span>Lago</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="hidromassagem" type="checkbox" class="checkbox-orange">
+                            <label for="hidromassagem"><span></span>Hidromassagem</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="televisao" type="checkbox" class="checkbox-orange">
+                            <label for="televisao"><span></span>Televisão</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="boliche" type="checkbox" class="checkbox-orange">
+                            <label for="boliche"><span></span>Boliche</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="armariosEmbutidos" type="checkbox" class="checkbox-orange">
+                            <label for="armariosEmbutidos"><span></span>Armários embutidos</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="portaria24H" type="checkbox" class="checkbox-orange">
+                            <label for="portaria24H"><span></span>Portaria 24h</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="copa" type="checkbox" class="checkbox-orange">
+                            <label for="copa"><span></span>Copa</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="comMaisDe1Andar" type="checkbox" class="checkbox-orange">
+                            <label for="comMaisDe1Andar"><span></span>Com mais de 1 andar</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="salaDeCinema" type="checkbox" class="checkbox-orange">
+                            <label for="salaDeCinema"><span></span>Sala de cinema</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="escritorio" type="checkbox" class="checkbox-orange">
+                            <label for="escritorio"><span></span>Escritório</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="umPorAndar" type="checkbox" class="checkbox-orange">
+                            <label for="umPorAndar"><span></span>Um por andar</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="despensa" type="checkbox" class="checkbox-orange">
+                            <label for="despensa"><span></span>Despensa</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="salaoDeFestas" type="checkbox" class="checkbox-orange">
+                            <label for="salaoDeFestas"><span></span>Salão de festas</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="playground" type="checkbox" class="checkbox-orange">
+                            <label for="playground"><span></span>Playground</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="piscina" type="checkbox" class="checkbox-orange">
+                            <label for="piscina"><span></span>Piscina</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="sauna" type="checkbox" class="checkbox-orange">
+                            <label for="sauna"><span></span>Sauna</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="areaDeServico" type="checkbox"  class="checkbox-orange">
+                            <label for="areaDeServico"><span></span>Area de serviço</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="dce" type="checkbox" class="checkbox-orange">
+                            <label for="dce"><span></span>DCE</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="porteiro" type="checkbox" class="checkbox-orange">
+                            <label for="porteiro"><span></span>Porteiro</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="elevador" type="checkbox" class="checkbox-orange">
+                            <label for="elevador"><span></span>Elevador</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="areaExterna" type="checkbox" class="checkbox-orange">
+                            <label for="areaExterna"><span></span>Área externa</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="lareira" type="checkbox" class="checkbox-orange">
+                            <label for="lareira"><span></span>Lareira</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="aquecedorSolar" type="checkbox" class="checkbox-orange">
+                            <label for="aquecedorSolar"><span></span>Aquecedor solar</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="quadraDeTenis" type="checkbox" class="checkbox-orange">
+                            <label for="quadraDeTenis"><span></span>Quadra de Tênis</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="sala2Ambientes" type="checkbox" class="checkbox-orange">
+                            <label for="sala2Ambientes"><span></span>Sala 2 ambientes</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="2porAndar" type="checkbox"  class="checkbox-orange">
+                            <label for="2porAndar"><span></span>2 por andar</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="vistaParaoMar" type="checkbox"  class="checkbox-orange">
+                            <label for="vistaParaoMar"><span></span>Vista para o mar</label>
+                        </div>
+                        <div class="col-4 form-group form-check">
+                            <input id="quadraDeVolei" type="checkbox"  class="checkbox-orange">
+                            <label for="quadraDeVolei"><span></span>Quadra de vôler</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- IPTU/ITR Taxas -->
+                <div class="row my-3">
+                    <div class="col-4 form-group">
+                        <label for="iptuItr">IPTU/ITR</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="numeroDeInscricaoDoIptuItr">Número de inscrição do IPTU/ITR*</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-4 form-group text-center">
+                        <label for="iptuPago">IPTU pago</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="iptuPagoSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="iptuPagoSim"><span><span></span></span>Sim</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input id="iptuPagoNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="iptuPagoNao" class="radio-orange"><span><span></span></span>Não</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 form-group">
+                        <label for="valorDoCondominio">Valor do condomínio</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-3 form-group">
+                        <label for="taxasExtras">Taxas extras</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-3 form-group text-center">
+                        <label for="aceitaFinanciamento">Aceita financiamento</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="aceitaFinanciamentoSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="aceitaFinanciamentoSim"><span><span></span></span>Sim</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input id="aceitaFinanciamentoNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="aceitaFinanciamentoNao" class="radio-orange"><span><span></span></span>Não</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 form-group text-center">
+                        <label for="registroDeImoveis">Registro de imóveis</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="registroDeImoveisSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="registroDeImoveisSim"><span><span></span></span>Sim</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input id="registroDeImoveisNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="registroDeImoveisNao" class="radio-orange"><span><span></span></span>Não</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Preço e anexos -->
+                <div class="row my-3">
+                    <div class="col-3 form-group text-center">
+                        <label>Moeda</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="moedaReal" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="moedaReal"><span><span></span></span>Real</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input id="moedaDolar" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="moedaDolar" class="radio-orange"><span><span></span></span>Dolar</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 form-group">
+                        <label for="preco">Preço</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-3 form-group text-center">
+                        <label>Financiado</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="financiadoSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="financiadoSim"><span><span></span></span>Sim</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input id="financiadoNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="financiadoNao" class="radio-orange"><span><span></span></span>Não</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 form-group text-center">
+                        <label>Alienado</label>
+                        <div class="font-weight-normal">
+                            <div class="d-inline mx-auto">
+                                <input id="alienadoSim" class="radio-orange" type="radio" name="radio" value="1"/>
+                                <label for="alienadoSim"><span><span></span></span>Sim</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input id="alienadoNao" class="radio-orange" type="radio" name="radio" value="option1"/>
+                                <label for="alienadoNao" class="radio-orange"><span><span></span></span>Não</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 form-group">
+                        <label for="fotos">Fotos</label>
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="arquivosFotos">
+                                <label class="custom-file-label" for="arquivosFotos">Escolher os arquivos</label>
+                            </div>
+                        </div>
+                        <small><p>Ao escolher, mantenha CTRL precionado para selecionar mais de 1 imagem se necessário. Máximo de 15 fotos</p></small>
+                    </div>
+                    <div class="col-6 form-group">
+                        <label for="documentos">Documentos*</label>
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="arquivosDocumentos">
+                                <label class="custom-file-label" for="arquivosDocumentos">Escolher os arquivos</label>
+                            </div>
+                        </div>
+                        <small><p>Ao escolher, mantenha CTRL precionado para selecionar mais de 1 imagem se necessário.</p></small>
+                    </div>
+                    <div class="col-12 form-group">
+                        <label for="descricao">Descrição</label>
+                        <textarea type="text" class="form-control" name="paragraph" rows="5"></textarea>
+                    </div>
+                    <div class="col-12 form-group">
+                        <label for="observacoes">Observações</label>
+                        <textarea type="text" class="form-control" name="paragraph" rows="5"></textarea>
+                        <small><p>*Somente a Unik HB e usuário que cadastrou o produto visualizarão esse campo</p></small>
+                    </div>
+                    
+                </div>
+                <!-- DADOS DE LOCALIZAÇÃO -->
+                <div class="col-12 text-center my-4">
+                    <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Dados de localização</h1>
+                    <hr class="mx-5"/>
+                </div>
+                <div class="row my-3">
+                    <div class="col-4 form-group">
+                        <label for="pais">País*</label>
+                        <select class="custom-select" id="inlineFormCustomSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="estado">Estado*</label>
+                        <select class="custom-select" id="estado">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="cidade">Cidade*</label>
+                        <select class="custom-select" id="cidade">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="cep">CEP*</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="logadouro">Logradouro*</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="numero">Número*</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="bairro">Bairro*</label>
+                        <select class="custom-select" id="bairro">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-4 form-group">
+                        <label for="complemento">Complemento*</label>
+                        <input type="text" class="form-control">
+                    </div>                    
+                </div>
+                <small class="form-text">*Somente a Unik HB e usuário que cadastrou o produto visualizarão esse campo.</small>
+                <div class="mt-1">
+                    <input id="termosDeUso" class="radio-orange" type="radio" name="radio" value="1"/>
+                    <label for="termosDeUso"><span><span></span></span>Aceito os termos de uso</label>
+                </div>
+                <!-- BOTÃO -->
+                <div class="col-12 text-right mt-2">
+                    <button type="submit" class="btn btn-warning text-white text-uppercase p-3">cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+	integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+	crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	crossorigin="anonymous"></script>
+<script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
