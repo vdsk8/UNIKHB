@@ -54,12 +54,6 @@ small {
 	background-color: #ff7925!important;
 }
 
-.btn-primary:not(:disabled):not(.disabled):active {
-    color: #fff;
-    background-color: #ea4126;
-    border-color: #ea4126;
-}
-
 .bg-secondary {
 	background-color: #f0eeee!important;
 }
@@ -95,6 +89,13 @@ small {
 	border: 0;
 }
 
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #ea4126;
+    border: 0;
+}
+
 .btn-primary:hover { 
 	background-color: #ff7925;
 	border: 0;
@@ -121,8 +122,18 @@ small {
 }
 
 .btn-info {
-	background-color: grey;
+	background-color: #535353;
 	border: 0;
+}
+
+.btn-info:hover {
+	background-color: #424242;
+	border: 0;
+}
+
+.btn-info:not(:disabled):not(.disabled):active {
+    background-color: #424242;
+    border: 0;
 }
 
 .btn-warning {
@@ -869,13 +880,14 @@ background-position: center;
 	
 	.dropdown-index {
 		position: absolute;
+		z-index: 100;
 		bottom: -28px;
 	}
 	.dropdown-card {
 		position: absolute;
 		top: 5%;
 		right: 150px;
-		z-index: 1;
+		z-index: 150;
 	}
 	.border-right{
 		border-right: 1px solid #dee2e6!important;
