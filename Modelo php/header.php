@@ -23,7 +23,11 @@
 
 <!--==== HEAD ====-->
 <!-- MENU HAMBURGER -->
-<nav class="d-block d-lg-none align-items-center">
+<nav class="d-block d-lg-none align-items-center mb-3">
+	<button onclick="topFunction()" class="btn-go-to-top btn-primary border-0" title="Go to top">
+		<svg class="svg-top" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve"><path d="M7.098,40.18c-1.064,0-2.135-0.355-3.02-1.088c-2.019-1.668-2.303-4.658-0.634-6.678l17.25-20.872c0.882-1.067,2.187-1.696,3.571-1.721c1.384-0.022,2.711,0.557,3.63,1.592l18.549,20.872c1.74,1.957,1.564,4.957-0.395,6.695c-1.958,1.74-4.957,1.566-6.696-0.395L24.481,21.853L10.757,38.457C9.819,39.594,8.463,40.18,7.098,40.18z"/>
+		</svg>
+	</button>
 	<div id="menuToggle">
 		<input type="checkbox"/>
 
@@ -33,14 +37,13 @@
 
 		<ul id="menu">
 			<!-- MENU 1 -->
-			<li><a class="text-uppercase" href="#">HOME</a></li>
-			<li><a class="text-uppercase" href="#">QUEM SOMOS</a></li>
-			<li><a class="text-uppercase" href="#">ASSESSORIA JURÍDICA</a></li>
-			<li><a class="text-uppercase" href="#">SEGURO</a></li>
-			<li><a class="text-uppercase" href="#">CONSULTAS</a></li>
-			<li><a class="text-uppercase" href="#">BLOG</a></li>
-			<li><a class="text-uppercase" href="#">CONTATO</a></li>
-			<li><a class="text-uppercase" href="#">ANUNCIAR</a></li>
+			<li><a class="text-uppercase" href="index.php">HOME</a></li>
+			<li><a class="text-uppercase" href="quem_somos.php">QUEM SOMOS</a></li>
+			<li><a class="text-uppercase" href="assessoria.php">ASSESSORIA JURÍDICA</a></li>
+			<li><a class="text-uppercase" href="consultas.php">CONSULTAS</a></li>
+			<li><a class="text-uppercase" href="blog.php">BLOG</a></li>
+			<li><a class="text-uppercase" href="contato.php">CONTATO</a></li>
+			<li><a class="text-uppercase" href="anunciar.php">ANUNCIAR</a></li>
 			<hr class="border-light"/>
 			<!-- MENU 2 ICONS -->
 			<li>
@@ -123,7 +126,7 @@
 	
 	<!-- LOGO -->
 	<div class="d-flex justify-content-end">
-		<a class="w-25" href="#">
+		<a class="w-25" href="index.php">
 			<img class="card-img unik-logo" src="img/LOGO_Unik.png" alt="Unik High Business Logo"/>
 		</a>
 	</div>
@@ -182,7 +185,7 @@
 
 		<!-- LOGO -->
 		<div class="col-lg-2">
-				<a class="navbar-brand d-flex justify-content-center align-self-start m-lg-0 m-4" href="#">
+				<a class="navbar-brand d-flex justify-content-center align-self-start m-lg-0 m-4" href="index.php">
 					<img class="card-img unik-logo" src="img/LOGO_Unik.png" alt="Unik High Business Logo"/>
 				</a>
 		</div>
@@ -197,7 +200,7 @@
 						<!-- MENU 1 -->
 						<ul id="menu1" class="navbar-nav mr-auto flex-fill justify-content-between">
 							<li class="nav-item">
-								<a class="nav-link" href="#">HOME</a>
+								<a class="nav-link" href="index.php">HOME</a>
 							</li>
 							<li>
 								<span class="no-hover font-weight-normal nav-link d-none d-lg-block"> | </span>
@@ -215,29 +218,23 @@
 								<span class="no-hover font-weight-normal nav-link d-none d-lg-block"> | </span>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">SEGURO</a>
+								<a class="nav-link" href="consultas.php">CONSULTAS</a>
 							</li>
 							<li>
 								<span class="no-hover font-weight-normal nav-link d-none d-lg-block"> | </span>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">CONSULTAS</a>
+								<a class="nav-link" href="blog.php">BLOG</a>
 							</li>
 							<li>
 								<span class="no-hover font-weight-normal nav-link d-none d-lg-block"> | </span>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">BLOG</a>
-							</li>
-							<li>
-								<span class="no-hover font-weight-normal nav-link d-none d-lg-block"> | </span>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">CONTATO</a>
+								<a class="nav-link" href="contato.php">CONTATO</a>
 							</li>
 							<li class="nav-item">
 								<a id="anunciar" class="nav-link btn btn-primary rounded-0 text-white"
-									href="#">ANUNCIAR</a>
+									href="anunciar.php">ANUNCIAR</a>
 							</li>
 						</ul>
 					
