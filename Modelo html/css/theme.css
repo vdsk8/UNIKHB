@@ -35,6 +35,10 @@ small {
 	color: #ffa200!important;
 }
 
+.text-info {
+	color:#4588f2!important;
+}
+
 .text-warning {
 	color: #fff000!important;
 }
@@ -43,7 +47,7 @@ small {
 
 .main-title {
 	text-transform: uppercase;
-	font-weight: 300;
+	font-weight: 400;
 	color: #fe6300;
 	line-height: 5rem;
 }
