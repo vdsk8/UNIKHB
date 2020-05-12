@@ -37,13 +37,13 @@
 
 		<ul id="menu">
 			<!-- MENU 1 -->
-			<li><a class="text-uppercase" href="#">HOME</a></li>
-			<li><a class="text-uppercase" href="#">QUEM SOMOS</a></li>
-			<li><a class="text-uppercase" href="#">ASSESSORIA JURÍDICA</a></li>
-			<li><a class="text-uppercase" href="#">CONSULTAS</a></li>
-			<li><a class="text-uppercase" href="#">BLOG</a></li>
-			<li><a class="text-uppercase" href="#">CONTATO</a></li>
-			<li><a class="text-uppercase" href="#">ANUNCIAR</a></li>
+			<li><a class="text-uppercase" href="index.php">HOME</a></li>
+			<li><a class="text-uppercase" href="quem_somos.php">QUEM SOMOS</a></li>
+			<li><a class="text-uppercase" href="assessoria.php">ASSESSORIA JURÍDICA</a></li>
+			<li><a class="text-uppercase" href="consultas.php">CONSULTAS</a></li>
+			<li><a class="text-uppercase" href="blog.php">BLOG</a></li>
+			<li><a class="text-uppercase" href="contato.php">CONTATO</a></li>
+			<li><a class="text-uppercase" href="anunciar.php">ANUNCIAR</a></li>
 			<hr class="border-light"/>
 			<!-- MENU 2 ICONS -->
 			<li>
@@ -126,7 +126,7 @@
 	
 	<!-- LOGO -->
 	<div class="d-flex justify-content-end">
-		<a class="w-25" href="#">
+		<a class="w-25" href="index.php">
 			<img class="card-img unik-logo" src="img/LOGO_Unik.png" alt="Unik High Business Logo"/>
 		</a>
 	</div>
@@ -185,7 +185,7 @@
 
 		<!-- LOGO -->
 		<div class="col-lg-2">
-				<a class="navbar-brand d-flex justify-content-center align-self-start m-lg-0 m-4" href="#">
+				<a class="navbar-brand d-flex justify-content-center align-self-start m-lg-0 m-4" href="index.php">
 					<img class="card-img unik-logo" src="img/LOGO_Unik.png" alt="Unik High Business Logo"/>
 				</a>
 		</div>
@@ -200,41 +200,41 @@
 						<!-- MENU 1 -->
 						<ul id="menu1" class="navbar-nav mr-auto flex-fill justify-content-between">
 							<li class="nav-item">
-								<a class="nav-link" href="#">HOME</a>
+								<a class="nav-link" href="index.php">HOME</a>
 							</li>
 							<li>
 								<span class="no-hover font-weight-normal nav-link d-none d-lg-block"> | </span>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">QUEM SOMOS</a>
+								<a class="nav-link" href="quem_somos.php">QUEM SOMOS</a>
 							</li>
 							<li>
 								<span class="no-hover font-weight-normal nav-link d-none d-lg-block"> | </span>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">ASSESSORIA JURÍDICA</a>
+								<a class="nav-link" href="assessoria.php">ASSESSORIA JURÍDICA</a>
 							</li>
 							<li>
 								<span class="no-hover font-weight-normal nav-link d-none d-lg-block"> | </span>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">CONSULTAS</a>
+								<a class="nav-link" href="consultas.php">CONSULTAS</a>
 							</li>
 							<li>
 								<span class="no-hover font-weight-normal nav-link d-none d-lg-block"> | </span>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">BLOG</a>
+								<a class="nav-link" href="blog.php">BLOG</a>
 							</li>
 							<li>
 								<span class="no-hover font-weight-normal nav-link d-none d-lg-block"> | </span>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">CONTATO</a>
+								<a class="nav-link" href="contato.php">CONTATO</a>
 							</li>
 							<li class="nav-item">
 								<a id="anunciar" class="nav-link btn btn-primary rounded-0 text-white"
-									href="#">ANUNCIAR</a>
+									href="anunciar.php">ANUNCIAR</a>
 							</li>
 						</ul>
 					
