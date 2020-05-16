@@ -342,68 +342,70 @@
 <!--==== BODY ====-->
 
 <div class="card border-0 mb-5">
-	<!-- HERO SLIDER -->
-	<div id="slide-hero-indicators" class="carousel slide d-sm-block d-none" data-ride="carousel">
-		<!-- INDICATORS -->
-		<ol class="carousel-indicators mb-5 pb-5">
-			<li data-target="#slide-hero-indicators" data-slide-to="0" class="active"></li>
-			<li data-target="#slide-hero-indicators" data-slide-to="1"></li>
-			<li data-target="#slide-hero-indicators" data-slide-to="2"></li>
-		</ol>
+    <!-- FORMULÁRIO DE BUSCA - DROPDOWN-->
+    <div class="card-body border-0 dropdown-index container bg-primary py-2 align-self-center">
+        <form class="form-inline">
+            <div class="row mx-3 flex-fill">
+                <!-- CATEGORIA -->
+                <select id="categoria" class="form-control rounded-0 flex-fill m-2 font-weight-bold">
+                    <option>CATEGORIA</option>
+                </select>
+                <!-- LOCALIZAÇÃO -->
+                <input id="localizacao" type="text" class="form-control rounded-0 flex-fill m-2 font-weight-bold" placeholder="LOCALIZAÇÃO">
+                <!-- VALOR -->
+                <select id="valor" class="form-control rounded-0 flex-fill m-2 font-weight-bold">
+                    <option>VALOR</option>
+                </select>
+                <!-- BUSCAR -->
+                <button id="buscar" type="submit" class="btn btn-info rounded-0 flex-fill m-2 font-weight-bold">BUSCAR</button>
+            </div>
+        </form>
+    </div>
+    <!-- HERO SLIDER -->
+    <div id="slide-hero-indicators" class="carousel slide" data-ride="carousel">
+        <!-- INDICATORS -->
+        <ol class="carousel-indicators mb-5 pb-5">
+            <li data-target="#slide-hero-indicators" data-slide-to="0" class="active"></li>
+            <li data-target="#slide-hero-indicators" data-slide-to="1"></li>
+            <li data-target="#slide-hero-indicators" data-slide-to="2"></li>
+        </ol>
 
-		<!-- CAROUSEL -->
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img class="hero-img d-block w-100 w-100img"
-					src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-					alt="..." />
-				<div class="carousel-caption">
-					<h3 class="text-left">First slide label: consectetur adipiscing elit</h3>
-					<h5 class="text-left font-weight-light">Nulla vitae elit libero</h5>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<img class="hero-img d-block w-100 w-100img"
-					src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
-					alt="..." />
-				<div class="carousel-caption">
-					<h3 class="text-left">Second slide label: consectetur adipiscing elit</h3>
-					<h5 class="text-left font-weight-light">Nulla vitae elit libero</h5>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<img class="hero-img d-block w-100 w-100img"
-					src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
-					alt="..." />
-				<div class="carousel-caption">
-					<h3 class="text-left">Third slide label: consectetur adipiscing elit</h3>
-					<h5 class="text-left font-weight-light">Nulla vitae elit libero</h5>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- DROPDOWN -->
-	<div class="card-body border-0 dropdown-index container bg-primary py-2 align-self-center">
-		<form class="form-inline">
-			<div class="row mx-3 flex-fill">
-				<!-- CÓDIGO -->
-				<input id="codigo" type="text" class="form-control rounded-0 flex-fill m-2" placeholder="CÓDIGO">
-				<!-- CATEGORIA -->
-				<select id="categoria" class="form-control rounded-0 flex-fill m-2">
-					<option>CATEGORIA</option>
-				</select>
-				<!-- LOCALIZAÇÃO -->
-				<input id="localizacao" type="text" class="form-control rounded-0 flex-fill m-2"
-					placeholder="LOCALIZAÇÃO">
-				<!-- VALOR -->
-				<select id="valor" class="form-control rounded-0 flex-fill m-2">
-					<option>VALOR</option>
-				</select>
-				<!-- BUSCAR -->
-				<button id="buscar" type="submit" class="btn btn-info rounded-0 flex-fill m-2">BUSCAR</button>
-			</div>
-		</form>
-	</div>
+        <!-- CAROUSEL -->
+        <div class="carousel-inner">
+            <div class="carousel-item active view">
+                <img class="hero-img d-block w-100 w-100img" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="..." />
+                <div class="carousel-caption mask bg-gradient-dark text-center py-5">
+                    <div class="ml-5 my-5 py-5">
+                        <h3 class="text-left ml-5">First slide label: consectetur adipiscing elit</h3>
+                        <h5 class="text-left font-weight-light ml-5">Nulla vitae elit libero</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item view">
+                <img class="hero-img d-block w-100 w-100img"
+                    src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
+                    alt="..." />
+                <div class="carousel-caption mask bg-gradient-dark text-center py-5">
+                    <div class="ml-5 my-5 py-5">
+                        <h3 class="text-left ml-5">First slide label: consectetur adipiscing elit</h3>
+                        <h5 class="text-left font-weight-light ml-5">Nulla vitae elit libero</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item view">
+                <img class="hero-img d-block w-100 w-100img"
+                    src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+                    alt="..." />
+                <div class="carousel-caption mask bg-gradient-dark text-center py-5">
+                    <div class="ml-5 my-5 py-5">
+                        <h3 class="text-left ml-5">First slide label: consectetur adipiscing elit</h3>
+                        <h5 class="text-left font-weight-light ml-5">Nulla vitae elit libero</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <!-- SLIDE PRODUCT -->
@@ -422,50 +424,26 @@
 				<div class="row">
 					<!-- CARD 1 -->
 					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
-						<div class="card border-0 mb-2 img-gallery">
+						<div class="card border-0 mb-3 img-gallery">
 							<a class="mais-vistos-card" href="#">
 								<img class="card-img border-0 img-gallery"
 									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
 								<div class="hover-card card-img-overlay bg-gradient-dark">
 									<!-- BANHEIROS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" version="1.1" id="Capa_1"
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-											xml:space="preserve">
-											<path
-												d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z" />
-											<path
-												d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z" />
+										<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
 										</svg>
 										2 Banheiros
 									</p>
 									<!-- TAMANHO -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Layer_1"
-											enable-background="new 0 0 508.659 508.659" height="512"
-											viewBox="0 0 508.659 508.659" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="m503.954 481.344-88.906-88.906-34.115 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.115-46.423-46.423-34.114 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-88.907-88.906c-10.058-10.061-27.313-2.905-27.313 11.313v476.641c0 8.837 7.164 16 16 16h476.641c14.204 0 21.386-17.241 11.313-27.314zm-283.124-74.171h-89.473c-16.472 0-29.872-13.401-29.872-29.873v-89.473c0-26.561 32.2-39.921 50.995-21.122l89.472 89.473c18.784 18.782 5.459 50.995-21.122 50.995z" />
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
 										</svg>
 										240 m<sup>2</sup>
 									</p>
 									<!-- QUARTOS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Capa_1" enable-background="new 0 0 512 512"
-											height="512" viewBox="0 0 512 512" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<g>
-												<path
-													d="m472.447 225.482h-432.894c-21.809 0-39.553 17.744-39.553 39.554v105.673h512v-105.673c0-21.81-17.744-39.554-39.553-39.554z" />
-												<path d="m271 132.578h126.862v62.904h-126.862z" />
-												<path
-													d="m84.139 102.578h171.861 171.862v92.904h37.468v-130.374h-418.66v130.374h37.469z" />
-												<path d="m114.139 132.578h126.861v62.904h-126.861z" />
-												<path d="m16.008 400.709h479.983v46.183h-479.983z" />
-											</g>
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
 										</svg>
 										2 Quartos
 									</p>
@@ -482,11 +460,11 @@
 										<small>Juiz de Fora, Minas Gerais</small>
 									</p>
 								</div>
-
+					
 							</a>
 						</div>
 						<div class="card-body border-0 p-1">
-							<p class="card-text text-uppercase text-gallery"><small>Juiz de Fora, Minas
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
 									Gerais</small></p>
 							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
 							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
@@ -494,50 +472,26 @@
 					</div>
 					<!-- CARD 2 -->
 					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
-						<div class="card border-0 mb-2 img-gallery">
+						<div class="card border-0 mb-3 img-gallery">
 							<a class="mais-vistos-card" href="#">
 								<img class="card-img border-0 img-gallery"
-									src="https://images.unsplash.com/photo-1560026301-88340cf16be7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" />
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
 								<div class="hover-card card-img-overlay bg-gradient-dark">
 									<!-- BANHEIROS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" version="1.1" id="Capa_1"
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-											xml:space="preserve">
-											<path
-												d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z" />
-											<path
-												d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z" />
+										<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
 										</svg>
 										2 Banheiros
 									</p>
 									<!-- TAMANHO -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Layer_1"
-											enable-background="new 0 0 508.659 508.659" height="512"
-											viewBox="0 0 508.659 508.659" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="m503.954 481.344-88.906-88.906-34.115 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.115-46.423-46.423-34.114 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-88.907-88.906c-10.058-10.061-27.313-2.905-27.313 11.313v476.641c0 8.837 7.164 16 16 16h476.641c14.204 0 21.386-17.241 11.313-27.314zm-283.124-74.171h-89.473c-16.472 0-29.872-13.401-29.872-29.873v-89.473c0-26.561 32.2-39.921 50.995-21.122l89.472 89.473c18.784 18.782 5.459 50.995-21.122 50.995z" />
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
 										</svg>
 										240 m<sup>2</sup>
 									</p>
 									<!-- QUARTOS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Capa_1" enable-background="new 0 0 512 512"
-											height="512" viewBox="0 0 512 512" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<g>
-												<path
-													d="m472.447 225.482h-432.894c-21.809 0-39.553 17.744-39.553 39.554v105.673h512v-105.673c0-21.81-17.744-39.554-39.553-39.554z" />
-												<path d="m271 132.578h126.862v62.904h-126.862z" />
-												<path
-													d="m84.139 102.578h171.861 171.862v92.904h37.468v-130.374h-418.66v130.374h37.469z" />
-												<path d="m114.139 132.578h126.861v62.904h-126.861z" />
-												<path d="m16.008 400.709h479.983v46.183h-479.983z" />
-											</g>
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
 										</svg>
 										2 Quartos
 									</p>
@@ -554,11 +508,11 @@
 										<small>Juiz de Fora, Minas Gerais</small>
 									</p>
 								</div>
-
+					
 							</a>
 						</div>
 						<div class="card-body border-0 p-1">
-							<p class="card-text text-uppercase text-gallery"><small>Juiz de Fora, Minas
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
 									Gerais</small></p>
 							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
 							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
@@ -566,50 +520,26 @@
 					</div>
 					<!-- CARD 3 -->
 					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
-						<div class="card border-0 mb-2 img-gallery">
+						<div class="card border-0 mb-3 img-gallery">
 							<a class="mais-vistos-card" href="#">
 								<img class="card-img border-0 img-gallery"
-									src="https://images.unsplash.com/photo-1508330570239-ce7cabceee22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=856&q=80" />
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
 								<div class="hover-card card-img-overlay bg-gradient-dark">
 									<!-- BANHEIROS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" version="1.1" id="Capa_1"
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-											xml:space="preserve">
-											<path
-												d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z" />
-											<path
-												d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z" />
+										<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
 										</svg>
 										2 Banheiros
 									</p>
 									<!-- TAMANHO -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Layer_1"
-											enable-background="new 0 0 508.659 508.659" height="512"
-											viewBox="0 0 508.659 508.659" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="m503.954 481.344-88.906-88.906-34.115 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.115-46.423-46.423-34.114 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-88.907-88.906c-10.058-10.061-27.313-2.905-27.313 11.313v476.641c0 8.837 7.164 16 16 16h476.641c14.204 0 21.386-17.241 11.313-27.314zm-283.124-74.171h-89.473c-16.472 0-29.872-13.401-29.872-29.873v-89.473c0-26.561 32.2-39.921 50.995-21.122l89.472 89.473c18.784 18.782 5.459 50.995-21.122 50.995z" />
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
 										</svg>
 										240 m<sup>2</sup>
 									</p>
 									<!-- QUARTOS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Capa_1" enable-background="new 0 0 512 512"
-											height="512" viewBox="0 0 512 512" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<g>
-												<path
-													d="m472.447 225.482h-432.894c-21.809 0-39.553 17.744-39.553 39.554v105.673h512v-105.673c0-21.81-17.744-39.554-39.553-39.554z" />
-												<path d="m271 132.578h126.862v62.904h-126.862z" />
-												<path
-													d="m84.139 102.578h171.861 171.862v92.904h37.468v-130.374h-418.66v130.374h37.469z" />
-												<path d="m114.139 132.578h126.861v62.904h-126.861z" />
-												<path d="m16.008 400.709h479.983v46.183h-479.983z" />
-											</g>
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
 										</svg>
 										2 Quartos
 									</p>
@@ -626,11 +556,11 @@
 										<small>Juiz de Fora, Minas Gerais</small>
 									</p>
 								</div>
-
+					
 							</a>
 						</div>
 						<div class="card-body border-0 p-1">
-							<p class="card-text text-uppercase text-gallery"><small>Juiz de Fora, Minas
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
 									Gerais</small></p>
 							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
 							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
@@ -642,50 +572,26 @@
 				<div class="row">
 					<!-- CARD 1 -->
 					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
-						<div class="card border-0 mb-2 img-gallery">
+						<div class="card border-0 mb-3 img-gallery">
 							<a class="mais-vistos-card" href="#">
 								<img class="card-img border-0 img-gallery"
 									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
 								<div class="hover-card card-img-overlay bg-gradient-dark">
 									<!-- BANHEIROS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" version="1.1" id="Capa_1"
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-											xml:space="preserve">
-											<path
-												d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z" />
-											<path
-												d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z" />
+										<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
 										</svg>
 										2 Banheiros
 									</p>
 									<!-- TAMANHO -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Layer_1"
-											enable-background="new 0 0 508.659 508.659" height="512"
-											viewBox="0 0 508.659 508.659" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="m503.954 481.344-88.906-88.906-34.115 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.115-46.423-46.423-34.114 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-88.907-88.906c-10.058-10.061-27.313-2.905-27.313 11.313v476.641c0 8.837 7.164 16 16 16h476.641c14.204 0 21.386-17.241 11.313-27.314zm-283.124-74.171h-89.473c-16.472 0-29.872-13.401-29.872-29.873v-89.473c0-26.561 32.2-39.921 50.995-21.122l89.472 89.473c18.784 18.782 5.459 50.995-21.122 50.995z" />
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
 										</svg>
 										240 m<sup>2</sup>
 									</p>
 									<!-- QUARTOS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Capa_1" enable-background="new 0 0 512 512"
-											height="512" viewBox="0 0 512 512" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<g>
-												<path
-													d="m472.447 225.482h-432.894c-21.809 0-39.553 17.744-39.553 39.554v105.673h512v-105.673c0-21.81-17.744-39.554-39.553-39.554z" />
-												<path d="m271 132.578h126.862v62.904h-126.862z" />
-												<path
-													d="m84.139 102.578h171.861 171.862v92.904h37.468v-130.374h-418.66v130.374h37.469z" />
-												<path d="m114.139 132.578h126.861v62.904h-126.861z" />
-												<path d="m16.008 400.709h479.983v46.183h-479.983z" />
-											</g>
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
 										</svg>
 										2 Quartos
 									</p>
@@ -702,10 +608,11 @@
 										<small>Juiz de Fora, Minas Gerais</small>
 									</p>
 								</div>
+					
 							</a>
 						</div>
 						<div class="card-body border-0 p-1">
-							<p class="card-text text-uppercase text-gallery"><small>Juiz de Fora, Minas
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
 									Gerais</small></p>
 							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
 							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
@@ -713,50 +620,26 @@
 					</div>
 					<!-- CARD 2 -->
 					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
-						<div class="card border-0 mb-2 img-gallery">
+						<div class="card border-0 mb-3 img-gallery">
 							<a class="mais-vistos-card" href="#">
 								<img class="card-img border-0 img-gallery"
-									src="https://images.unsplash.com/photo-1560026301-88340cf16be7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" />
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
 								<div class="hover-card card-img-overlay bg-gradient-dark">
 									<!-- BANHEIROS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" version="1.1" id="Capa_1"
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-											xml:space="preserve">
-											<path
-												d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z" />
-											<path
-												d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z" />
+										<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
 										</svg>
 										2 Banheiros
 									</p>
 									<!-- TAMANHO -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Layer_1"
-											enable-background="new 0 0 508.659 508.659" height="512"
-											viewBox="0 0 508.659 508.659" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="m503.954 481.344-88.906-88.906-34.115 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.115-46.423-46.423-34.114 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-88.907-88.906c-10.058-10.061-27.313-2.905-27.313 11.313v476.641c0 8.837 7.164 16 16 16h476.641c14.204 0 21.386-17.241 11.313-27.314zm-283.124-74.171h-89.473c-16.472 0-29.872-13.401-29.872-29.873v-89.473c0-26.561 32.2-39.921 50.995-21.122l89.472 89.473c18.784 18.782 5.459 50.995-21.122 50.995z" />
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
 										</svg>
 										240 m<sup>2</sup>
 									</p>
 									<!-- QUARTOS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Capa_1" enable-background="new 0 0 512 512"
-											height="512" viewBox="0 0 512 512" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<g>
-												<path
-													d="m472.447 225.482h-432.894c-21.809 0-39.553 17.744-39.553 39.554v105.673h512v-105.673c0-21.81-17.744-39.554-39.553-39.554z" />
-												<path d="m271 132.578h126.862v62.904h-126.862z" />
-												<path
-													d="m84.139 102.578h171.861 171.862v92.904h37.468v-130.374h-418.66v130.374h37.469z" />
-												<path d="m114.139 132.578h126.861v62.904h-126.861z" />
-												<path d="m16.008 400.709h479.983v46.183h-479.983z" />
-											</g>
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
 										</svg>
 										2 Quartos
 									</p>
@@ -773,11 +656,11 @@
 										<small>Juiz de Fora, Minas Gerais</small>
 									</p>
 								</div>
-
+					
 							</a>
 						</div>
 						<div class="card-body border-0 p-1">
-							<p class="card-text text-uppercase text-gallery"><small>Juiz de Fora, Minas
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
 									Gerais</small></p>
 							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
 							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
@@ -785,50 +668,26 @@
 					</div>
 					<!-- CARD 3 -->
 					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
-						<div class="card border-0 mb-2 img-gallery">
+						<div class="card border-0 mb-3 img-gallery">
 							<a class="mais-vistos-card" href="#">
 								<img class="card-img border-0 img-gallery"
-									src="https://images.unsplash.com/photo-1508330570239-ce7cabceee22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=856&q=80" />
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
 								<div class="hover-card card-img-overlay bg-gradient-dark">
 									<!-- BANHEIROS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" version="1.1" id="Capa_1"
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-											xml:space="preserve">
-											<path
-												d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z" />
-											<path
-												d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z" />
+										<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
 										</svg>
 										2 Banheiros
 									</p>
 									<!-- TAMANHO -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Layer_1"
-											enable-background="new 0 0 508.659 508.659" height="512"
-											viewBox="0 0 508.659 508.659" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="m503.954 481.344-88.906-88.906-34.115 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.115-46.423-46.423-34.114 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-88.907-88.906c-10.058-10.061-27.313-2.905-27.313 11.313v476.641c0 8.837 7.164 16 16 16h476.641c14.204 0 21.386-17.241 11.313-27.314zm-283.124-74.171h-89.473c-16.472 0-29.872-13.401-29.872-29.873v-89.473c0-26.561 32.2-39.921 50.995-21.122l89.472 89.473c18.784 18.782 5.459 50.995-21.122 50.995z" />
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
 										</svg>
 										240 m<sup>2</sup>
 									</p>
 									<!-- QUARTOS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Capa_1" enable-background="new 0 0 512 512"
-											height="512" viewBox="0 0 512 512" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<g>
-												<path
-													d="m472.447 225.482h-432.894c-21.809 0-39.553 17.744-39.553 39.554v105.673h512v-105.673c0-21.81-17.744-39.554-39.553-39.554z" />
-												<path d="m271 132.578h126.862v62.904h-126.862z" />
-												<path
-													d="m84.139 102.578h171.861 171.862v92.904h37.468v-130.374h-418.66v130.374h37.469z" />
-												<path d="m114.139 132.578h126.861v62.904h-126.861z" />
-												<path d="m16.008 400.709h479.983v46.183h-479.983z" />
-											</g>
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
 										</svg>
 										2 Quartos
 									</p>
@@ -845,11 +704,11 @@
 										<small>Juiz de Fora, Minas Gerais</small>
 									</p>
 								</div>
-
+					
 							</a>
 						</div>
 						<div class="card-body border-0 p-1">
-							<p class="card-text text-uppercase text-gallery"><small>Juiz de Fora, Minas
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
 									Gerais</small></p>
 							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
 							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
@@ -889,50 +748,26 @@
 				<div class="row">
 					<!-- CARD 1 -->
 					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
-						<div class="card border-0 mb-2 img-gallery">
+						<div class="card border-0 mb-3 img-gallery">
 							<a class="mais-vistos-card" href="#">
 								<img class="card-img border-0 img-gallery"
 									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
 								<div class="hover-card card-img-overlay bg-gradient-dark">
 									<!-- BANHEIROS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" version="1.1" id="Capa_1"
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-											xml:space="preserve">
-											<path
-												d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z" />
-											<path
-												d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z" />
+										<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
 										</svg>
 										2 Banheiros
 									</p>
 									<!-- TAMANHO -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Layer_1"
-											enable-background="new 0 0 508.659 508.659" height="512"
-											viewBox="0 0 508.659 508.659" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="m503.954 481.344-88.906-88.906-34.115 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.115-46.423-46.423-34.114 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-88.907-88.906c-10.058-10.061-27.313-2.905-27.313 11.313v476.641c0 8.837 7.164 16 16 16h476.641c14.204 0 21.386-17.241 11.313-27.314zm-283.124-74.171h-89.473c-16.472 0-29.872-13.401-29.872-29.873v-89.473c0-26.561 32.2-39.921 50.995-21.122l89.472 89.473c18.784 18.782 5.459 50.995-21.122 50.995z" />
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
 										</svg>
 										240 m<sup>2</sup>
 									</p>
 									<!-- QUARTOS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Capa_1" enable-background="new 0 0 512 512"
-											height="512" viewBox="0 0 512 512" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<g>
-												<path
-													d="m472.447 225.482h-432.894c-21.809 0-39.553 17.744-39.553 39.554v105.673h512v-105.673c0-21.81-17.744-39.554-39.553-39.554z" />
-												<path d="m271 132.578h126.862v62.904h-126.862z" />
-												<path
-													d="m84.139 102.578h171.861 171.862v92.904h37.468v-130.374h-418.66v130.374h37.469z" />
-												<path d="m114.139 132.578h126.861v62.904h-126.861z" />
-												<path d="m16.008 400.709h479.983v46.183h-479.983z" />
-											</g>
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
 										</svg>
 										2 Quartos
 									</p>
@@ -949,11 +784,11 @@
 										<small>Juiz de Fora, Minas Gerais</small>
 									</p>
 								</div>
-
+					
 							</a>
 						</div>
 						<div class="card-body border-0 p-1">
-							<p class="card-text text-uppercase text-gallery"><small>Juiz de Fora, Minas
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
 									Gerais</small></p>
 							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
 							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
@@ -961,50 +796,26 @@
 					</div>
 					<!-- CARD 2 -->
 					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
-						<div class="card border-0 mb-2 img-gallery">
+						<div class="card border-0 mb-3 img-gallery">
 							<a class="mais-vistos-card" href="#">
 								<img class="card-img border-0 img-gallery"
-									src="https://images.unsplash.com/photo-1560026301-88340cf16be7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" />
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
 								<div class="hover-card card-img-overlay bg-gradient-dark">
 									<!-- BANHEIROS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" version="1.1" id="Capa_1"
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-											xml:space="preserve">
-											<path
-												d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z" />
-											<path
-												d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z" />
+										<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
 										</svg>
 										2 Banheiros
 									</p>
 									<!-- TAMANHO -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Layer_1"
-											enable-background="new 0 0 508.659 508.659" height="512"
-											viewBox="0 0 508.659 508.659" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="m503.954 481.344-88.906-88.906-34.115 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.115-46.423-46.423-34.114 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-88.907-88.906c-10.058-10.061-27.313-2.905-27.313 11.313v476.641c0 8.837 7.164 16 16 16h476.641c14.204 0 21.386-17.241 11.313-27.314zm-283.124-74.171h-89.473c-16.472 0-29.872-13.401-29.872-29.873v-89.473c0-26.561 32.2-39.921 50.995-21.122l89.472 89.473c18.784 18.782 5.459 50.995-21.122 50.995z" />
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
 										</svg>
 										240 m<sup>2</sup>
 									</p>
 									<!-- QUARTOS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Capa_1" enable-background="new 0 0 512 512"
-											height="512" viewBox="0 0 512 512" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<g>
-												<path
-													d="m472.447 225.482h-432.894c-21.809 0-39.553 17.744-39.553 39.554v105.673h512v-105.673c0-21.81-17.744-39.554-39.553-39.554z" />
-												<path d="m271 132.578h126.862v62.904h-126.862z" />
-												<path
-													d="m84.139 102.578h171.861 171.862v92.904h37.468v-130.374h-418.66v130.374h37.469z" />
-												<path d="m114.139 132.578h126.861v62.904h-126.861z" />
-												<path d="m16.008 400.709h479.983v46.183h-479.983z" />
-											</g>
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
 										</svg>
 										2 Quartos
 									</p>
@@ -1021,11 +832,11 @@
 										<small>Juiz de Fora, Minas Gerais</small>
 									</p>
 								</div>
-
+					
 							</a>
 						</div>
 						<div class="card-body border-0 p-1">
-							<p class="card-text text-uppercase text-gallery"><small>Juiz de Fora, Minas
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
 									Gerais</small></p>
 							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
 							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
@@ -1033,50 +844,26 @@
 					</div>
 					<!-- CARD 3 -->
 					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
-						<div class="card border-0 mb-2 img-gallery">
+						<div class="card border-0 mb-3 img-gallery">
 							<a class="mais-vistos-card" href="#">
 								<img class="card-img border-0 img-gallery"
-									src="https://images.unsplash.com/photo-1508330570239-ce7cabceee22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=856&q=80" />
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
 								<div class="hover-card card-img-overlay bg-gradient-dark">
 									<!-- BANHEIROS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" version="1.1" id="Capa_1"
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-											xml:space="preserve">
-											<path
-												d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z" />
-											<path
-												d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z" />
+										<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
 										</svg>
 										2 Banheiros
 									</p>
 									<!-- TAMANHO -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Layer_1"
-											enable-background="new 0 0 508.659 508.659" height="512"
-											viewBox="0 0 508.659 508.659" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="m503.954 481.344-88.906-88.906-34.115 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.115-46.423-46.423-34.114 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-88.907-88.906c-10.058-10.061-27.313-2.905-27.313 11.313v476.641c0 8.837 7.164 16 16 16h476.641c14.204 0 21.386-17.241 11.313-27.314zm-283.124-74.171h-89.473c-16.472 0-29.872-13.401-29.872-29.873v-89.473c0-26.561 32.2-39.921 50.995-21.122l89.472 89.473c18.784 18.782 5.459 50.995-21.122 50.995z" />
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
 										</svg>
 										240 m<sup>2</sup>
 									</p>
 									<!-- QUARTOS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Capa_1" enable-background="new 0 0 512 512"
-											height="512" viewBox="0 0 512 512" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<g>
-												<path
-													d="m472.447 225.482h-432.894c-21.809 0-39.553 17.744-39.553 39.554v105.673h512v-105.673c0-21.81-17.744-39.554-39.553-39.554z" />
-												<path d="m271 132.578h126.862v62.904h-126.862z" />
-												<path
-													d="m84.139 102.578h171.861 171.862v92.904h37.468v-130.374h-418.66v130.374h37.469z" />
-												<path d="m114.139 132.578h126.861v62.904h-126.861z" />
-												<path d="m16.008 400.709h479.983v46.183h-479.983z" />
-											</g>
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
 										</svg>
 										2 Quartos
 									</p>
@@ -1093,11 +880,11 @@
 										<small>Juiz de Fora, Minas Gerais</small>
 									</p>
 								</div>
-
+					
 							</a>
 						</div>
 						<div class="card-body border-0 p-1">
-							<p class="card-text text-uppercase text-gallery"><small>Juiz de Fora, Minas
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
 									Gerais</small></p>
 							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
 							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
@@ -1109,50 +896,26 @@
 				<div class="row">
 					<!-- CARD 1 -->
 					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
-						<div class="card border-0 mb-2 img-gallery">
+						<div class="card border-0 mb-3 img-gallery">
 							<a class="mais-vistos-card" href="#">
 								<img class="card-img border-0 img-gallery"
 									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
 								<div class="hover-card card-img-overlay bg-gradient-dark">
 									<!-- BANHEIROS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" version="1.1" id="Capa_1"
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-											xml:space="preserve">
-											<path
-												d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z" />
-											<path
-												d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z" />
+										<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
 										</svg>
 										2 Banheiros
 									</p>
 									<!-- TAMANHO -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Layer_1"
-											enable-background="new 0 0 508.659 508.659" height="512"
-											viewBox="0 0 508.659 508.659" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="m503.954 481.344-88.906-88.906-34.115 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.115-46.423-46.423-34.114 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-88.907-88.906c-10.058-10.061-27.313-2.905-27.313 11.313v476.641c0 8.837 7.164 16 16 16h476.641c14.204 0 21.386-17.241 11.313-27.314zm-283.124-74.171h-89.473c-16.472 0-29.872-13.401-29.872-29.873v-89.473c0-26.561 32.2-39.921 50.995-21.122l89.472 89.473c18.784 18.782 5.459 50.995-21.122 50.995z" />
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
 										</svg>
 										240 m<sup>2</sup>
 									</p>
 									<!-- QUARTOS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Capa_1" enable-background="new 0 0 512 512"
-											height="512" viewBox="0 0 512 512" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<g>
-												<path
-													d="m472.447 225.482h-432.894c-21.809 0-39.553 17.744-39.553 39.554v105.673h512v-105.673c0-21.81-17.744-39.554-39.553-39.554z" />
-												<path d="m271 132.578h126.862v62.904h-126.862z" />
-												<path
-													d="m84.139 102.578h171.861 171.862v92.904h37.468v-130.374h-418.66v130.374h37.469z" />
-												<path d="m114.139 132.578h126.861v62.904h-126.861z" />
-												<path d="m16.008 400.709h479.983v46.183h-479.983z" />
-											</g>
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
 										</svg>
 										2 Quartos
 									</p>
@@ -1169,10 +932,11 @@
 										<small>Juiz de Fora, Minas Gerais</small>
 									</p>
 								</div>
+					
 							</a>
 						</div>
 						<div class="card-body border-0 p-1">
-							<p class="card-text text-uppercase text-gallery"><small>Juiz de Fora, Minas
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
 									Gerais</small></p>
 							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
 							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
@@ -1180,50 +944,26 @@
 					</div>
 					<!-- CARD 2 -->
 					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
-						<div class="card border-0 mb-2 img-gallery">
+						<div class="card border-0 mb-3 img-gallery">
 							<a class="mais-vistos-card" href="#">
 								<img class="card-img border-0 img-gallery"
-									src="https://images.unsplash.com/photo-1560026301-88340cf16be7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" />
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
 								<div class="hover-card card-img-overlay bg-gradient-dark">
 									<!-- BANHEIROS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" version="1.1" id="Capa_1"
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-											xml:space="preserve">
-											<path
-												d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z" />
-											<path
-												d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z" />
+										<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
 										</svg>
 										2 Banheiros
 									</p>
 									<!-- TAMANHO -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Layer_1"
-											enable-background="new 0 0 508.659 508.659" height="512"
-											viewBox="0 0 508.659 508.659" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="m503.954 481.344-88.906-88.906-34.115 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.115-46.423-46.423-34.114 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-88.907-88.906c-10.058-10.061-27.313-2.905-27.313 11.313v476.641c0 8.837 7.164 16 16 16h476.641c14.204 0 21.386-17.241 11.313-27.314zm-283.124-74.171h-89.473c-16.472 0-29.872-13.401-29.872-29.873v-89.473c0-26.561 32.2-39.921 50.995-21.122l89.472 89.473c18.784 18.782 5.459 50.995-21.122 50.995z" />
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
 										</svg>
 										240 m<sup>2</sup>
 									</p>
 									<!-- QUARTOS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Capa_1" enable-background="new 0 0 512 512"
-											height="512" viewBox="0 0 512 512" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<g>
-												<path
-													d="m472.447 225.482h-432.894c-21.809 0-39.553 17.744-39.553 39.554v105.673h512v-105.673c0-21.81-17.744-39.554-39.553-39.554z" />
-												<path d="m271 132.578h126.862v62.904h-126.862z" />
-												<path
-													d="m84.139 102.578h171.861 171.862v92.904h37.468v-130.374h-418.66v130.374h37.469z" />
-												<path d="m114.139 132.578h126.861v62.904h-126.861z" />
-												<path d="m16.008 400.709h479.983v46.183h-479.983z" />
-											</g>
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
 										</svg>
 										2 Quartos
 									</p>
@@ -1240,11 +980,11 @@
 										<small>Juiz de Fora, Minas Gerais</small>
 									</p>
 								</div>
-
+					
 							</a>
 						</div>
 						<div class="card-body border-0 p-1">
-							<p class="card-text text-uppercase text-gallery"><small>Juiz de Fora, Minas
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
 									Gerais</small></p>
 							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
 							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
@@ -1252,50 +992,26 @@
 					</div>
 					<!-- CARD 3 -->
 					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
-						<div class="card border-0 mb-2 img-gallery">
+						<div class="card border-0 mb-3 img-gallery">
 							<a class="mais-vistos-card" href="#">
 								<img class="card-img border-0 img-gallery"
-									src="https://images.unsplash.com/photo-1508330570239-ce7cabceee22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=856&q=80" />
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
 								<div class="hover-card card-img-overlay bg-gradient-dark">
 									<!-- BANHEIROS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" version="1.1" id="Capa_1"
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-											xml:space="preserve">
-											<path
-												d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z" />
-											<path
-												d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z" />
+										<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
 										</svg>
 										2 Banheiros
 									</p>
 									<!-- TAMANHO -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Layer_1"
-											enable-background="new 0 0 508.659 508.659" height="512"
-											viewBox="0 0 508.659 508.659" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="m503.954 481.344-88.906-88.906-34.115 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.114-46.423-46.423-34.114 34.114c-6.25 6.249-16.379 6.248-22.628 0-6.248-6.248-6.248-16.379 0-22.627l34.115-34.115-46.423-46.423-34.114 34.114c-6.246 6.247-16.377 6.25-22.627 0-6.248-6.248-6.248-16.379 0-22.627l34.114-34.114-88.907-88.906c-10.058-10.061-27.313-2.905-27.313 11.313v476.641c0 8.837 7.164 16 16 16h476.641c14.204 0 21.386-17.241 11.313-27.314zm-283.124-74.171h-89.473c-16.472 0-29.872-13.401-29.872-29.873v-89.473c0-26.561 32.2-39.921 50.995-21.122l89.472 89.473c18.784 18.782 5.459 50.995-21.122 50.995z" />
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
 										</svg>
 										240 m<sup>2</sup>
 									</p>
 									<!-- QUARTOS -->
 									<p class="card-text text-white">
-										<svg class="card-hover-svg" id="Capa_1" enable-background="new 0 0 512 512"
-											height="512" viewBox="0 0 512 512" width="512"
-											xmlns="http://www.w3.org/2000/svg">
-											<g>
-												<path
-													d="m472.447 225.482h-432.894c-21.809 0-39.553 17.744-39.553 39.554v105.673h512v-105.673c0-21.81-17.744-39.554-39.553-39.554z" />
-												<path d="m271 132.578h126.862v62.904h-126.862z" />
-												<path
-													d="m84.139 102.578h171.861 171.862v92.904h37.468v-130.374h-418.66v130.374h37.469z" />
-												<path d="m114.139 132.578h126.861v62.904h-126.861z" />
-												<path d="m16.008 400.709h479.983v46.183h-479.983z" />
-											</g>
+										<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
 										</svg>
 										2 Quartos
 									</p>
@@ -1312,11 +1028,11 @@
 										<small>Juiz de Fora, Minas Gerais</small>
 									</p>
 								</div>
-
+					
 							</a>
 						</div>
 						<div class="card-body border-0 p-1">
-							<p class="card-text text-uppercase text-gallery"><small>Juiz de Fora, Minas
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
 									Gerais</small></p>
 							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
 							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
@@ -1377,8 +1093,8 @@
 </div>
 
 <!-- TESTEMONIAL -->
-<div class="bg-secondary">
-	<div class="container my-5">
+<div class="bg-secondary pb-5">
+	<div class="container my-auto">
 
 		<h1 class="main-title text-center">porque a <span class="font-weight-bold">unik</span>
 		</h1>
@@ -1491,24 +1207,10 @@
 		</ol>
 		<!-- LOGO CAROUSEL -->
 		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<div class="row">
-					<div class="col-lg-4 col-6">
-						<div class="image">
-							<img class="img-thumbnail dictionary-img border-0 mb-3" src="img/receita-federal-logo-0-2048x2048.png">
-						</div>
-					</div>
-					<div class="col-lg-4 col-6">
-						<div class="image">
-							<img class="img-thumbnail dictionary-img border-0 mb-3" src="img/receita-federal-logo-0-2048x2048.png">
-						</div>
-					</div>
-					<div class="col-lg-4 col-6">
-						<div class="image">
-							<img class="img-thumbnail dictionary-img border-0 mb-3" src="img/receita-federal-logo-0-2048x2048.png">
-						</div>
-					</div>
-				</div>
+			<div class="carousel-item active mb-5">
+				<div class=" d-flex justify-content-center">
+                    <img class="img-card dictionary-img" src="img/Logomarca_Alterada.png">
+                </div>
 			</div>
 		</div>
 		<!-- CAROSEL CONTROLS -->
