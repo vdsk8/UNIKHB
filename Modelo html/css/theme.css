@@ -51,6 +51,12 @@ small {
 	color: #353535!important;
 }
 
+.text-shadow {
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.5),
+				 0px 0px 13px rgba(0,0,0,0.1),
+				 0px 0px 23px rgba(0,0,0,0.1);
+}
+
 /* main title */
 
 .main-title {
@@ -847,7 +853,7 @@ background-position: center;
 	visibility: visible;
 }
 
-.consultas-gallery {
+.consultas-gallery .img-fluid{
 	width: 250px;
 	height: 250px;
 	object-fit: cover;
@@ -856,10 +862,19 @@ background-position: center;
 }
 
 .dictionary-img  {
-	object-fit: cover;
-	width: 180px;
-	background-size: cover;
-	background-position: center;
+	object-fit: contain;
+	width: 70%;
+	height: 110px;
+	filter: gray;
+	-webkit-filter: grayscale(1);
+	-webkit-transition: all .2s ease-in-out;
+}
+
+.dictionary-img:hover  {
+	filter: none;
+	-webkit-filter: grayscale(0);
+}
+	
 }
 
 /* TODAS AS CATEGORIAS */
