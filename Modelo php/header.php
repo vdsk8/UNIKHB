@@ -3,29 +3,29 @@
 <head>
 	<title>UNIK</title>
 	
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
 
-    <!-- Custom styles for this template -->
-	<link href="css/theme.css" rel="stylesheet">
-	
+	<!-- Custom styles for this template -->
+	<link href="css/theme.css" rel="stylesheet"/>
+
 	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet"/>
 
 </head>
 <body>
 
 <!--==== HEAD ====-->
 <!-- MENU HAMBURGER -->
-<nav class="d-block d-lg-none align-items-center mb-3">
+<nav class="navbar-light d-block d-lg-none mb-3">
 	<button onclick="topFunction()" class="btn-go-to-top btn-primary border-0" title="Go to top">
-		<svg class="svg-top" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve"><path d="M7.098,40.18c-1.064,0-2.135-0.355-3.02-1.088c-2.019-1.668-2.303-4.658-0.634-6.678l17.25-20.872c0.882-1.067,2.187-1.696,3.571-1.721c1.384-0.022,2.711,0.557,3.63,1.592l18.549,20.872c1.74,1.957,1.564,4.957-0.395,6.695c-1.958,1.74-4.957,1.566-6.696-0.395L24.481,21.853L10.757,38.457C9.819,39.594,8.463,40.18,7.098,40.18z"/>
+		<svg class="svg-top" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve"><path d="M7.098,40.18c-1.064,0-2.135-0.355-3.02-1.088c-2.019-1.668-2.303-4.658-0.634-6.678l17.25-20.872c0.882-1.067,2.187-1.696,3.571-1.721c1.384-0.022,2.711,0.557,3.63,1.592l18.549,20.872c1.74,1.957,1.564,4.957-0.395,6.695c-1.958,1.74-4.957,1.566-6.696-0.395L24.481,21.853L10.757,38.457C9.819,39.594,8.463,40.18,7.098,40.18z"/>
 		</svg>
 	</button>
 	<div id="menuToggle">
@@ -36,6 +36,12 @@
 		<span></span>
 
 		<ul id="menu">
+			<!-- NAVBAR (CONTATO/LOGIN/CADASTRO) -->
+			<li><a class="text-uppercase" href="#">LOGIN</a></li>
+			<li><a class="text-uppercase" href="#">CADASTRO</a></li>
+			<li><a href="#">contato@unikhb.com.br</a></li>
+			<hr class="border-light"/>
+
 			<!-- MENU 1 -->
 			<li><a class="text-uppercase" href="index.php">HOME</a></li>
 			<li><a class="text-uppercase" href="quem_somos.php">QUEM SOMOS</a></li>
@@ -116,16 +122,11 @@
 					TODAS AS CATEGORIAS
 				</a>
 			</li>
-			<hr class="border-light"/>
-			<!-- NAVBAR (CONTATO/LOGIN/CADASTRO) -->
-			<li><a class="text-uppercase" href="#">LOGIN</a></li>
-			<li><a class="text-uppercase" href="#">CADASTRO</a></li>
-			<li><a href="#">contato@unikhb.com.br</a></li>
 		</ul>
 	</div>
 	
 	<!-- LOGO -->
-	<div class="d-flex justify-content-end">
+	<div class="d-flex justify-content-end mr-3">
 		<a class="w-25" href="index.php">
 			<img class="card-img unik-logo" src="img/LOGO_Unik.png" alt="Unik High Business Logo"/>
 		</a>
@@ -185,7 +186,7 @@
 
 		<!-- LOGO -->
 		<div class="col-lg-2">
-				<a class="navbar-brand d-flex justify-content-center align-self-start m-lg-0 m-4" href="index.php">
+				<a class="navbar-brand d-flex justify-content-center align-self-start" href="index.php">
 					<img class="card-img unik-logo" src="img/LOGO_Unik.png" alt="Unik High Business Logo"/>
 				</a>
 		</div>
@@ -198,43 +199,42 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					
 						<!-- MENU 1 -->
-						<ul id="menu1" class="navbar-nav mr-auto flex-fill justify-content-between">
+						<ul id="menu1" class="navbar-nav mr-auto flex-fill justify-content-between text-black font-weight-bold">
 							<li class="nav-item">
-								<a class="nav-link" href="index.php">HOME</a>
+								<a class="nav-link font-weight-bold" href="index.php">HOME</a>
 							</li>
 							<li>
-								<span class="no-hover font-weight-normal nav-link d-none d-lg-block"> | </span>
+								<span class="no-hover nav-link d-none d-lg-block"> | </span>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="quem_somos.php">QUEM SOMOS</a>
 							</li>
 							<li>
-								<span class="no-hover font-weight-normal nav-link d-none d-lg-block"> | </span>
+								<span class="no-hover nav-link d-none d-lg-block"> | </span>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="assessoria.php">ASSESSORIA JURÍDICA</a>
 							</li>
 							<li>
-								<span class="no-hover font-weight-normal nav-link d-none d-lg-block"> | </span>
+								<span class="no-hover nav-link d-none d-lg-block"> | </span>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="consultas.php">CONSULTAS</a>
 							</li>
 							<li>
-								<span class="no-hover font-weight-normal nav-link d-none d-lg-block"> | </span>
+								<span class="no-hover nav-link d-none d-lg-block"> | </span>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="blog.php">BLOG</a>
 							</li>
 							<li>
-								<span class="no-hover font-weight-normal nav-link d-none d-lg-block"> | </span>
+								<span class="no-hover nav-link d-none d-lg-block"> | </span>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="contato.php">CONTATO</a>
+								<a class="nav-link" href="consultas.php">CONTATO</a>
 							</li>
 							<li class="nav-item">
-								<a id="anunciar" class="nav-link btn btn-primary rounded-0 text-white"
-									href="anunciar.php">ANUNCIAR</a>
+								<a id="anunciar" class="nav-link btn btn-primary rounded-0 text-white" href="anunciar.php">ANUNCIAR</a>
 							</li>
 						</ul>
 					
