@@ -57,6 +57,10 @@ small {
 				 0px 0px 23px rgba(0,0,0,0.1);
 }
 
+.text-blog p {
+	font-size: 1.1rem;
+}
+
 /* main title */
 
 .main-title {
