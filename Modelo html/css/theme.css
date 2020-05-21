@@ -833,6 +833,10 @@ background-position: center;
 	top:7rem;
 }
 
+.blog-abstract h6:hover {
+	color:#ff7925
+}
+
 /* CONSULTAS */
 
 .hover-card {
