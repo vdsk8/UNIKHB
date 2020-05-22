@@ -330,7 +330,7 @@ background-image:         linear-gradient(#fdb63b,#e28f00);
 	/* display: none; */
 	position: fixed;
 	bottom: 20px;
-	z-index: 200;
+	z-index: 10;
 	cursor: pointer;
 	padding: 15px;
 }
@@ -432,11 +432,6 @@ background-image:         linear-gradient(#fdb63b,#e28f00);
 }
 
 /* MENU TOGGLE (hamburguer -> start here) */
-
-.menu-hamburger {
-	position: absolute;
-	z-index: 300;
-}
 
 #menuToggle {
 	position: relative;
@@ -990,14 +985,14 @@ background-position: center;
 
 	.dropdown-index {
 		position: absolute;
-		z-index: 100;
+		z-index: 12;
 		bottom: -28px;
 	}
 	.dropdown-card {
 		position: absolute;
 		top: 5%;
 		right: 150px;
-		z-index: 150;
+		z-index: 5;
 	}
 	.border-right{
 		border-right: 1px solid #dee2e6!important;
