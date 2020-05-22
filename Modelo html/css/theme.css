@@ -737,6 +737,12 @@ visibility: visible;
 	color: #ff7925!important;
 }
 
+/* PARCEIROS */
+.parceiro-img  {
+	object-fit: contain;
+	width: 70%;
+	height: 110px;
+}
 
  /* DESTAQUES */
 
