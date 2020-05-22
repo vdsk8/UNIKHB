@@ -803,14 +803,9 @@ background-position: center;
 	padding: 0 0 0 20px;
 }
 
-.media, .media-body {
-	overflow: hidden;
-	zoom: 1;
-}
-
 .media-body, .media-left, .media-right {
 	display: table-cell;
-	vertical-align: top;
+	vertical-align: center;
 }
 
 .carousel .media img {
@@ -821,7 +816,6 @@ background-position: center;
 }
 
 .name {
-	font-weight: 800;
 	line-height: 0.5rem;
 }
 
