@@ -1,3 +1,155 @@
 <?php include 'header.php';?>
-<h1>QUEM SOMOS</h1>
+<!--==== BODY QUEM SOMOS ====-->
+
+<!-- HERO SLIDER -->
+<div id="slide-hero-indicators" class="carousel slide" data-ride="carousel">
+	<!-- INDICATORS -->
+	<ol class="carousel-indicators mb-5 pb-5">
+		<li data-target="#slide-hero-indicators" data-slide-to="0" class="active"></li>
+		<li data-target="#slide-hero-indicators" data-slide-to="1"></li>
+		<li data-target="#slide-hero-indicators" data-slide-to="2"></li>
+	</ol>
+
+	<!-- CAROUSEL -->
+	<div class="carousel-inner">
+		<div class="carousel-item active view">
+			<img class="hero-img d-block w-100 w-100img" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="..." />
+			<div class="mask bg-gradient-dark d-flex align-self-center">
+                <div class="carousel-caption container">
+					<h2 class="text-left font-weight-bold">First slide label: consectetur adipiscing elit</h2>
+					<h5 class="text-left font-weight-light">Nulla vitae elit libero</h5>
+                </div>
+			</div>
+		</div>
+		<div class="carousel-item view">
+			<img class="hero-img d-block w-100 w-100img" src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80" alt="..." />
+			<div class="mask bg-gradient-dark d-flex align-self-center">
+                <div class="carousel-caption container">
+					<h2 class="text-left font-weight-bold">First slide label: consectetur adipiscing elit</h2>
+					<h5 class="text-left font-weight-light">Nulla vitae elit libero</h5>
+                </div>
+			</div>
+		</div>
+		<div class="carousel-item view">
+			<img class="hero-img d-block w-100 w-100img" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="..." />
+			<div class="mask bg-gradient-dark d-flex align-self-center">
+                <div class="carousel-caption container">
+					<h2 class="text-left font-weight-bold">First slide label: consectetur adipiscing elit</h2>
+					<h5 class="text-left font-weight-light">Nulla vitae elit libero</h5>
+                </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- QUEM SOMOS -->
+<div class="bg-secondary py-3 mb-5">
+	<div class="container my-5">
+		<h1 class="main-title text-center">quem somos</h1>
+		<h5 class="text-muted font-weight-bold text-center mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus viverra vitae congue.</h5>
+		<h5 class="text-muted font-weight-bold text-center mb-3">Nam aliquam sem et tortor consequat id porta nibh. Facilisi cras fermentum odio eu. Integer quis auctor elit sed. Blandit massa enim nec dui. Adipiscing elit ut aliquam purus sit amet luctus venenatis.</h5>
+		<h5 class="text-muted font-weight-bold text-center mb-3">In egestas erat imperdiet sed euismod nisi. Mattis molestie a iaculis at erat pellentesque adipiscing. Lectus arcu bibendum at varius vel pharetra vel turpis. Sagittis id consectetur purus ut faucibus pulvinar elementum. Convallis posuere morbi leo urna molestie at elementum eu. Feugiat pretium nibh ipsum consequat nisl.</h5>
+	</div>
+</div>
+
+<!-- COMO FUNCIONA -->
+<div class="container">
+	<h1 class="main-title text-center">como funciona</h1>
+	<h2 class="text-center font-weight-bold text-muted">Negociar com a gente é bem fácil. Confira as vantagens de comprar e vender com a Unik HB:</h2>
+	<div class="row justify-content-center mt-4">
+		<!-- CARD 1 -->
+		<div class="col-lg-6 col-12 mt-4">
+			<svg class="svg-decoration mx-auto d-block mb-4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"			viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M507.448,108.594c-2.844-2-6.49-2.49-9.76-1.281l-86.958,31.625c-10.781,3.917-19.365,11.813-24.167,22.229			c-0.9,1.953-1.491,3.982-2.083,6.008c-14.932-4.245-42.682-13.111-70.26-27.32c-41.673-21.473-73.51-10.867-100.816,9.961 c-13.836,0.272-32.906,1.908-51.652,3.56c-11.958,1.055-23.259,2.026-32.423,2.585c-0.225-5.504-1.513-10.966-3.889-16.126 c-4.802-10.417-13.385-18.313-24.167-22.229L14.313,85.979c-3.26-1.198-6.927-0.708-9.76,1.281C1.698,89.261,0,92.521,0,96			v213.333C0,315.229,4.771,320,10.667,320h31.156c13.251,0,25.579-6.25,33.548-16.342c4.245,3.228,9.273,7.008,14.546,10.967 c12.448,9.365,26.073,19.583,32.052,24.594c39.719,33.25,87.469,69.156,96.979,75.406c8.885,5.833,24.885,12.042,37.052,12.042			c4.76,0,16.75,0,25.167-7.115c8.677,3.406,18.031,3.24,26.729-0.594c8.677-3.823,15.698-11.031,19.781-19.792 c8.333,1.708,17.906,0.458,26.583-3.896c8.135-4.073,14.125-10.24,17.333-17.448c7.708,0.708,15.938-1.802,23.302-7.438			c10.522-8.043,15.34-19.921,13.977-31.639l27.057-14.969c7.924,10.741,20.518,17.556,34.247,17.556h31.156 c5.896,0,10.667-4.771,10.667-10.667V117.334C512,113.854,510.302,110.594,507.448,108.594z M61.802,284.823			c-3.104,8.281-11.135,13.844-19.979,13.844h-20.49V111.229l72.646,26.417c5.396,1.969,9.688,5.917,12.083,11.125 c2.406,5.208,2.615,11.042,0.604,16.406L61.802,284.823z M381.948,353.438c-3.615,2.771-8.677,4.313-10.927,2.063			c-0.115-0.115-0.293-0.104-0.411-0.214c-0.204-0.189-0.305-0.444-0.526-0.62c-7.625-6.021-41.792-40.979-62.906-63 c-4.073-4.26-10.833-4.417-15.073-0.323c-4.26,4.073-4.406,10.823-0.323,15.073c4.956,5.173,44.74,46.608,60.663,61.099			c-1.189,4.684-5.531,7.576-7.736,8.682c-6.833,3.427-13.958,2.854-16.625,0.375c-0.079-0.074-0.197-0.07-0.279-0.142 c-0.13-0.116-0.188-0.279-0.326-0.389c-12.792-10.219-44.885-44.323-52.146-52.219c-3.99-4.344-10.729-4.615-15.073-0.635			c-4.333,3.99-4.625,10.74-0.635,15.073c0.35,0.379,31.802,34.306,49.467,50.065c-1.736,4.988-5.273,9.119-9.811,11.122 c-3.349,1.488-8.587,2.251-14.572-2.172c-15.318-12.988-46.059-45.711-52.105-52.182c-4.01-4.313-10.781-4.531-15.073-0.51			c-4.302,4.021-4.531,10.771-0.51,15.073c7.168,7.672,28.355,30.128,44.461,45.333c-1.799,0.219-3.688,0.344-5.482,0.344 c-7.063,0-19.198-4.51-25.333-8.542c-7.479-4.917-54.438-39.958-94.99-73.917c-6.135-5.146-20.135-15.677-32.948-25.302			c-6.867-5.155-13.194-9.908-17.857-13.495l39.938-106.516c10.367-0.453,24.188-1.648,38.815-2.938 c8.273-0.729,16.555-1.44,24.469-2.056c-12.164,12.487-30.249,34.852-27.865,55.816c1.094,9.542,6.313,17.49,15.115,22.99			c17.427,10.906,49.688,1.76,65.229-17.354c10.031-1.448,16.813-4.01,24.208-7.677c12.5,11.75,29.26,25.563,46.865,40.073 c30.646,25.25,65.385,53.875,74.573,69.927C391.333,345.271,384.24,351.688,381.948,353.438z M400.247,319.134			c-14.212-19.012-45.02-44.449-75.039-69.186c-20.01-16.49-38.906-32.063-51-44.156c-3.333-3.313-8.448-4.063-12.573-1.865 c-10.865,5.823-15.76,8.229-28.031,9.458c-3.271,0.333-6.208,2.146-7.958,4.927c-8.365,13.271-31.615,19.583-38.99,14.979			c-4.188-2.625-5-5.292-5.229-7.323c-1.031-9.073,8.156-24.781,23.396-40.031c37.74-37.74,64.719-45.125,99.625-27.125 c33.164,17.099,65.895,26.767,79.635,30.419c0.397,1.598,0.685,3.212,1.271,4.779l41.417,110.451L400.247,319.134z M490.667,320 h-20.49c-8.844,0-16.875-5.563-19.979-13.844l-44.865-119.635c-2.01-5.375-1.802-11.208,0.604-16.417 c2.396-5.208,6.688-9.156,12.083-11.125l72.646-26.417V320z"/>
+			</svg>
+			<h5 class="text-uppercase text-center font-weight-bolder mx-2">confiabilidade</h5>
+			<p class="text-center mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<!-- CARD 2 -->
+		<div class="col-lg-6 col-12 mt-4">
+			<svg class="svg-decoration mx-auto d-block mb-4" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="450px" viewBox="0 25 500 450" enable-background="new 0 25 500 450" xml:space="preserve"><path d="M475,25H25C11.193,25,0,36.193,0,50v316.666c0,13.809,11.193,25,25,25h191.667V425H150c-13.807,0-25,11.192-25,25v16.667c0,4.602,3.731,8.333,8.333,8.333h233.333c4.602,0,8.333-3.731,8.333-8.333V450c0-13.808-11.192-25-25-25h-58.334v-33.334H475c13.808,0,25-11.191,25-25V50C500,36.193,488.808,25,475,25z M350,441.667c4.603,0,8.333,3.73,8.333,8.333v8.333H141.667V450c0-4.603,3.731-8.333,8.333-8.333H350z M233.333,425v-33.334H275V425H233.333z M483.333,366.666c0,4.603-3.731,8.334-8.333,8.334H25c-4.602,0-8.333-3.731-8.333-8.334v-25h466.667V366.666z M483.333,325H16.667V92.358h466.667V325z M483.333,75.691H16.667V50c0-4.602,3.731-8.333,8.333-8.333h450c4.602,0,8.333,3.731,8.333,8.333V75.691z"/><path d="M41.667,125h18.492l23.333,110c0.792,3.883,4.211,6.672,8.175,6.667h100c3.96,0.001,7.375-2.786,8.167-6.667l16.667-83.333c0.921-4.509-1.989-8.911-6.498-9.831c-0.549-0.113-1.108-0.169-1.668-0.169H81.5l-6.75-27.017c-0.926-3.711-4.258-6.315-8.083-6.316h-25c-4.602,0-8.333,3.731-8.333,8.333S37.064,125,41.667,125z M198.167,158.333L184.842,225h-86.35l-13.333-66.667H198.167z"/><path d="M108.333,250c-13.808,0-25,11.193-25,25s11.192,25,25,25c13.807,0,25-11.193,25-25S122.141,250,108.333,250z M108.333,283.334c-4.602,0-8.333-3.732-8.333-8.334s3.731-8.334,8.333-8.334s8.333,3.732,8.333,8.334S112.936,283.334,108.333,283.334z"/><path d="M183.333,250c-13.808,0-25,11.193-25,25s11.192,25,25,25c13.807,0,25-11.193,25-25S197.141,250,183.333,250z M183.333,283.334c-4.602,0-8.333-3.732-8.333-8.334s3.731-8.334,8.333-8.334s8.333,3.732,8.333,8.334S187.936,283.334,183.333,283.334z"/><path d="M258.334,150h149.999c4.603,0,8.334-3.731,8.334-8.333s-3.731-8.333-8.334-8.333H258.334c-4.603,0-8.334,3.731-8.334,8.333S253.731,150,258.334,150z"/><path d="M441.667,150h16.666c4.603,0,8.334-3.731,8.334-8.333s-3.731-8.333-8.334-8.333h-16.666c-4.603,0-8.334,3.731-8.334,8.333S437.064,150,441.667,150z"/><path d="M258.334,183.333h149.999c4.603,0,8.334-3.731,8.334-8.333s-3.731-8.333-8.334-8.333H258.334c-4.603,0-8.334,3.731-8.334,8.333S253.731,183.333,258.334,183.333z"/><path d="M441.667,183.333h16.666c4.603,0,8.334-3.731,8.334-8.333s-3.731-8.333-8.334-8.333h-16.666c-4.603,0-8.334,3.731-8.334,8.333S437.064,183.333,441.667,183.333z"/><path d="M258.334,216.667h149.999c4.603,0,8.334-3.731,8.334-8.333S412.936,200,408.333,200H258.334c-4.603,0-8.334,3.731-8.334,8.333S253.731,216.667,258.334,216.667z"/><path d="M441.667,216.667h16.666c4.603,0,8.334-3.731,8.334-8.333S462.936,200,458.333,200h-16.666c-4.603,0-8.334,3.731-8.334,8.333S437.064,216.667,441.667,216.667z"/><path d="M258.334,250h149.999c4.603,0,8.334-3.731,8.334-8.333s-3.731-8.333-8.334-8.333H258.334c-4.603,0-8.334,3.731-8.334,8.333S253.731,250,258.334,250z"/><path d="M441.667,250h16.666c4.603,0,8.334-3.731,8.334-8.333s-3.731-8.333-8.334-8.333h-16.666c-4.603,0-8.334,3.731-8.334,8.333S437.064,250,441.667,250z"/>
+			</svg>
+			<h5 class="text-uppercase text-center font-weight-bolder mx-2">praticidade</h5>
+			<p class="text-center mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<!-- CARD 3 -->
+		<div class="col-lg-6 col-12 mt-4">
+			<svg class="svg-decoration mx-auto d-block mb-4" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m60.03125 60.046875h30.023438v29.996094h-30.023438zm0 0"/><path d="m120.078125 60.046875h30.023437v29.996094h-30.023437zm0 0"/><path d="m180.121094 60.046875h30.023437v29.996094h-30.023437zm0 0"/><path d="m511.972656 0h-511.972656v451.929688h165.132812c23.410157 25.804687 52.550782 45.652343 85.570313 58.082031l5.285156 1.988281 5.285157-1.988281c33.015624-12.429688 62.15625-32.277344 85.566406-58.082031h165.132812zm-29.996094 30v90.089844h-451.976562v-90.089844zm-225.988281 449.859375c-34.175781-14.023437-63.253906-37.398437-84.34375-67.878906-22.171875-32.039063-33.890625-69.566407-33.890625-108.53125v-45.785157c21.738282-8.648437 38.882813-25.792968 47.53125-47.53125h141.40625c8.648438 21.738282 25.792969 38.882813 47.53125 47.53125v45.785157c0 38.964843-11.71875 76.492187-33.890625 108.53125-21.09375 30.476562-50.167969 53.855469-84.34375 67.878906zm113.738281-57.929687c22.59375-35.464844 34.496094-76.246094 34.496094-118.480469v-68.484375l-11.445312-2.792969c-19.824219-4.835937-35.757813-20.769531-40.59375-40.589844l-2.792969-11.445312h-186.808594l-2.792969 11.445312c-4.832031 19.820313-20.765624 35.753907-40.589843 40.589844l-11.445313 2.792969v68.484375c0 42.234375 11.898438 83.015625 34.492188 118.480469h-112.246094v-271.839844h451.976562v271.839844zm0 0"/><path d="m255.988281 264.992188c-27.804687 0-50.421875 22.621093-50.421875 50.421874 0 22.582032 14.921875 41.742188 35.421875 48.144532v40.410156h29.996094v-40.410156c20.503906-6.402344 35.425781-25.5625 35.425781-48.144532 0-27.800781-22.621094-50.421874-50.421875-50.421874zm0 70.84375c-11.261719 0-20.425781-9.160157-20.425781-20.421876 0-11.261718 9.164062-20.421874 20.425781-20.421874s20.421875 9.160156 20.421875 20.421874c0 11.261719-9.160156 20.421876-20.421875 20.421876zm0 0"/>
+			</svg>
+			<h5 class="text-uppercase text-center font-weight-bolder mx-2">segurança</h5>
+			<p class="text-center mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<!-- CARD 4 -->
+		<div class="col-lg-6 col-12 mt-4">
+			<svg class="svg-decoration mx-auto d-block mb-4" viewBox="0 0 496 496" xmlns="http://www.w3.org/2000/svg"><path d="m496 414.207031v-60.421875l-23.144531-5.914062c-.160157-.390625-.320313-.78125-.488281-1.167969l12.183593-20.535156-42.726562-42.726563-20.535157 12.183594c-.394531-.167969-.785156-.328125-1.167968-.488281l-5.914063-23.136719h-60.421875l-5.914062 23.144531c-.390625.160157-.78125.320313-1.167969.488281l-20.535156-12.183593-42.726563 42.726562 12.183594 20.535157c-.167969.394531-.328125.785156-.488281 1.167968l-23.136719 5.914063v60.421875l23.144531 5.914062c.160157.390625.320313.78125.488281 1.167969l-12.183593 20.535156 42.726562 42.726563 20.535157-12.183594c.394531.167969.785156.328125 1.167968.488281l5.914063 23.136719h60.421875l5.914062-23.144531c.390625-.160157.78125-.320313 1.167969-.488281l20.535156 12.183593 42.726563-42.726562-12.183594-20.535157c.167969-.394531.328125-.785156.488281-1.167968zm-31.542969 25.097657-25.152343 25.152343-17.097657-10.144531-3.847656 1.839844c-2.480469 1.175781-5.015625 2.238281-7.625 3.160156l-4.03125 1.429688-4.910156 19.257812h-35.578125l-4.910156-19.257812-4.03125-1.429688c-2.609376-.914062-5.152344-1.976562-7.625-3.160156l-3.847657-1.839844-17.097656 10.144531-25.152344-25.152343 10.144531-17.097657-1.839843-3.847656c-1.175781-2.480469-2.238281-5.015625-3.160157-7.625l-1.429687-4.03125-19.265625-4.910156v-35.578125l19.257812-4.910156 1.429688-4.03125c.914062-2.609376 1.976562-5.152344 3.160156-7.625l1.839844-3.847657-10.144531-17.097656 25.152343-25.152344 17.097657 10.144531 3.847656-1.839843c2.480469-1.175781 5.015625-2.238281 7.625-3.160157l4.03125-1.429687 4.910156-19.265625h35.578125l4.910156 19.257812 4.03125 1.429688c2.609376.914062 5.152344 1.976562 7.625 3.160156l3.847657 1.839844 17.097656-10.144531 25.152344 25.152343-10.144531 17.097657 1.839843 3.847656c1.175781 2.480469 2.238281 5.015625 3.160157 7.625l1.429687 4.03125 19.265625 4.910156v35.578125l-19.257812 4.910156-1.429688 4.03125c-.914062 2.609376-1.976562 5.152344-3.160156 7.625l-1.839844 3.847657zm0 0"/><path d="m384 320c-35.289062 0-64 28.710938-64 64s28.710938 64 64 64 64-28.710938 64-64-28.710938-64-64-64zm0 112c-26.472656 0-48-21.527344-48-48s21.527344-48 48-48 48 21.527344 48 48-21.527344 48-48 48zm0 0"/><path d="m384 352c-17.648438 0-32 14.351562-32 32s14.351562 32 32 32 32-14.351562 32-32-14.351562-32-32-32zm0 48c-8.824219 0-16-7.175781-16-16s7.175781-16 16-16 16 7.175781 16 16-7.175781 16-16 16zm0 0"/><path d="m202.601562 135.457031c2.679688 7.855469 7.34375 14.78125 13.398438 20.222657v6.785156l-38.039062 14.261718c-15.527344 5.816407-25.960938 20.867188-25.960938 37.449219v41.824219h192v-41.824219c0-16.582031-10.433594-31.632812-25.953125-37.457031l-38.046875-14.261719v-6.777343c6.054688-5.433594 10.71875-12.359376 13.398438-20.222657 15.074218-2.585937 26.601562-15.664062 26.601562-31.457031v-32c0-39.695312-32.296875-72-72-72s-72 32.304688-72 72v32c0 15.792969 11.527344 28.871094 26.601562 31.457031zm61.398438 30.328125-16 26.664063-16-26.664063v-.585937c5.015625 1.785156 10.382812 2.800781 16 2.800781s10.984375-1.023438 16-2.800781zm-43.433594 12.046875 16.128906 26.871094-16.023437 8.007813-10.351563-31.039063zm107.433594 36.34375v25.824219h-160v-25.824219c0-9.953125 6.257812-18.976562 15.574219-22.472656l11.761719-4.40625 15.992187 47.984375 36.671875-18.335938 36.671875 18.335938 15.992187-47.984375 11.769532 4.414063c9.308594 3.488281 15.566406 12.511718 15.566406 22.464843zm-42.320312-32.503906-10.351563 31.046875-16.023437-8.007812 16.128906-26.878907zm-37.679688-29.671875c-17.648438 0-32-14.351562-32-32v-32.542969c11.710938-1.234375 22.761719-5.503906 32-12.769531 9.238281 7.273438 20.289062 11.535156 32 12.769531v32.542969c0 17.648438-14.351562 32-32 32zm48-34.222656v-27.546875c4.761719 2.777343 8 7.882812 8 13.777343 0 5.894532-3.238281 10.992188-8 13.769532zm-48-101.777344c30.871094 0 56 25.121094 56 56v4.449219c-4.726562-2.753907-10.144531-4.449219-16-4.449219h-1.375c-12.457031 0-24.167969-4.847656-32.96875-13.65625l-5.65625-5.664062-5.65625 5.664062c-8.808594 8.808594-20.511719 13.65625-32.96875 13.65625h-1.375c-5.855469 0-11.273438 1.695312-16 4.449219v-4.449219c0-30.878906 25.128906-56 56-56zm-48 74.222656v27.546875c-4.761719-2.777343-8-7.882812-8-13.777343 0-5.894532 3.238281-10.992188 8-13.769532zm0 0"/><path d="m0 496h160v-208h-160zm16-192h128v176h-128zm0 0"/><path d="m32 320h96v16h-96zm0 0"/><path d="m32 352h16v16h-16zm0 0"/><path d="m64 352h64v16h-64zm0 0"/><path d="m32 384h96v16h-96zm0 0"/><path d="m32 416h96v16h-96zm0 0"/><path d="m112 448h16v16h-16zm0 0"/><path d="m32 448h64v16h-64zm0 0"/><path d="m213.65625 357.65625-11.3125-11.3125-37.65625 37.65625 37.65625 37.65625 11.3125-11.3125-18.34375-18.34375h60.6875v-16h-60.6875zm0 0"/><path d="m88 128c0-4.40625 3.585938-8 8-8h36.6875l-18.34375 18.34375 11.3125 11.3125 37.65625-37.65625-37.65625-37.65625-11.3125 11.3125 18.34375 18.34375h-36.6875c-13.230469 0-24 10.769531-24 24v144h16zm0 0"/><path d="m384 128v100.6875l-18.34375-18.34375-11.3125 11.3125 37.65625 37.65625 37.65625-37.65625-11.3125-11.3125-18.34375 18.34375v-100.6875c0-13.230469-10.769531-24-24-24h-40v16h40c4.414062 0 8 3.59375 8 8zm0 0"/>
+			</svg>
+			<h5 class="text-uppercase text-center font-weight-bolder mx-2">transparência</h5>
+			<p class="text-center mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</div>
+</div>
+
+<!-- COMO ANUNCIAR BANNER -->
+<div class="container">
+	<div class="card border-0 rounded-0">
+		<img class="card-img" src="img/Unik Site Infografico.png" alt="..."/>
+	  </div>
+</div>
+
+<!-- ACCORDION -->
+<div class="bg-secondary my-3">
+	<div class="container py-3">
+		<h1 class="main-title text-center">dúvidas frequentes</h1>
+		<div class="accordion" id="accordionExample">
+			<!-- DÚVIDA CARD 1 -->
+			<div class="card">
+			  <div class="card-header" id="headingOne">
+				<a class="btn btn-link collapsed pb-0"  type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+					<h5 class="text-left d-flex align-items-center text-muted font-weight-bold">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					<i class="arrow-duvidas"></i>   
+					</h5>
+				</a>
+			  </div>
+			  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+				<div class="card-body text-muted">
+				  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			  </div>
+			</div>
+			<!-- DÚVIDA CARD 2 -->
+			<div class="card">
+				<div class="card-header" id="headingOne">
+				  <a class="btn btn-link collapsed pb-0"  type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+					  <h5 class="text-left d-flex align-items-center text-muted font-weight-bold">
+					  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					  <i class="arrow-duvidas"></i>   
+					  </h5>
+				  </a>
+				</div>
+				<div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+				  <div class="card-body text-muted">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				  </div>
+				</div>
+			</div>
+			<!-- DÚVIDA CARD 3 -->
+			<div class="card">
+				<div class="card-header" id="headingOne">
+				  <a class="btn btn-link collapsed pb-0"  type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
+					  <h5 class="text-left d-flex align-items-center text-muted font-weight-bold">
+					  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					  <i class="arrow-duvidas"></i>   
+					  </h5>
+				  </a>
+				</div>
+				<div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+				  <div class="card-body text-muted">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <?php include 'footer.php'; ?>

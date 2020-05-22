@@ -1,26 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Categorias</title>
-	
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-	<link href="css/theme.css" rel="stylesheet">
-	
-	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-</head>
-<body>
-<!--==== BODY ====-->
+<?php include 'header.php';?>
+<!--==== BODY TODAS AS CATEGORIAS ====-->
 <!-- CATEGORIA HERO SLIDER-->
 <div class="card border-0">
 	<!-- HERO SLIDER -->
@@ -64,7 +43,7 @@
         </div>
     </div>
 		
-	<!-- DROPDOWN CARD -->
+	<!-- BUSCA CARD -->
 	<div class="card dropdown-card bg-gradient-light border-0 rounded-0">
 		<div class="card-body">
 			<form>
@@ -278,9 +257,7 @@
                             </div>
 						</div>
 					</div>
-                </div>
-                <div class="carousel-inner">
-					<div class="carousel-item">
+                    <div class="carousel-item">
 						<div class="row">
 							<!-- DESTAQUE CARD EMBARCAÇÕES -->
                             <div class="card-group col-lg-6 col-12 my-1">
@@ -421,9 +398,7 @@
                             </div>
 						</div>
 					</div>
-                </div>
-                <div class="carousel-inner">
-					<div class="carousel-item">
+                    <div class="carousel-item">
 						<div class="row">
 							<!-- DESTAQUE CARD MÁQUINAS AGRÍCOLAS/CONSTRUÇÃO -->
                             <div class="card-group col-lg-6 col-12 my-1">
@@ -529,9 +504,7 @@
                             </div>
 						</div>
 					</div>
-                </div>
-                <div class="carousel-inner">
-					<div class="carousel-item">
+                    <div class="carousel-item">
 						<div class="row">
 							<!-- DESTAQUE CARD MOTOCICLETAS -->
                             <div class="card-group col-lg-6 col-12 my-1">
@@ -665,16 +638,7 @@
                             </div>
 						</div>
 					</div>
-				</div>
-				<!-- CAROSEL CONTROLS -->
-				<a class="carousel-control-prev d-lg-flex d-none" href="#products-carousel" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next d-lg-flex d-none" href="#products-carousel" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
+                </div>
 		</div>
 	</div>
 </div>
@@ -970,23 +934,8 @@
             </div>
         </div>
 	</div>
-	<ul class="page text-center">
-		<li class="d-inline text-muted active">1</li>
-		<li class="d-inline text-muted">2</li>
-		<li class="d-inline text-muted">3</li>
-		<li class="d-inline text-muted">...</li>
-		<li class="d-inline text-muted">35</li>
-	</ul>
+	<button class="btn border-dark mx-auto d-block text-uppercase">Ver todos</button>
 </div>
 
-</div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
-
-</body>
-</html>
+<?php include 'footer.php'; ?>

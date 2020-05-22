@@ -104,6 +104,10 @@ small {
 	background-color: rgba(255, 145, 0, 0.4)!important;
 }
 
+.bg-gradient-light {
+	background-color: rgba(255, 255, 255, 0.8)!important;
+}
+
 /* BUTTONS */
 
 .btn-primary {
@@ -616,9 +620,10 @@ padding: 15px;
 
 .carousel-caption {
 	position: absolute;
-	right: 15%;
+	width: 600px;
+	right: 25%;
 	bottom: 250px;
-	left: 15%;
+	left: 1%;
 	z-index: 1;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -991,8 +996,8 @@ background-position: center;
 	.dropdown-card {
 		position: absolute;
 		top: 5%;
-		right: 150px;
-		z-index: 5;
+		right: 100px;
+		z-index: 1;
 	}
 	.border-right{
 		border-right: 1px solid #dee2e6!important;
