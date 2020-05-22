@@ -1,7 +1,47 @@
 <?php include 'header.php';?>
 <!--==== BODY INDEX ====-->
-
+<!-- HERO SLIDER AND DROPDOWN -->
 <div class="card border-0 mb-5">
+    <!-- HERO SLIDER -->
+    <div id="slide-hero-indicators" class="carousel slide" data-ride="carousel">
+        <!-- INDICATORS -->
+        <ol class="carousel-indicators mb-5 pb-5">
+            <li data-target="#slide-hero-indicators" data-slide-to="0" class="active"></li>
+            <li data-target="#slide-hero-indicators" data-slide-to="1"></li>
+            <li data-target="#slide-hero-indicators" data-slide-to="2"></li>
+        </ol>
+
+        <!-- CAROUSEL -->
+        <div class="carousel-inner">
+            <div class="carousel-item active view">
+                <img class="hero-img d-block w-100 w-100img" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="..." />
+                <div class="mask bg-gradient-dark d-flex align-self-center">
+                    <div class="carousel-caption container">
+                        <h2 class="text-left font-weight-bold">First slide label: consectetur adipiscing elit</h2>
+                        <h5 class="text-left font-weight-light">Nulla vitae elit libero</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item view">
+                <img class="hero-img d-block w-100 w-100img" src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80" alt="..." />
+                <div class="mask bg-gradient-dark d-flex align-self-center">
+                    <div class="carousel-caption container">
+                        <h2 class="text-left font-weight-bold">First slide label: consectetur adipiscing elit</h2>
+                        <h5 class="text-left font-weight-light">Nulla vitae elit libero</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item view">
+                <img class="hero-img d-block w-100 w-100img" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="..." />
+                <div class="mask bg-gradient-dark d-flex align-self-center">
+                    <div class="carousel-caption container">
+                        <h2 class="text-left font-weight-bold">First slide label: consectetur adipiscing elit</h2>
+                        <h5 class="text-left font-weight-light">Nulla vitae elit libero</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- FORMULÁRIO DE BUSCA - DROPDOWN-->
     <div class="card-body border-0 dropdown-index container bg-primary py-2 align-self-center">
         <form class="form-inline">
@@ -21,56 +61,11 @@
             </div>
         </form>
     </div>
-    <!-- HERO SLIDER -->
-    <div id="slide-hero-indicators" class="carousel slide" data-ride="carousel">
-        <!-- INDICATORS -->
-        <ol class="carousel-indicators mb-5 pb-5">
-            <li data-target="#slide-hero-indicators" data-slide-to="0" class="active"></li>
-            <li data-target="#slide-hero-indicators" data-slide-to="1"></li>
-            <li data-target="#slide-hero-indicators" data-slide-to="2"></li>
-        </ol>
-
-        <!-- CAROUSEL -->
-        <div class="carousel-inner">
-            <div class="carousel-item active view">
-                <img class="hero-img d-block w-100 w-100img" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="..." />
-                <div class="carousel-caption mask bg-gradient-dark text-center py-5">
-                    <div class="ml-5 my-5 py-5">
-                        <h3 class="text-left ml-5">First slide label: consectetur adipiscing elit</h3>
-                        <h5 class="text-left font-weight-light ml-5">Nulla vitae elit libero</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item view">
-                <img class="hero-img d-block w-100 w-100img"
-                    src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
-                    alt="..." />
-                <div class="carousel-caption mask bg-gradient-dark text-center py-5">
-                    <div class="ml-5 my-5 py-5">
-                        <h3 class="text-left ml-5">First slide label: consectetur adipiscing elit</h3>
-                        <h5 class="text-left font-weight-light ml-5">Nulla vitae elit libero</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item view">
-                <img class="hero-img d-block w-100 w-100img"
-                    src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
-                    alt="..." />
-                <div class="carousel-caption mask bg-gradient-dark text-center py-5">
-                    <div class="ml-5 my-5 py-5">
-                        <h3 class="text-left ml-5">First slide label: consectetur adipiscing elit</h3>
-                        <h5 class="text-left font-weight-light ml-5">Nulla vitae elit libero</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </div>
 
 <!-- SLIDE PRODUCT -->
 <div class="container my-5">
-	<h1 class="main-title text-center">lançamentos</h1>
+	<h1 class="main-title text-center">Lançamentos</h1>
 	<div id="products-carousel" class="carousel slide" data-ride="carousel">
 		<!-- INDICATORS ORANGE -->
 		<ol class="carousel-indicators">
@@ -220,8 +215,7 @@
 							</a>
 						</div>
 						<div class="card-body border-0 p-1">
-							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
-									Gerais</small></p>
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas Gerais</small></p>
 							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
 							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
 						</div>
@@ -378,11 +372,11 @@
 			</div>
 		</div>
 		<!-- CAROSEL CONTROLS -->
-		<a class="carousel-control-prev" href="#products-carousel" role="button" data-slide="prev">
+		<a class="carousel-control-prev d-lg-flex d-none" href="#products-carousel" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="sr-only">Previous</span>
 		</a>
-		<a class="carousel-control-next" href="#products-carousel" role="button" data-slide="next">
+		<a class="carousel-control-next d-lg-flex d-none" href="#products-carousel" role="button" data-slide="next">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		</a>
@@ -544,8 +538,7 @@
 							</a>
 						</div>
 						<div class="card-body border-0 p-1">
-							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
-									Gerais</small></p>
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas Gerais</small></p>
 							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
 							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
 						</div>
@@ -702,11 +695,11 @@
 			</div>
 		</div>
 		<!-- CAROSEL CONTROLS -->
-		<a class="carousel-control-prev" href="#products-carousel" role="button" data-slide="prev">
+		<a class="carousel-control-prev d-lg-flex d-none" href="#products-carousel" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="sr-only">Previous</span>
 		</a>
-		<a class="carousel-control-next" href="#products-carousel" role="button" data-slide="next">
+		<a class="carousel-control-next d-lg-flex d-none" href="#products-carousel" role="button" data-slide="next">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		</a>
@@ -727,9 +720,9 @@
 				<!-- CONTENT -->
 				<div class="card-img-overlay text-white d-flex align-items-end bg-gradient-primary">
 					<div>
-						<h5>Quis auctor elit sed vulputate mi sit amet mauris</h5>
+						<h4>Quis auctor elit sed vulputate mi sit amet mauris</h4>
 						<p>Lorem ipsum dolor sit amet</p>
-						<a href="#" class="btn btn-outline-light rounded-pill mt-3">LOREM</a>
+						<a href="#" class="btn btn-outline-light rounded-pill px-4 mt-3">LOREM</a>
 					</div>
 				</div>
 			</div>
@@ -742,9 +735,9 @@
 				<!-- CONTENT -->
 				<div class="card-img-overlay text-white d-flex align-items-end bg-gradient-dark">
 					<div>
-						<h5>Quis auctor elit sed vulputate mi sit amet mauris</h5>
+						<h4>Quis auctor elit sed vulputate mi sit amet mauris</h4>
 						<p>Lorem ipsum dolor sit amet</p>
-						<a href="#" class="btn btn-outline-light rounded-pill mt-3">LOREM</a>
+						<a href="#" class="btn btn-outline-light rounded-pill px-4 mt-3">LOREM</a>
 					</div>
 				</div>
 			</div>
@@ -768,82 +761,75 @@
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<div class="row">
-						<div class="mt-1 mb-1 col-lg-4 ">
+						<div class="mt-1 mb-1 col-lg-4 col-12">
 							<div class="testimonial-wrapper">
 								<div class="testimonial">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 									</p>
 								</div>
-								<div class="row align-items-center">
+								<div class="row">
 									<div class="media">
 										<div class="media-left d-flex mr-3">
 											<img src="img/testimonial.jpg">
 										</div>
 									</div>
-									<div class="media-body">
-										<div class="overview">
-											<div class="name">
-												<p>Jeremy H.</p>
-											</div>
-											<div class="details">
-												<p>Manager</p>
-											</div>
+									<div class="media-body mt-4">
+										<div class="name font-weight-bolder">
+											<p>Jeremy H.</p>
+										</div>
+										<div class="details">
+											<p>Manager</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="mt-1 mb-1 col-lg-4 ">
+						<div class="mt-1 mb-1 col-lg-4 col-12">
 							<div class="testimonial-wrapper">
 								<div class="testimonial">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 									</p>
 								</div>
-								<div class="row align-items-center">
+								<div class="row">
 									<div class="media">
 										<div class="media-left d-flex mr-3">
 											<img src="img/testimonial.jpg">
 										</div>
 									</div>
-									<div class="media-body">
-										<div class="overview">
-											<div class="name">
-												<p>Jeremy H.</p>
-											</div>
-											<div class="details">
-												<p>Manager</p>
-											</div>
+									<div class="media-body mt-4">
+										<div class="name font-weight-bolder">
+											<p>Jeremy H.</p>
+										</div>
+										<div class="details">
+											<p>Manager</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="mt-1 mb-1 col-lg-4 ">
+						<div class="mt-1 mb-1 col-lg-4 col-12">
 							<div class="testimonial-wrapper">
 								<div class="testimonial">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 									</p>
 								</div>
-								<div class="row align-items-center">
+								<div class="row">
 									<div class="media">
 										<div class="media-left d-flex mr-3">
 											<img src="img/testimonial.jpg">
 										</div>
 									</div>
-									<div class="media-body">
-										<div class="overview">
-											<div class="name">
-												<p>Jeremy H.</p>
-											</div>
-											<div class="details">
-												<p>Manager</p>
-											</div>
+									<div class="media-body mt-4">
+										<div class="name font-weight-bolder">
+											<p>Jeremy H.</p>
+										</div>
+										<div class="details">
+											<p>Manager</p>
 										</div>
 									</div>
-									<div class="clearfix"></div>
 								</div>
 							</div>
 						</div>
@@ -853,7 +839,6 @@
 		</div>
 	</div>
 </div>
-
 
 <!-- PARCEIRO -->
 <div class="container my-5">
@@ -868,17 +853,17 @@
 		<!-- LOGO CAROUSEL -->
 		<div class="carousel-inner">
 			<div class="carousel-item active mb-5">
-				<div class=" d-flex justify-content-center">
-                    <img class="img-card dictionary-img" src="img/Logomarca_Alterada.png">
+				<div class="d-flex justify-content-center">
+                    <img class="img-card parceiro-img" src="img/Logomarca_Alterada.png">
                 </div>
 			</div>
 		</div>
 		<!-- CAROSEL CONTROLS -->
-		<a class="carousel-control-prev" href="#products-carousel" role="button" data-slide="prev">
+		<a class="carousel-control-prev d-lg-flex d-none" href="#products-carousel" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="sr-only">Previous</span>
 		</a>
-		<a class="carousel-control-next" href="#products-carousel" role="button" data-slide="next">
+		<a class="carousel-control-next d-lg-flex d-none" href="#products-carousel" role="button" data-slide="next">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		</a>
@@ -894,34 +879,44 @@
 	<div class="row">
 		<!-- CARD 1 -->
 		<div class="blog-img card border-0 col-md-4 m-auto">
-			<a href="#"><img class="card-img-top"
-					src="https://images.unsplash.com/photo-1499914485622-a88fac536970?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"></a>
-			<div class="blog-abstract card-body bg-white position-absolute align-self-center">
-				<h6 class="text-uppercase font-weight-bold">Lorem ipsum</h6>
-				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
+			<a class="text-black-50" href="#">
+				<img class="card-img-top" src="https://images.unsplash.com/photo-1499914485622-a88fac536970?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"/>
+				<div class=" d-flex justify-content-center">
+					<div class="blog-abstract card-body bg-white position-absolute align-self-center">
+						<h6 class="text-uppercase font-weight-bold">Lorem ipsum</h6>
+						<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>		
+			</a>
 		</div>
 		<!-- CARD 2 -->
 		<div class="blog-img card border-0 col-md-4 m-auto">
-			<a href="#"><img class="card-img-top"
-					src="https://images.unsplash.com/photo-1507208773393-40d9fc670acf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"></a>
-			<div class="blog-abstract card-body bg-white position-absolute align-self-center">
-				<h6 class="text-uppercase font-weight-bold">Lorem ipsum</h6>
-				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
+			<a class="text-black-50" href="#">
+				<img class="card-img-top" src="https://images.unsplash.com/photo-1507208773393-40d9fc670acf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"/>
+				<div class=" d-flex justify-content-center">
+					<div class="blog-abstract card-body bg-white position-absolute align-self-center">
+						<h6 class="text-uppercase font-weight-bold">Lorem ipsum</h6>
+						<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>		
+			</a>
 		</div>
 		<!-- CARD 3 -->
 		<div class="blog-img card border-0 col-md-4 m-auto">
-			<a href="#"><img class="card-img-top"
-					src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"></a>
-			<div class="blog-abstract card-body bg-white position-absolute align-self-center">
-				<h6 class="text-uppercase font-weight-bold">Lorem ipsum</h6>
-				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
+			<a class="text-black-50" href="#">
+				<img class="card-img-top" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"/>
+				<div class=" d-flex justify-content-center">
+					<div class="blog-abstract card-body bg-white position-absolute align-self-center">
+						<h6 class="text-uppercase font-weight-bold">Lorem ipsum</h6>
+						<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>		
+			</a>
 		</div>
 	</div>
 </div>
+
 <?php include 'footer.php'; ?>
