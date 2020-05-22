@@ -892,9 +892,9 @@ background-position: center;
 }
 
 .svg-check {
-	width: 15x;
+	width: 15px;
 	height: 15px;
-	fill: green;
+	fill: #57b66a;
 }
 
 .border-light {
@@ -908,13 +908,12 @@ background-position: center;
 }
 
 .dark-blue-svg {
-	fill: #3D8CC2;
+	fill: #006b9e;
 }
 
 .svg-size-product {
-	width: 35px;
-	height: 35px;
-	margin: 1px 1px 1px 1px;
+	width: 40px;
+	height: 40px;
 	display: block
 }
 
