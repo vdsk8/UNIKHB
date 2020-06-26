@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PROPOSTAS</title>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+	<link href="css/theme.css" rel="stylesheet">
+	
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- PROPRIETÁRIO -->
+<div class="container card p-5">
+    <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Propostas</h1>
+    <hr/>
+    <div class="container">
+        <h5 class="text-muted font-weight-bold">Você recebeu propostas:</h5>
+        <h5 class="text-muted font-weight-bold">1 - <span class="text-success">Nome do produto</span></h5>
+    </div>
+        <form class="container">
+            <div class="bg-green text-muted p-4 mb-3 rounded-sm">
+                <div class="form-group">
+                    <label><h5 class="font-weight-bold">Proposta enviada em <span class="font-weight-normal">DD/MM/AAAA HH:MM:SS</span></h5></label>
+                    <input type="text" class="form-control">
+                </div>
+                <h5 class="font-weight-bold">Forma de pagamento: <span class="font-weight-normal">XXX</span></h5>
+                <h5 class="font-weight-bold">Primeiro pagamento em: <span class="font-weight-normal">XXX</span></h5>
+                <h5 class="font-weight-bold">Valor a ser pago: <span class="font-weight-normal">XXX</span></h5>
+                <h5 class="font-weight-bold">Contraproposta: <span class="font-weight-normal">XXX</span></h5>
+
+                <div class="col-12 text-left mt-3 ml-0 pl-0">
+                    <button type="submit" class="btn btn-warning text-white text-uppercase">Contraproposta</button>
+                    <button type="submit" class="btn btn-green text-white text-uppercase">Aceitar</button>
+                    <button type="submit" class="btn btn-danger text-white text-uppercase">Recusar</button>
+                </div>
+                <div class="container">
+                    <div class="row bg-light-green my-3 p-3">
+                        <input type="text" class="form-control mb-3">
+                        <div class="col-lg-6 col-12 form-group text-center">
+                            <label class="font-weight-bold">Forma de pagamento:</label>
+                            <div class="font-weight-normal">
+                                <div class="d-inline mx-auto">
+                                    <input class="radio-orange" type="radio" name="formaDePagamento" value="1"/>
+                                    <label><span><span></span></span>À vista</label>
+                                </div>
+                                <div class="d-inline mx-auto">
+                                    <input class="radio-orange" type="radio" name="formaDePagamento" value="option1"/>
+                                    <label class="radio-orange"><span><span></span></span>Parcelado</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12 form-group">
+                            <label>Número de Parcelas:</label>
+                            <select class="custom-select" id="inlineFormCustomSelect">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 col-12 form-group">
+                            <label>Valor que deseja pagar:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-lg-6 col-12 form-group">
+                            <label>Data do primeiro pagamento:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-lg-6 col-12 form-group text-center">
+                            <label class="font-weight-bold">Assessoria Presencial</label>
+                            <div class="font-weight-normal">
+                                <div class="d-inline mx-auto">
+                                    <input class="radio-orange" type="radio" name="assessoriaPresencial" value="1"/>
+                                    <label><span><span></span></span>Sim</label>
+                                </div>
+                                <div class="d-inline mx-auto">
+                                    <input class="radio-orange" type="radio" name="assessoriaPresencial" value="option1"/>
+                                    <label class="radio-orange"><span><span></span></span>Não</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-right mt-3 mr-0 pr-0">
+                            <button type="submit" class="btn btn-warning text-white text-uppercase rounded-0 px-5 py-1">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="container">
+            <div class="bg-green text-muted p-4 mb-3 rounded-sm">
+                <div class="form-group">
+                    <label><h5 class="font-weight-bold">Proposta enviada em <span class="font-weight-normal">DD/MM/AAAA HH:MM:SS</span></h5></label>
+                    <input type="text" class="form-control">
+                </div>
+                <h5 class="font-weight-bold">Forma de pagamento: <span class="font-weight-normal">XXX</span></h5>
+                <h5 class="font-weight-bold">Primeiro pagamento em: <span class="font-weight-normal">XXX</span></h5>
+                <h5 class="font-weight-bold">Valor a ser pago: <span class="font-weight-normal">XXX</span></h5>
+                <h5 class="font-weight-bold">Contraproposta: <span class="font-weight-normal">XXX</span></h5>
+                <div class="form-group mt-5">
+                    <label><h5 class="font-weight-bold">Contraproposta enviada pelo proprietário em <span class="font-weight-normal">DD/MM/AAAA HH:MM:SS</span></h5></label>
+                    <input type="text" class="form-control" disabled>
+                    <small class="form-text">Sua contraproposta sofreu algumas alterações pela Unik.</small>
+                </div>
+                <h5 class="font-weight-bold">Forma de pagamento: <span class="font-weight-normal">XXX</span></h5>
+                <h5 class="font-weight-bold">Primeiro pagamento em: <span class="font-weight-normal">XXX</span></h5>
+                <h5 class="font-weight-bold">Valor a ser pago: <span class="font-weight-normal">XXX</span></h5>
+                <h5 class="font-weight-bold">Contraproposta: <span class="font-weight-normal">XXX</span></h5>
+                <div class="container bg-light-pink my-3 p-3">
+                    <p class="font-weight-bolder text-dark my-auto">Esta proposta foi recusada</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="bg-green text-muted p-4 mb-3 rounded-sm">
+                <div class="form-group">
+                    <label><h5 class="font-weight-bold">Proposta enviada em <span class="font-weight-normal">DD/MM/AAAA HH:MM:SS</span></h5></label>
+                    <input type="text" class="form-control">
+                </div>
+                <h5 class="font-weight-bold">Forma de pagamento: <span class="font-weight-normal">XXX</span></h5>
+                <h5 class="font-weight-bold">Primeiro pagamento em: <span class="font-weight-normal">XXX</span></h5>
+                <h5 class="font-weight-bold">Valor a ser pago: <span class="font-weight-normal">XXX</span></h5>
+                <h5 class="font-weight-bold">Contraproposta: <span class="font-weight-normal">XXX</span></h5>
+                <div class="container bg-light-pink my-3 p-3">
+                    <p class="font-weight-bolder text-dark my-auto">Esta proposta foi recusada</p>
+                </div>
+            </div>
+        </div>
+            
+        
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
