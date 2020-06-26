@@ -27,46 +27,48 @@
 <body>
 <!-- INSERIR AERONAVE -->
 <div class="container">
-    <div class="card formulario mx-auto my-5">
-        <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Inserir Aeronave</h1>
-        <hr class="mx-5"/>
-        <div class="mx-5">
-            <p class="text-center text-muted">A UNIK HB atua como divulgadora e intermediadora de vendas e anúncios feitos por proprietários e/ou mandatários mediante comissão sobre as vendas realizadas através do site, conforme tabela de comissões presente no termo de adesão, variando de 5% a 10%.</p>
-            <p class="text-center text-muted">O valor mínimo para anunciar produtos nessa categora é de <span class="font-weight-bold">R$ 150.000,00</span></p>
-        </div>
-        <form>
-            <div class="row text-center d-flex align-items-center mb-3">
-                <div class="col-md-4 col-12 text-center my-2">
-                    <h5 class="text-black-50 font-weight-bold">Você é mandatário?</h5>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col">
-                            <div class="d-inline mx-auto">
-                                <input id="mandatarioSim" class="radio-orange" type="radio" name="mandatario" value="1"/>
-                                <label for="mandatarioSim"><span><span></span></span>Sim</label>
-                            </div>
-                            <div class="d-inline mx-auto">
-                                <input id="mandatarioNao" class="radio-orange" type="radio" name="mandatario" value="1"/>
-                                <label for="mandatarioNao"><span><span></span></span>Não</label>
+    <div class="row">
+        <div class="card formulario mx-auto my-5">
+            <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Inserir Aeronave</h1>
+            <hr class="mx-5"/>
+            <div class="mx-5">
+                <p class="text-center text-muted">A UNIK HB atua como divulgadora e intermediadora de vendas e anúncios feitos por proprietários e/ou mandatários mediante comissão sobre as vendas realizadas através do site, conforme tabela de comissões presente no termo de adesão, variando de 5% a 10%.</p>
+                <p class="text-center text-muted">O valor mínimo para anunciar produtos nessa categora é de <span class="font-weight-bold">R$ 150.000,00</span></p>
+            </div>
+            <form class="container">
+                <div class="row text-center d-flex align-items-center mb-3">
+                    <div class="col-md-4 col-12 text-center my-2">
+                        <h5 class="text-black-50 font-weight-bold">Você é mandatário?</h5>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col">
+                                <div class="d-inline mx-auto">
+                                    <input id="mandatarioSim" class="radio-orange" type="radio" name="mandatario" value="1"/>
+                                    <label for="mandatarioSim"><span><span></span></span>Sim</label>
+                                </div>
+                                <div class="d-inline mx-auto">
+                                    <input id="mandatarioNao" class="radio-orange" type="radio" name="mandatario" value="1"/>
+                                    <label for="mandatarioNao"><span><span></span></span>Não</label>
+                                </div>
                             </div>
                         </div>
+                        <button class="btn btn-warning text-white border-0 rounded-0 py-1 mt-3">Simulador de gratificação</button>
                     </div>
-                    <button class="btn btn-warning text-white border-0 rounded-0 py-1 mt-3">Simulador de gratificação</button>
+                    <div class="col-md-4 col-12 form-group text-center">
+                        <label for="categoria"><h5 class="text-black-50 font-weight-bold">Proprietário</h5></label>
+                        <select class="custom-select" id="inlineFormCustomSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <button class="btn btn-warning text-white border-0 rounded-0 py-1 mt-3">Mandatários Adicionais</button>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <button class="btn btn-warning text-uppercase text-white font-weight-bold border-0 rounded-0 py-1">Nova Pessoa</button>
+                    </div>
                 </div>
-                <div class="col-md-4 col-12 form-group text-center">
-                    <label for="categoria"><h5 class="text-black-50 font-weight-bold">Proprietário</h5></label>
-                    <select class="custom-select" id="inlineFormCustomSelect">
-                        <option selected>Choose...</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                    <button class="btn btn-warning text-white border-0 rounded-0 py-1 mt-3">Mandatários Adicionais</button>
-                </div>
-                <div class="col-md-4 col-12">
-                    <button class="btn btn-warning text-uppercase text-white font-weight-bold border-0 rounded-0 py-1">Nova Pessoa</button>
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 </div>
 <!-- INSERIR CADASTRO AERONAVES-->
@@ -106,7 +108,7 @@
                 </div>
                 <!-- ESPECIFICIDADE -->
                 <div class="row my-3">
-                    <div class="col-4 form-group text-center">
+                    <div class="col-md-4 col-12 form-group text-center">
                         <label>Condição</label>
                         <div class="font-weight-normal">
                             <div class="d-inline mx-auto">
@@ -119,7 +121,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="categoria">Categoria</label>
                         <select class="custom-select" id="inlineFormCustomSelect">
                             <option selected>Choose...</option>
@@ -128,57 +130,57 @@
                             <option value="3">Three</option>
                         </select>
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="marca">Marca</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="modelo">Modelo</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="ano">Ano</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="horasTotais">Horas totais</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="numeroDeAssentos">Número de assentos</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="exterior">Exterior</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="interior">Interior</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="motor">Motor</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="potencia">Potência</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="horasTotaisDoMotor">Horas totais do motor</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="helice">Hélice</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="horasTotaisDaHelice">Horas totais da hélice</label>
                         <input type="text" class="form-control">
                     </div>
                 </div>
                 <div class="row my-3">
-                    <div class="col-4 form-group text-center">
+                    <div class="col-md-4 col-12 form-group text-center">
                         <label>Hangarada</label>
                         <div class="font-weight-normal">
                             <div class="d-inline mx-auto">
@@ -191,7 +193,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 form-group text-center">
+                    <div class="col-md-4 col-12 form-group text-center">
                         <label>Histórico de acidente</label>
                         <div class="font-weight-normal">
                             <div class="d-inline mx-auto">
@@ -206,30 +208,30 @@
                     </div>
                 </div>
                 <div class="row my-3">
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="numeroDeRegistro">Número de Registro*</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="validadeRiam">Validade RIAM</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="validadeSeguro">Validade Seguro</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-12 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="avionicoseRadios">Aviônicos e rádios</label>
                         <textarea type="text" class="form-control" name="paragraph" rows="3"></textarea>
                     </div>
-                    <div class="col-12 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="equipamentosAdicionais">Equipamentos adicionais</label>
                         <textarea type="text" class="form-control" name="paragraph" rows="3"></textarea>
                     </div>
                 </div>
                 <!-- Preço e anexos -->
                 <div class="row my-3">
-                    <div class="col-3 form-group text-center">
+                    <div class="col-md-4 col-12 form-group text-center">
                         <label>Moeda</label>
                         <div class="font-weight-normal">
                             <div class="d-inline mx-auto">
@@ -242,11 +244,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="preco">Preço</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-3 form-group text-center">
+                    <div class="col-md-4 col-12 form-group text-center">
                         <label>Financiado</label>
                         <div class="font-weight-normal">
                             <div class="d-inline mx-auto">
@@ -259,7 +261,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3 form-group text-center">
+                    <div class="col-md-4 col-12 form-group text-center">
                         <label>Alienado</label>
                         <div class="font-weight-normal">
                             <div class="d-inline mx-auto">
@@ -324,7 +326,7 @@
                     <button class="btn btn-link text-muted text-uppercase p-0"><small>Utilizar endereço do Proprietário</small></button>
                 </div>
                 <div class="row my-3">
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="pais">País*</label>
                         <select class="custom-select" id="inlineFormCustomSelect">
                             <option selected>Choose...</option>
@@ -333,7 +335,7 @@
                             <option value="3">Three</option>
                         </select>
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="estado">Estado*</label>
                         <select class="custom-select" id="estado">
                             <option selected>Choose...</option>
@@ -342,7 +344,7 @@
                             <option value="3">Three</option>
                         </select>
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="cidade">Cidade*</label>
                         <select class="custom-select" id="cidade">
                             <option selected>Choose...</option>
@@ -351,19 +353,19 @@
                             <option value="3">Three</option>
                         </select>
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="cep">CEP*</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="logadouro">Logradouro*</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="numero">Número*</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="bairro">Bairro*</label>
                         <select class="custom-select" id="bairro">
                             <option selected>Choose...</option>
@@ -372,7 +374,7 @@
                             <option value="3">Three</option>
                         </select>
                     </div>
-                    <div class="col-4 form-group">
+                    <div class="col-md-4 col-12 form-group">
                         <label for="complemento">Complemento*</label>
                         <input type="text" class="form-control">
                     </div>                    
