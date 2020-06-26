@@ -28,7 +28,7 @@ small {
 /* TEXT COLOR */
 
 .text-primary {
-	color: #ff7925!important;
+	color: #EB8200!important;
 }
 
 .text-secondary {
@@ -73,7 +73,7 @@ small {
 /* BACKGROUND */
 
 .bg-primary {
-	background-color: #ff7925!important;
+	background-color: #EB8200!important;
 }
 
 .bg-secondary {
@@ -104,8 +104,30 @@ small {
 	background-color: rgba(255, 145, 0, 0.4)!important;
 }
 
+.bg-gradient-orange {
+	border: 0.0625em solid #D9923B;
+	background: #ffa200;
+	background-image: linear-gradient(#f8d4a2,#F29F05);
+}
+
 .bg-gradient-light {
 	background-color: rgba(255, 255, 255, 0.8)!important;
+}
+
+.bg-light-blue {
+	background-color: #BBE2F7;
+}
+
+.bg-light-pink {
+	background-color: #F3B4BB;
+}
+
+.bg-green {
+	background-color: #DEF3E3;
+}
+
+.bg-light-green {
+	background-color: #F4FBF6;
 }
 
 /* BUTTONS */
@@ -184,6 +206,16 @@ small {
 
 .btn-google {
 	background-color: #d85133;
+	border: 0;
+}
+
+.btn-dark-red {
+	background-color: #770F00;
+	border: 0;
+}
+
+.btn-green {
+	background-color: #2C7330;
 	border: 0;
 }
 
@@ -341,6 +373,43 @@ background-image:         linear-gradient(#fdb63b,#e28f00);
 .svg-top {
 	width: 20px;
 	fill: white;
+}
+
+/* AVISOS POP-UP */
+/* algo deu errado e mandatários adicionais ...*/
+.triangle-down {
+	position: absolute;
+	top: 63px;
+	width: 0px;
+	height: 0px;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 20px solid #EB8200;
+}
+.circle {
+	position: absolute;
+	top: 0.75em;
+	right: 0.5em;
+
+	height: 21px;
+	width: 21px;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+}
+
+.circle-orange {
+	position: absolute;
+	top: 2.1em;
+	right: 1.85em;
+
+	height: 21px;
+	width: 21px;
+	border: 2px solid #ffa200;
+	border-radius: 50%;
+}
+
+.check-icon {
+	fill: #65FE63;
 }
 
 /* NAVBAR */

@@ -21,11 +21,54 @@
 
 </head>
 <body>
- 
+<!-- INSERIR AERONAVE -->
+<div class="container">
+    <div class="card formulario mx-auto my-5">
+        <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Inserir Aeronave</h1>
+        <hr class="mx-5"/>
+        <div class="mx-5">
+            <p class="text-center text-muted">A UNIK HB atua como divulgadora e intermediadora de vendas e anúncios feitos por proprietários e/ou mandatários mediante comissão sobre as vendas realizadas através do site, conforme tabela de comissões presente no termo de adesão, variando de 5% a 10%.</p>
+            <p class="text-center text-muted">O valor mínimo para anunciar produtos nessa categora é de <span class="font-weight-bold">R$ 150.000,00</span></p>
+        </div>
+        <form>
+            <div class="row text-center d-flex align-items-center mb-3">
+                <div class="col-md-4 col-12 text-center my-2">
+                    <h5 class="text-black-50 font-weight-bold">Você é mandatário?</h5>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col">
+                            <div class="d-inline mx-auto">
+                                <input id="mandatarioSim" class="radio-orange" type="radio" name="mandatario" value="1"/>
+                                <label for="mandatarioSim"><span><span></span></span>Sim</label>
+                            </div>
+                            <div class="d-inline mx-auto">
+                                <input id="mandatarioNao" class="radio-orange" type="radio" name="mandatario" value="1"/>
+                                <label for="mandatarioNao"><span><span></span></span>Não</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-warning text-white border-0 rounded-0 py-1 mt-3">Simulador de gratificação</button>
+                </div>
+                <div class="col-md-4 col-12 form-group text-center">
+                    <label for="categoria"><h5 class="text-black-50 font-weight-bold">Proprietário</h5></label>
+                    <select class="custom-select" id="inlineFormCustomSelect">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <button class="btn btn-warning text-white border-0 rounded-0 py-1 mt-3">Mandatários Adicionais</button>
+                </div>
+                <div class="col-md-4 col-12">
+                    <button class="btn btn-warning text-uppercase text-white font-weight-bold border-0 rounded-0 py-1">Nova Pessoa</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 <!-- INSERIR CADASTRO AERONAVES-->
-    <div class="container">
+<div class="container">
   <div class="row">
-    <div class="card formulario my-5">
+    <div class="card formulario mx-auto my-5">
         <!-- INTRODUCTION -->
         <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Inserir Aeronave</h1>
         <hr class="mx-5"/>
@@ -37,7 +80,7 @@
             <form class="container font-weight-bold">
                 <!-- CADASTRO COMUM -->
                 <div class="col-12 text-center my-2">
-                    <h2 class="font-weight-bold">Você é mandatário?</h2>
+                    <h2 class="text-black-50 font-weight-bold">Você é mandatário?</h2>
                     <div class="row d-flex justify-content-center">
                         <div class="col">
                             <div class="d-inline mx-auto">
@@ -225,7 +268,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 form-group">
+                    <div class="col-md-6 col-12 form-group">
                         <label for="fotos">Fotos</label>
                         <div class="input-group mb-3">
                             <div class="custom-file">
@@ -233,17 +276,27 @@
                                 <label class="custom-file-label" for="arquivosFotos">Escolher os arquivos</label>
                             </div>
                         </div>
-                        <small><p>Ao escolher, mantenha CTRL precionado para selecionar mais de 1 imagem se necessário. Máximo de 15 fotos</p></small>
+                        <div>
+                            <small><p>Ao escolher, mantenha CTRL precionado para selecionar mais de 1 imagem, se necessário. Máximo de 15 fotos.</p></small>
+                        </div>
+                        <div class="progress">
+                            <div class="progressbar bg-gradient-orange" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
-                    <div class="col-6 form-group">
+                    <div class="col-md-6 col-12 form-group">
                         <label for="documentos">Documentos*</label>
                         <div class="input-group mb-3">
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="arquivosDocumentos">
-                                <label class="custom-file-label" for="arquivosDocumentos">Escolher os arquivos</label>
+                                <input type="file" class="custom-file-input" id="arquivosFotos">
+                                <label class="custom-file-label" for="arquivosFotos">Escolher os arquivos</label>
                             </div>
                         </div>
-                        <small><p>Ao escolher, mantenha CTRL precionado para selecionar mais de 1 imagem se necessário.</p></small>
+                        <div class="pb-3">
+                            <small><p>Ao escolher, mantenha CTRL precionado para selecionar mais de 1 documento, se necessário.</p></small>
+                        </div>
+                        <div class="progress">
+                            <div class="progressbar bg-gradient-orange" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
                     <div class="col-12 form-group">
                         <label for="descricao">Descrição</label>
@@ -260,6 +313,11 @@
                 <div class="col-12 text-center my-4">
                     <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Dados de localização</h1>
                     <hr class="mx-5"/>
+                </div>
+                <div class="text-left mb-4">
+                    <button class="btn btn-link text-muted text-uppercase p-0"><small>Utilizar enderço de cadastro</small></button>
+                    <span><small>|</small></span>
+                    <button class="btn btn-link text-muted text-uppercase p-0"><small>Utilizar endereço do Proprietário</small></button>
                 </div>
                 <div class="row my-3">
                     <div class="col-4 form-group">
