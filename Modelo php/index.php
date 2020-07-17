@@ -1,632 +1,936 @@
-<?php 
-include 'header.php';
+<?php include 'header.php';?>
+<!--==== BODY INDEX ====-->
+<!-- HERO SLIDER AND DROPDOWN -->
+<div class="card border-0 mb-5">
+    <!-- HERO SLIDER -->
+    <div id="slide-hero-indicators" class="carousel slide" data-ride="carousel">
+        <!-- INDICATORS -->
+        <ol class="carousel-indicators mb-5 pb-5">
+            <li data-target="#slide-hero-indicators" data-slide-to="0" class="active"></li>
+            <li data-target="#slide-hero-indicators" data-slide-to="1"></li>
+            <li data-target="#slide-hero-indicators" data-slide-to="2"></li>
+        </ol>
 
-?>
-    
-
-
-  <!-- - - - - - -  --> 
-  <!-- - - - - - -  --> 
-  <!-- - - - - - -  -->
-
-
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Startup Framework</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Treehouse</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Golden</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Dreams</h4>
-                        <p class="text-muted">Website Design</p>
+        <!-- CAROUSEL -->
+        <div class="carousel-inner">
+            <div class="carousel-item active view">
+                <img class="hero-img d-block w-100 w-100img" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="..." />
+                <div class="mask bg-gradient-dark d-flex align-self-center">
+                    <div class="carousel-caption container">
+                        <h2 class="text-left font-weight-bold">First slide label: consectetur adipiscing elit</h2>
+                        <h5 class="text-left font-weight-light">Nulla vitae elit libero</h5>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
+            <div class="carousel-item view">
+                <img class="hero-img d-block w-100 w-100img" src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80" alt="..." />
+                <div class="mask bg-gradient-dark d-flex align-self-center">
+                    <div class="carousel-caption container">
+                        <h2 class="text-left font-weight-bold">First slide label: consectetur adipiscing elit</h2>
+                        <h5 class="text-left font-weight-light">Nulla vitae elit libero</h5>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Clients Aside -->
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2016</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <p>
-                                    <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                                <ul class="list-inline">
-                                    <li>Date: July 2014</li>
-                                    <li>Client: Round Icons</li>
-                                    <li>Category: Graphic Design</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
+            <div class="carousel-item view">
+                <img class="hero-img d-block w-100 w-100img" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="..." />
+                <div class="mask bg-gradient-dark d-flex align-self-center">
+                    <div class="carousel-caption container">
+                        <h2 class="text-left font-weight-bold">First slide label: consectetur adipiscing elit</h2>
+                        <h5 class="text-left font-weight-light">Nulla vitae elit libero</h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Project Heading</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- FORMULÁRIO DE BUSCA - DROPDOWN-->
+    <div class="card-body border-0 dropdown-index container bg-primary py-2 align-self-center">
+        <form class="form-inline">
+            <div class="row mx-3 flex-fill">
+                <!-- CATEGORIA -->
+                <select id="categoria" class="form-control rounded-0 flex-fill m-2 font-weight-bold">
+                    <option>CATEGORIA</option>
+                </select>
+                <!-- LOCALIZAÇÃO -->
+                <input id="localizacao" type="text" class="form-control rounded-0 flex-fill m-2 font-weight-bold" placeholder="LOCALIZAÇÃO">
+                <!-- VALOR -->
+                <select id="valor" class="form-control rounded-0 flex-fill m-2 font-weight-bold">
+                    <option>VALOR</option>
+                </select>
+                <!-- BUSCAR -->
+                <button id="buscar" type="submit" class="btn btn-info rounded-0 flex-fill m-2 font-weight-bold">BUSCAR</button>
             </div>
-        </div>
+        </form>
     </div>
+</div>
 
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                                <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- SLIDE PRODUCT -->
+<div class="container my-5">
+	<h1 class="main-title text-center">Lançamentos</h1>
+	<div id="products-carousel" class="carousel slide" data-ride="carousel">
+		<!-- INDICATORS ORANGE -->
+		<ol class="carousel-indicators">
+			<li data-target="#products-carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#products-carousel" data-slide-to="1"></li>
+			<li data-target="#products-carousel" data-slide-to="2"></li>
+		</ol>
+		<!-- PRODUCTS -->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="row">
+					<!-- CARD 1 -->
+					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
+						<div class="card border-0 mb-3 img-gallery">
+							<a class="mais-vistos-card" href="#">
+								<img class="card-img border-0 img-gallery"
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
+								<div class="d-flex align-items-end hover-card card-img-overlay bg-gradient-dark">
+									<div>
+										<!-- BANHEIROS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
+											</svg>
+											2 Banheiros
+										</p>
+										<!-- TAMANHO -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
+											</svg>
+											240 m<sup>2</sup>
+										</p>
+										<!-- QUARTOS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
+											</svg>
+											2 Quartos
+										</p>
+										<hr class="border-light mb-0" />
+										<p class="card-text text-uppercase text-white">
+											<svg class="card-white-svg" version="1.1" id="Layer_1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+												xml:space="preserve">
+												<path
+													d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" />
+											</svg>
+											<small>Juiz de Fora, Minas Gerais</small>
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="card-body border-0 p-1">
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
+									Gerais</small></p>
+							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
+							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
+						</div>
+					</div>
+					<!-- CARD 2 -->
+					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
+						<div class="card border-0 mb-3 img-gallery">
+							<a class="mais-vistos-card" href="#">
+								<img class="card-img border-0 img-gallery"
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
+								<div class="d-flex align-items-end hover-card card-img-overlay bg-gradient-dark">
+									<div>
+										<!-- BANHEIROS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
+											</svg>
+											2 Banheiros
+										</p>
+										<!-- TAMANHO -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
+											</svg>
+											240 m<sup>2</sup>
+										</p>
+										<!-- QUARTOS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
+											</svg>
+											2 Quartos
+										</p>
+										<hr class="border-light mb-0" />
+										<p class="card-text text-uppercase text-white">
+											<svg class="card-white-svg" version="1.1" id="Layer_1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+												xml:space="preserve">
+												<path
+													d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" />
+											</svg>
+											<small>Juiz de Fora, Minas Gerais</small>
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="card-body border-0 p-1">
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
+									Gerais</small></p>
+							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
+							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
+						</div>
+					</div>
+					<!-- CARD 3 -->
+					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
+						<div class="card border-0 mb-3 img-gallery">
+							<a class="mais-vistos-card" href="#">
+								<img class="card-img border-0 img-gallery"
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
+								<div class="d-flex align-items-end hover-card card-img-overlay bg-gradient-dark">
+									<div>
+										<!-- BANHEIROS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
+											</svg>
+											2 Banheiros
+										</p>
+										<!-- TAMANHO -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
+											</svg>
+											240 m<sup>2</sup>
+										</p>
+										<!-- QUARTOS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
+											</svg>
+											2 Quartos
+										</p>
+										<hr class="border-light mb-0" />
+										<p class="card-text text-uppercase text-white">
+											<svg class="card-white-svg" version="1.1" id="Layer_1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+												xml:space="preserve">
+												<path
+													d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" />
+											</svg>
+											<small>Juiz de Fora, Minas Gerais</small>
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="card-body border-0 p-1">
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
+									Gerais</small></p>
+							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
+							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="row">
+					<!-- CARD 1 -->
+					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
+						<div class="card border-0 mb-3 img-gallery">
+							<a class="mais-vistos-card" href="#">
+								<img class="card-img border-0 img-gallery"
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
+								<div class="d-flex align-items-end hover-card card-img-overlay bg-gradient-dark">
+									<div>
+										<!-- BANHEIROS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
+											</svg>
+											2 Banheiros
+										</p>
+										<!-- TAMANHO -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
+											</svg>
+											240 m<sup>2</sup>
+										</p>
+										<!-- QUARTOS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
+											</svg>
+											2 Quartos
+										</p>
+										<hr class="border-light mb-0" />
+										<p class="card-text text-uppercase text-white">
+											<svg class="card-white-svg" version="1.1" id="Layer_1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+												xml:space="preserve">
+												<path
+													d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" />
+											</svg>
+											<small>Juiz de Fora, Minas Gerais</small>
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="card-body border-0 p-1">
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
+									Gerais</small></p>
+							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
+							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
+						</div>
+					</div>
+					<!-- CARD 2 -->
+					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
+						<div class="card border-0 mb-3 img-gallery">
+							<a class="mais-vistos-card" href="#">
+								<img class="card-img border-0 img-gallery"
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
+								<div class="d-flex align-items-end hover-card card-img-overlay bg-gradient-dark">
+									<div>
+										<!-- BANHEIROS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
+											</svg>
+											2 Banheiros
+										</p>
+										<!-- TAMANHO -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
+											</svg>
+											240 m<sup>2</sup>
+										</p>
+										<!-- QUARTOS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
+											</svg>
+											2 Quartos
+										</p>
+										<hr class="border-light mb-0" />
+										<p class="card-text text-uppercase text-white">
+											<svg class="card-white-svg" version="1.1" id="Layer_1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+												xml:space="preserve">
+												<path
+													d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" />
+											</svg>
+											<small>Juiz de Fora, Minas Gerais</small>
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="card-body border-0 p-1">
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
+									Gerais</small></p>
+							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
+							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
+						</div>
+					</div>
+					<!-- CARD 3 -->
+					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
+						<div class="card border-0 mb-3 img-gallery">
+							<a class="mais-vistos-card" href="#">
+								<img class="card-img border-0 img-gallery"
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
+								<div class="d-flex align-items-end hover-card card-img-overlay bg-gradient-dark">
+									<div>
+										<!-- BANHEIROS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
+											</svg>
+											2 Banheiros
+										</p>
+										<!-- TAMANHO -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
+											</svg>
+											240 m<sup>2</sup>
+										</p>
+										<!-- QUARTOS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
+											</svg>
+											2 Quartos
+										</p>
+										<hr class="border-light mb-0" />
+										<p class="card-text text-uppercase text-white">
+											<svg class="card-white-svg" version="1.1" id="Layer_1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+												xml:space="preserve">
+												<path
+													d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" />
+											</svg>
+											<small>Juiz de Fora, Minas Gerais</small>
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="card-body border-0 p-1">
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
+									Gerais</small></p>
+							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
+							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- CAROSEL CONTROLS -->
+		<a class="carousel-control-prev d-lg-flex d-none" href="#products-carousel" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next d-lg-flex d-none" href="#products-carousel" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+</div>
 
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
-                                <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- HR -->
+<hr />
 
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                                <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- SLIDE PRODUCT -->
+<div class="container my-5">
+	<h1 class="main-title text-center">mais vistos</h1>
+	<div id="products-carousel" class="carousel slide" data-ride="carousel">
+		<!-- INDICATORS ORANGE -->
+		<ol class="carousel-indicators">
+			<li data-target="#products-carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#products-carousel" data-slide-to="1"></li>
+			<li data-target="#products-carousel" data-slide-to="2"></li>
+		</ol>
+		<!-- PRODUCTS -->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="row">
+					<!-- CARD 1 -->
+					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
+						<div class="card border-0 mb-3 img-gallery">
+							<a class="mais-vistos-card" href="#">
+								<img class="card-img border-0 img-gallery"
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
+								<div class="d-flex align-items-end hover-card card-img-overlay bg-gradient-dark">
+									<div>
+										<!-- BANHEIROS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
+											</svg>
+											2 Banheiros
+										</p>
+										<!-- TAMANHO -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
+											</svg>
+											240 m<sup>2</sup>
+										</p>
+										<!-- QUARTOS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
+											</svg>
+											2 Quartos
+										</p>
+										<hr class="border-light mb-0" />
+										<p class="card-text text-uppercase text-white">
+											<svg class="card-white-svg" version="1.1" id="Layer_1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+												xml:space="preserve">
+												<path
+													d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" />
+											</svg>
+											<small>Juiz de Fora, Minas Gerais</small>
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="card-body border-0 p-1">
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
+									Gerais</small></p>
+							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
+							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
+						</div>
+					</div>
+					<!-- CARD 2 -->
+					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
+						<div class="card border-0 mb-3 img-gallery">
+							<a class="mais-vistos-card" href="#">
+								<img class="card-img border-0 img-gallery"
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
+								<div class="d-flex align-items-end hover-card card-img-overlay bg-gradient-dark">
+									<div>
+										<!-- BANHEIROS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
+											</svg>
+											2 Banheiros
+										</p>
+										<!-- TAMANHO -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
+											</svg>
+											240 m<sup>2</sup>
+										</p>
+										<!-- QUARTOS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
+											</svg>
+											2 Quartos
+										</p>
+										<hr class="border-light mb-0" />
+										<p class="card-text text-uppercase text-white">
+											<svg class="card-white-svg" version="1.1" id="Layer_1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+												xml:space="preserve">
+												<path
+													d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" />
+											</svg>
+											<small>Juiz de Fora, Minas Gerais</small>
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="card-body border-0 p-1">
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
+									Gerais</small></p>
+							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
+							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
+						</div>
+					</div>
+					<!-- CARD 3 -->
+					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
+						<div class="card border-0 mb-3 img-gallery">
+							<a class="mais-vistos-card" href="#">
+								<img class="card-img border-0 img-gallery"
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
+								<div class="d-flex align-items-end hover-card card-img-overlay bg-gradient-dark">
+									<div>
+										<!-- BANHEIROS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
+											</svg>
+											2 Banheiros
+										</p>
+										<!-- TAMANHO -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
+											</svg>
+											240 m<sup>2</sup>
+										</p>
+										<!-- QUARTOS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
+											</svg>
+											2 Quartos
+										</p>
+										<hr class="border-light mb-0" />
+										<p class="card-text text-uppercase text-white">
+											<svg class="card-white-svg" version="1.1" id="Layer_1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+												xml:space="preserve">
+												<path
+													d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" />
+											</svg>
+											<small>Juiz de Fora, Minas Gerais</small>
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="card-body border-0 p-1">
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
+									Gerais</small></p>
+							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
+							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="row">
+					<!-- CARD 1 -->
+					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
+						<div class="card border-0 mb-3 img-gallery">
+							<a class="mais-vistos-card" href="#">
+								<img class="card-img border-0 img-gallery"
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
+								<div class="d-flex align-items-end hover-card card-img-overlay bg-gradient-dark">
+									<div>
+										<!-- BANHEIROS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
+											</svg>
+											2 Banheiros
+										</p>
+										<!-- TAMANHO -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
+											</svg>
+											240 m<sup>2</sup>
+										</p>
+										<!-- QUARTOS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
+											</svg>
+											2 Quartos
+										</p>
+										<hr class="border-light mb-0" />
+										<p class="card-text text-uppercase text-white">
+											<svg class="card-white-svg" version="1.1" id="Layer_1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+												xml:space="preserve">
+												<path
+													d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" />
+											</svg>
+											<small>Juiz de Fora, Minas Gerais</small>
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="card-body border-0 p-1">
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
+									Gerais</small></p>
+							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
+							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
+						</div>
+					</div>
+					<!-- CARD 2 -->
+					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
+						<div class="card border-0 mb-3 img-gallery">
+							<a class="mais-vistos-card" href="#">
+								<img class="card-img border-0 img-gallery"
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
+								<div class="d-flex align-items-end hover-card card-img-overlay bg-gradient-dark">
+									<div>
+										<!-- BANHEIROS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
+											</svg>
+											2 Banheiros
+										</p>
+										<!-- TAMANHO -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
+											</svg>
+											240 m<sup>2</sup>
+										</p>
+										<!-- QUARTOS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
+											</svg>
+											2 Quartos
+										</p>
+										<hr class="border-light mb-0" />
+										<p class="card-text text-uppercase text-white">
+											<svg class="card-white-svg" version="1.1" id="Layer_1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+												xml:space="preserve">
+												<path
+													d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" />
+											</svg>
+											<small>Juiz de Fora, Minas Gerais</small>
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="card-body border-0 p-1">
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
+									Gerais</small></p>
+							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
+							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
+						</div>
+					</div>
+					<!-- CARD 3 -->
+					<div class="card col-lg-4 col-md-6 col-12 border-0 card-gallery mb-4">
+						<div class="card border-0 mb-3 img-gallery">
+							<a class="mais-vistos-card" href="#">
+								<img class="card-img border-0 img-gallery"
+									src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
+								<div class="d-flex align-items-end hover-card card-img-overlay bg-gradient-dark">
+									<div>
+										<!-- BANHEIROS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M20.021,345.689v41.259c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549v-41.259H20.021z"/><path d="M50.022,255.639V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23c-31.24,7.036-54.651,34.987-54.651,68.321v20.004H240.18v-20.004c0-33.574-23.748-61.692-55.323-68.476C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.006v60.049h511.988v-60.049H50.022z"/>
+											</svg>
+											2 Banheiros
+										</p>
+										<!-- TAMANHO -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve"><polygon points="499.076,83.903 499.076,52.836 446.922,52.836 446.922,-0.422 415.922,-0.422 415.922,52.836 83.884,52.836 83.884,1.206 52.883,1.206 52.883,52.836 0.923,52.836 0.923,83.903 52.883,83.903 52.883,417.726 0.923,417.726 0.923,448.792 52.883,448.792 52.883,500.422 83.884,500.422 83.884,448.792 415.922,448.792 415.922,498.795 446.922,498.795 446.922,448.792 499.076,448.792 499.076,417.726 446.922,417.726 446.922,83.903 "/>
+											</svg>
+											240 m<sup>2</sup>
+										</p>
+										<!-- QUARTOS -->
+										<p class="card-text text-white">
+											<svg class="card-hover-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,202.667h53.333c-3.285,0-6.379-1.515-8.405-4.096c-2.027-2.581-2.731-5.952-1.941-9.152l6.635-26.517c3.563-14.272,16.341-24.235,31.04-24.235h68.672c17.643,0,32,14.357,32,32V192c0,5.888-4.779,10.667-10.667,10.667h64c-5.888,0-10.667-4.779-10.667-10.667v-21.333c0-17.643,14.357-32,32-32h68.672c14.699,0,27.477,9.963,31.04,24.235l6.635,26.517c0.811,3.179,0.085,6.571-1.941,9.152c-2.027,2.581-5.12,4.096-8.405,4.096h53.333c5.888,0,10.667-4.779,10.667-10.667v-64c0-29.397-23.936-53.333-53.333-53.333H96c-29.397,0-53.333,23.936-53.333,53.333v64C42.667,197.888,47.445,202.667,53.333,202.667z"/><path d="M458.667,224H53.333C23.936,224,0,247.936,0,277.333v149.333c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667v-32h469.333v32c0,5.888,4.779,10.667,10.667,10.667c5.888,0,10.667-4.779,10.667-10.667V277.333C512,247.936,488.064,224,458.667,224z M490.667,373.333H21.333V352h469.333V373.333z"/>
+											</svg>
+											2 Quartos
+										</p>
+										<hr class="border-light mb-0" />
+										<p class="card-text text-uppercase text-white">
+											<svg class="card-white-svg" version="1.1" id="Layer_1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+												xml:space="preserve">
+												<path
+													d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" />
+											</svg>
+											<small>Juiz de Fora, Minas Gerais</small>
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="card-body border-0 p-1">
+							<p class="card-text text-uppercase text-gallery text-muted"><small>Juiz de Fora, Minas
+									Gerais</small></p>
+							<h5 class="card-title font-weight-bold title-gallery">Product Name</h5>
+							<h5 class="card-title font-weight-bold text-info title-gallery">R$30.000</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- CAROSEL CONTROLS -->
+		<a class="carousel-control-prev d-lg-flex d-none" href="#products-carousel" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next d-lg-flex d-none" href="#products-carousel" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+</div>
 
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
+<!-- HR -->
+<hr />
+
+<!-- BANNER CARDS -->
+<div class="container">
+	<div class="row my-5">
+		<!-- CARD1 -->
+		<div class="col-lg-6">
+			<div class="card banner-card gradient-card">
+				<img class="card-img"
+					src="https://images.unsplash.com/photo-1532974297617-c0f05fe48bff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" />
+				<!-- CONTENT -->
+				<div class="card-img-overlay text-white d-flex align-items-end bg-gradient-primary">
+					<div>
+						<h4>Quis auctor elit sed vulputate mi sit amet mauris</h4>
+						<p>Lorem ipsum dolor sit amet</p>
+						<a href="#" class="btn btn-outline-light rounded-pill px-4 mt-3">LOREM</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- CARD2 -->
+		<div class="col-lg-6">
+			<div class="card banner-card gradient-card">
+				<img class="card-img"
+					src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
+				<!-- CONTENT -->
+				<div class="card-img-overlay text-white d-flex align-items-end bg-gradient-dark">
+					<div>
+						<h4>Quis auctor elit sed vulputate mi sit amet mauris</h4>
+						<p>Lorem ipsum dolor sit amet</p>
+						<a href="#" class="btn btn-outline-light rounded-pill px-4 mt-3">LOREM</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- TESTEMONIAL -->
+<div class="bg-secondary pb-5">
+	<div class="container my-auto">
+
+		<h1 class="main-title text-center">porque a <span class="font-weight-bold">unik</span>
+		</h1>
+		<div id="products-carousel" class="carousel slide" data-ride="carousel">
+			<!-- INDICATORS ORANGE -->
+			<ol class="carousel-indicators">
+				<li data-target="#products-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#products-carousel" data-slide-to="1"></li>
+				<li data-target="#products-carousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="mt-1 mb-1 col-lg-4 col-12">
+							<div class="testimonial-wrapper">
+								<div class="testimonial">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+									</p>
+								</div>
+								<div class="row">
+									<div class="media">
+										<div class="media-left d-flex mr-3">
+											<img src="img/testimonial.jpg">
+										</div>
+									</div>
+									<div class="media-body mt-4">
+										<div class="name font-weight-bolder">
+											<p>Jeremy H.</p>
+										</div>
+										<div class="details">
+											<p>Manager</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mt-1 mb-1 col-lg-4 col-12">
+							<div class="testimonial-wrapper">
+								<div class="testimonial">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+									</p>
+								</div>
+								<div class="row">
+									<div class="media">
+										<div class="media-left d-flex mr-3">
+											<img src="img/testimonial.jpg">
+										</div>
+									</div>
+									<div class="media-body mt-4">
+										<div class="name font-weight-bolder">
+											<p>Jeremy H.</p>
+										</div>
+										<div class="details">
+											<p>Manager</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mt-1 mb-1 col-lg-4 col-12">
+							<div class="testimonial-wrapper">
+								<div class="testimonial">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+									</p>
+								</div>
+								<div class="row">
+									<div class="media">
+										<div class="media-left d-flex mr-3">
+											<img src="img/testimonial.jpg">
+										</div>
+									</div>
+									<div class="media-body mt-4">
+										<div class="name font-weight-bolder">
+											<p>Jeremy H.</p>
+										</div>
+										<div class="details">
+											<p>Manager</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- PARCEIRO -->
+<div class="container my-5">
+	<h1 class="main-title text-center">parceiro</h1>
+	<div id="products-carousel" class="carousel slide" data-ride="carousel">
+		<!-- INDICATORS ORANGE -->
+		<ol class="carousel-indicators">
+			<li data-target="#products-carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#products-carousel" data-slide-to="1"></li>
+			<li data-target="#products-carousel" data-slide-to="2"></li>
+		</ol>
+		<!-- LOGO CAROUSEL -->
+		<div class="carousel-inner">
+			<div class="carousel-item active mb-5">
+				<div class="d-flex justify-content-center">
+                    <img class="img-card parceiro-img" src="img/Logomarca_Alterada.png">
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                                <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  
-<!-- - - - - - -  --> 
-<!-- - - - - - -  --> 
-<!-- - - - - - -  -->
+			</div>
+		</div>
+		<!-- CAROSEL CONTROLS -->
+		<a class="carousel-control-prev d-lg-flex d-none" href="#products-carousel" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next d-lg-flex d-none" href="#products-carousel" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+</div>
+
+<!-- HR -->
+<hr />
+
+<!-- BLOG CARDS -->
+<div class="container my-5">
+	<h1 class="main-title text-center">blog</h1>
+	<div class="row">
+		<!-- CARD 1 -->
+		<div class="blog-img card border-0 col-md-4 m-auto">
+			<a class="text-black-50" href="#">
+				<img class="card-img-top" src="https://images.unsplash.com/photo-1499914485622-a88fac536970?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"/>
+				<div class=" d-flex justify-content-center">
+					<div class="blog-abstract card-body bg-white position-absolute align-self-center">
+						<h6 class="text-uppercase font-weight-bold">Lorem ipsum</h6>
+						<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>		
+			</a>
+		</div>
+		<!-- CARD 2 -->
+		<div class="blog-img card border-0 col-md-4 m-auto">
+			<a class="text-black-50" href="#">
+				<img class="card-img-top" src="https://images.unsplash.com/photo-1507208773393-40d9fc670acf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"/>
+				<div class=" d-flex justify-content-center">
+					<div class="blog-abstract card-body bg-white position-absolute align-self-center">
+						<h6 class="text-uppercase font-weight-bold">Lorem ipsum</h6>
+						<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>		
+			</a>
+		</div>
+		<!-- CARD 3 -->
+		<div class="blog-img card border-0 col-md-4 m-auto">
+			<a class="text-black-50" href="#">
+				<img class="card-img-top" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"/>
+				<div class=" d-flex justify-content-center">
+					<div class="blog-abstract card-body bg-white position-absolute align-self-center">
+						<h6 class="text-uppercase font-weight-bold">Lorem ipsum</h6>
+						<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>		
+			</a>
+		</div>
+	</div>
+</div>
 
 <?php include 'footer.php'; ?>

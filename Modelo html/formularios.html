@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORMULARIOS</title>
+	
+    <meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+	<!-- Custom styles for this template -->
+	<link href="css/theme.css" rel="stylesheet"/>
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+<!-- PROPRIETÁRIO -->
+<div class="container card p-5">
+    <h2 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Proprietário</h2>
+    <hr/>
+    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h3 class="text-center text-uppercase text-success font-weight-bold mt-4">Seus proprietários</h3>
+    <hr/>
+    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="d-flex justify-content-end">
+        <button class="btn btn-warning text-white text-uppercase font-weight-bold">Cadastrar proprietário</button>
+    </div>
+</div>
+
+<!-- CADASTRAR PROPRIETÁRIO / dados pessoais -->
+<div class="container card p-5">
+    <div class="close text-success d-flex justify-content-end" type="button" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        <div class="circle-orange"></div>
+    </div>
+    <h2 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">cadastrar proprietário</h2>
+    <hr/>
+    <div class="row">
+        <button type="button" class="btn btn-link text-secondary font-weight-bold">Dados Pessoais</button>
+        <button type="button" class="btn btn-link text-secondary font-weight-bold">Dados de localização</button>
+    </div>
+    <form class="mt-3">
+        <div class="row text-muted">
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>Nome</label>
+                <input class="form-control" aria-describedby="emailHelp">
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>Email</label>
+                <input class="form-control" aria-describedby="emailHelp">
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>CPF</label>
+                <input class="form-control" aria-describedby="emailHelp">
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>RG</label>
+                <input class="form-control" aria-describedby="emailHelp">
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>Data de Nascimento</label>
+                <input class="form-control" aria-describedby="emailHelp">
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>Estado Civil</label>
+                <select class="custom-select">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>Profissão</label>
+                <select class="custom-select">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>Nacionalidade</label>
+                <select class="custom-select">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>         
+            <div class="col-12 text-right mt-2">
+                <button type="submit" class="btn btn-link text-white text-uppercase font-weight-bold text-muted p-3">Fechar</button>
+                <button type="submit" class="btn btn-warning text-white text-uppercase font-weight-bold p-3">enviar</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- CADASTRAR PROPRIETÁRIO / dados de localização -->
+<div class="container card p-5">
+    <div class="close text-success d-flex justify-content-end" type="button" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        <div class="circle-orange"></div>
+    </div>
+    <h2 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">cadastrar proprietário</h2>
+    <hr/>
+    <div class="row text-muted">
+        <button type="button" class="btn btn-link text-secondary font-weight-bold">Dados Pessoais</button>
+        <button type="button" class="btn btn-link text-secondary font-weight-bold">Dados de localização</button>
+    </div>
+    <form class="mt-3">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>País</label>
+                <select class="custom-select">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>Estado</label>
+                <select class="custom-select">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>Cidade</label>
+                <select class="custom-select">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>CEP</label>
+                <input class="form-control" aria-describedby="emailHelp">
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>Logradouro</label>
+                <input class="form-control" aria-describedby="emailHelp">
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>Número</label>
+                <input class="form-control" aria-describedby="emailHelp">
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>Bairro</label>
+                <select class="custom-select">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>Complemento</label>
+                <input class="form-control" aria-describedby="emailHelp">
+            </div>          
+            <div class="col-12 text-right mt-2">
+                <button type="submit" class="btn btn-link text-white text-uppercase font-weight-bold text-muted p-3">Fechar</button>
+                <button type="submit" class="btn btn-warning text-white text-uppercase font-weight-bold p-3">enviar</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- EMPRESA -->
+<div class="container card p-5">
+    <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Empresa</h1>
+    <hr/>
+    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h3 class="text-center text-uppercase text-success font-weight-bold mt-4">Suas empresas</h3>
+    <hr/>
+    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="d-flex justify-content-end">
+        <button class="btn btn-warning text-white text-uppercase font-weight-bold">Cadastrar empresa</button>
+    </div>
+</div>
+
+<!-- EMPRESA / dados da empresa -->
+<div class="container card p-5">
+    <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Empresa</h1>
+    <hr/>
+    <div class="btn btn-link text-info text-left text-uppercase mx-0 px-0">Voltar</div>
+    <h3 class="text-success font-weight-bold my-2">Dados da Empresa</h3>
+    <form class="mt-3">
+        <div class="row text-muted">
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>CNPJ</label>
+                <input class="form-control" aria-describedby="emailHelp">
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>Razão Social</label>
+                <input class="form-control" aria-describedby="emailHelp">
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>Sócio Proprietário</label>
+                <input class="form-control" aria-describedby="emailHelp">
+            </div>
+            <div class="col-md-6 col-sm-12 form-group">
+                <label>Área de atuação</label>
+                <input class="form-control" aria-describedby="emailHelp">
+            </div>          
+            <div class="col-12 text-right mt-2">
+                <button type="submit" class="btn btn-warning text-white text-uppercase font-weight-bold p-3">Salvar</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- PROPOSTA -->
+<div class="container card p-5">
+    <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Proposta</h1>
+    <hr/>
+    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</div>
+
+<!-- HISTÓRICO -->
+<div class="container card p-5">
+    <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Histórico</h1>
+    <hr/>
+    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</div>
+
+<!-- PUBLICIDADE -->
+<div class="container card p-5">
+    <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Publicidade</h1>
+    <hr/>
+    <div class="bg-light-blue p-5">
+        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+    </div>
+    <h2 class="text-center text-success font-weight-bold mt-4">Suas Publicidades</h2>
+    <table class="my-3">
+        <thead class="bg-info font-weight-bold text-black-50 text-center">
+            <tr>
+                <th scope="col">Tipos</th>
+                <th scope="col">Data Cadastro</th>
+                <th scope="col">Status</th>
+                <th scope="col">Visualizar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border-bottom text-center">
+                <td>Lorem ipsum</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem ipsum</td>
+                <td><a href="#">Lorem ipsum</a></td>
+            </tr>
+            <tr class="border-bottom text-center">
+                <td>Lorem ipsum</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem ipsum</td>
+                <td><a href="#">Lorem ipsum</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- ENCERRAR CONTA -->
+<div class="container card p-5">
+    <h1 class="card-title text-center text-uppercase text-success font-weight-bold mt-4">Encerrar Conta</h1>
+    <hr/>
+    <div class="bg-light-pink p-5">
+        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="font-weight-bolder">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="col-12 text-right mt-3 mr-0 pr-0">
+        <button type="submit" class="btn btn-link text-white text-uppercase font-weight-bold text-muted">Fechar</button>
+        <button type="submit" class="btn btn-dark-red text-white text-uppercase font-weight-bold rounded-0">Encerrar conta</button>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
