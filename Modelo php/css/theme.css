@@ -115,7 +115,7 @@ small {
 }
 
 .bg-gradient-light {
-	background-color: rgba(255, 255, 255, 0.8)!important;
+	background-color: rgba(209, 209, 209, 0.8)!important;
 }
 
 .bg-light-blue {
@@ -954,30 +954,28 @@ background-position: center;
 	line-height: 0.5rem;
 }
 
- /* BLOG */
+/* BLOG */
 
- /* .blog-img {
-	width: 20rem;
-	height: 20rem;
-}
+.blog-img {
+	z-index: 0;
+} 
 
 .blog-img .card-img-top {
+
 	object-fit: cover;
 	width: 100%;
-	height: 200px;
 	background-size: cover;
 	background-position: center;
 }
 
 .blog-abstract {
-	width: 16rem;
-	height: 10.5rem;
-	top:7rem;
+	z-index: 1;
+	margin-top: 10em;
 }
 
 .blog-abstract h6:hover {
 	color:#ff7925
-} */
+}
 
 /* CONSULTAS */
 
