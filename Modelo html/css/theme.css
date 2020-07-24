@@ -47,8 +47,12 @@ small {
 	color: #fff000!important;
 }
 
-.text-black-50{
+.text-black-50 {
 	color: #353535!important;
+}
+
+.text-slider {
+	color: #EF5D5A;
 }
 
 .text-shadow {
@@ -111,7 +115,7 @@ small {
 }
 
 .bg-gradient-light {
-	background-color: rgba(255, 255, 255, 0.8)!important;
+	background-color: rgba(209, 209, 209, 0.8)!important;
 }
 
 .bg-light-blue {
@@ -190,7 +194,7 @@ small {
 }
 
 .btn-danger {
-	background-color: #ff575d;
+	background-color: #EF5D5A;
 	border: 0;
 }
 
@@ -883,7 +887,7 @@ background-position: center;
 
  /* BLOG */
 
- .blog-img {
+ /* .blog-img {
 	width: 20rem;
 	height: 20rem;
 }
@@ -904,7 +908,7 @@ background-position: center;
 
 .blog-abstract h6:hover {
 	color:#ff7925
-}
+} */
 
 /* CONSULTAS */
 
