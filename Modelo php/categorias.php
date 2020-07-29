@@ -43,77 +43,84 @@
         </div>
     </div>
 		
-	<!-- DROPDOWN CARD -->
+	<!-- BUSCA CARD -->
 	<div class="card dropdown-card bg-gradient-light border-0 rounded-0">
-		<div class="card-body">
-			<form>
-				<div class="form-group">
-					<select class="custom-select" id="tipo">
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <select class="custom-select" id="tipo">
                         <option selected>Choose...</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
-				</div>
-				<div class="form-group">
-					<select class="custom-select" id="tipo">
+                </div>
+                <div class="form-group">
+                    <select class="custom-select" id="tipo">
                         <option selected>Choose...</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
-				</div>
-				<div class="form-group">
-					<select class="custom-select" id="tipo">
+                </div>
+                <div class="form-group">
+                    <select class="custom-select" id="tipo">
                         <option selected>Choose...</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
-				</div>
-				<div class="form-group">
-					<select class="custom-select" id="tipo">
+                </div>
+                <div class="form-group">
+                    <select class="custom-select" id="tipo">
                         <option selected>Choose...</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
-				</div>
-				<div class="form-group">
-					<select class="custom-select" id="tipo">
+                </div>
+                <div class="form-group">
+                    <select class="custom-select" id="tipo">
                         <option selected>Choose...</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
-				</div>
-				<div class="row">
-					<div class="form-group col-6 pr-1">
-						<select class="custom-select" id="tipo">
+                </div>
+                <div class="row">
+                    <div class="form-group col-6 pr-1">
+                        <select class="custom-select" id="tipo">
                             <option selected>Choose...</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
-					</div>
-					<div class="form-group col-6 pl-1">
-						<select class="custom-select" id="tipo">
+                    </div>
+                    <div class="form-group col-6 pl-1">
+                        <select class="custom-select" id="tipo">
                             <option selected>Choose...</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
-					</div>
-				</div>		
-				<div class="form-group">
-					<input type="range" class="custom-range" min="0" max="5" step="0.5" id="customRange3">
-				</div>
-				<div class="d-flex">
-					<button type="submit" class="btn btn-primary mb-2 flex-fill">Lorem Ipsum</button>
-				</div>
-			</form>
-		</div>
-	</div>
+                    </div>
+                </div>		
+                <div class="form-group mt-3">
+                    <div id="slider">
+                        <div  class="ui-slider-handle">
+                        <div id="custom-handle" class="font-weight-bold text-slider"></div>
+                        </div>
+                        <div class="ui-slider-handle">
+                        <div id="custom-handle2" class="font-weight-bold text-slider"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <button type="submit" class="btn btn-danger mb-2 flex-fill text-uppercase font-weight-bold">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 
 <!-- DESTAQUES -->

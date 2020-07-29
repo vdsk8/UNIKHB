@@ -132,9 +132,36 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery-3.4.1.slim.min.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+
+<!-- Slider Range -->
+<script>
+    $( function() {
+        var handle = $( "#custom-handle" );
+        var handle2 = $( "#custom-handle2" );
+        $( "#slider" ).slider({
+        range: true,
+        min: 30000,
+        max: 60000,
+        step: 1000,
+        values: [36000, 54000],
+
+        create: function() {
+            var valMin = $( this ).slider( "values", 0 );
+            var valMax = $( this ).slider( "values", 1 )
+            handle.text( "R$" + valMin );
+            handle2.text("R$" + valMax );
+        },
+        slide: function( event, ui ) {
+            handle.text( "R$" + ui.values [0] );
+            handle2.text( "R$" + ui.values [1] );
+        }
+        });
+  } );
+</script>
 
 </body>
 </html>
