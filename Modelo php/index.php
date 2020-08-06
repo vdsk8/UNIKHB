@@ -747,7 +747,7 @@
 				<img class="card-img"
 					src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
 				<!-- CONTENT -->
-				<div class="card-img-overlay text-white d-flex align-items-end bg-gradient-dark">
+				<div class="card-img-overlay text-white d-flex align-items-end bg-gradient-primary">
 					<div>
 						<h4>Quis auctor elit sed vulputate mi sit amet mauris</h4>
 						<p>Lorem ipsum dolor sit amet</p>
