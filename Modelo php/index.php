@@ -777,7 +777,7 @@
 					<div class="row">
 						<div class="mt-1 mb-1 col-lg-4 col-12">
 							<div class="testimonial-wrapper">
-								<div class="testimonial">
+								<div class="testimonial font-italic">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 									</p>
@@ -801,7 +801,7 @@
 						</div>
 						<div class="mt-1 mb-1 col-lg-4 col-12">
 							<div class="testimonial-wrapper">
-								<div class="testimonial">
+								<div class="testimonial font-italic">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 									</p>
@@ -825,7 +825,7 @@
 						</div>
 						<div class="mt-1 mb-1 col-lg-4 col-12">
 							<div class="testimonial-wrapper">
-								<div class="testimonial">
+								<div class="testimonial font-italic">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 									</p>

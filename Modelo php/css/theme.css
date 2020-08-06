@@ -25,6 +25,11 @@ small {
 	font-size: 0.7em;
 }
 
+.font-italic {
+	font-weight: 300!important;
+	font-style: italic;
+}
+
 /* TEXT COLOR */
 
 .text-primary {
@@ -897,6 +902,7 @@ visibility: visible;
 
 
 /* TESTEMONIAL */
+
 
 .carousel .testimonial-wrapper {
 	padding: 0 10px;
