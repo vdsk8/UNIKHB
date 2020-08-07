@@ -29,7 +29,7 @@
 <!-- MENU HAMBURGER -->
 <nav class="navbar-light d-block d-lg-none my-3">
 	<div class="d-flex align-content-end justify-content-end mr-3">
-		<button onclick="topFunction()" class="btn-go-to-top btn-primary border-0" title="Go to top">
+		<button onclick="topFunction()" id="myBtn" class="btn-go-to-top btn-primary border-0" title="Go to top">
 			<svg class="svg-top" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve"><path d="M7.098,40.18c-1.064,0-2.135-0.355-3.02-1.088c-2.019-1.668-2.303-4.658-0.634-6.678l17.25-20.872c0.882-1.067,2.187-1.696,3.571-1.721c1.384-0.022,2.711,0.557,3.63,1.592l18.549,20.872c1.74,1.957,1.564,4.957-0.395,6.695c-1.958,1.74-4.957,1.566-6.696-0.395L24.481,21.853L10.757,38.457C9.819,39.594,8.463,40.18,7.098,40.18z"/>
 			</svg>
 		</button>

@@ -373,7 +373,7 @@ background-image:         linear-gradient(#fdb63b,#e28f00);
 
 /* GO TO TOP BTN */
 .btn-go-to-top {
-	/* display: none; */
+	display: none;
 	position: fixed;
 	bottom: 20px;
 	z-index: 100;

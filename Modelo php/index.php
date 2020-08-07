@@ -893,11 +893,11 @@
 	<div class="row">
 
 		<div class="blog-img col-lg-4 col-md-6 col-12">
-			<a class="card border-0 text-black-50 text-decoration-none mx-auto p-2" href="#">
+			<a class="card border-0 text-black-50 text-decoration-none mx-auto p-2 rounded-0" href="#">
 				<div class="position-absolute">
 					<img class="card-img-top" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"/>
 				</div>
-				<div class="blog-abstract bg-white align-self-center p-3 mx-3 d-block">
+				<div class="blog-abstract bg-white align-self-center p-4 mx-3 d-block">
 					<h6 class="text-uppercase font-weight-bold">Lorem ipsum dolor sit amet</h6>
 					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quia atque inventore ab quis laborum, doloribus sequi illo maxime optio provident voluptates id placeat architecto incidunt natus? Qui, nisi laborum!
 					</p>
@@ -906,11 +906,11 @@
 		</div>
 
 		<div class="blog-img col-lg-4 col-md-6 col-12">
-			<a class="card border-0 text-black-50 text-decoration-none mx-auto p-2" href="#">
+			<a class="card border-0 text-black-50 text-decoration-none mx-auto p-2 rounded-0" href="#">
 				<div class="position-absolute">
 					<img class="card-img-top" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"/>
 				</div>
-				<div class="blog-abstract bg-white align-self-center p-3 mx-3 d-block">
+				<div class="blog-abstract bg-white align-self-center p-4 mx-3 d-block">
 					<h6 class="text-uppercase font-weight-bold">Lorem ipsum dolor sit amet</h6>
 					<p class="text-justify">Lorem ipsum dolor sit amet, id placeat architecto incidunt natus? Qui, nisi laborum!
 					</p>
@@ -919,18 +919,18 @@
 		</div>
 
 		<div class="blog-img col-lg-4 col-md-6 col-12">
-			<a class="card border-0 text-black-50 text-decoration-none mx-auto p-2" href="#">
+			<a class="card border-0 text-black-50 text-decoration-none mx-auto p-2 rounded-0" href="#">
 				<div class="position-absolute">
 					<img class="card-img-top" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"/>
 				</div>
-				<div class="blog-abstract bg-white align-self-center p-3 mx-3 d-block">
+				<div class="blog-abstract bg-white align-self-center p-4 mx-3 d-block">
 					<h6 class="text-uppercase font-weight-bold">Lorem ipsum dolor sit amet</h6>
 					<p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, neque non nesciunt inventore impedit molestias amet magni necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quia atque inventore ab quis laborum, doloribus sequi illo maxime optio provident voluptates id placeat architecto incidunt natus? Qui, nisi laborum!
 					</p>
 				</div>	
 			</a>
 		</div>
-		
+
 	</div>
 </div>
 
