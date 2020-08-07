@@ -25,6 +25,11 @@ small {
 	font-size: 0.7em;
 }
 
+.font-italic {
+	font-weight: 300!important;
+	font-style: italic;
+}
+
 /* TEXT COLOR */
 
 .text-primary {
@@ -100,12 +105,13 @@ small {
 	background-color: #373737!important;
 }
 
-.bg-gradient-dark {
-	background-color: rgba(0, 0, 0, 0.6)!important;
-}
 
 .bg-gradient-primary {
 	background-color: rgba(255, 145, 0, 0.4)!important;
+}
+
+.bg-gradient-primary:hover {
+	background-color: rgba(0, 0, 0, 0.6)!important;
 }
 
 .bg-gradient-orange {
@@ -367,7 +373,7 @@ background-image:         linear-gradient(#fdb63b,#e28f00);
 
 /* GO TO TOP BTN */
 .btn-go-to-top {
-	/* display: none; */
+	display: none;
 	position: fixed;
 	bottom: 20px;
 	z-index: 100;
@@ -873,15 +879,15 @@ visibility: visible;
 
  .light-blue-svg {
 	fill: #80D6ff;
-	height: 35px;
+	height: 30px;
 }
 
 .destaque-img {
-object-fit: cover;
-width: 100%;
-height: 100%;
-background-size: cover;
-background-position: center;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
 }
 
 /* BANNER CARDS */
@@ -896,6 +902,7 @@ background-position: center;
 
 
 /* TESTEMONIAL */
+
 
 .carousel .testimonial-wrapper {
 	padding: 0 10px;
