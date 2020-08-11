@@ -967,12 +967,24 @@ visibility: visible;
 	z-index: 0;
 } 
 
+.blog-img {
+height: 200px;
+}
 .blog-img .card-img-top {
+    object-fit: cover;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
 
-	object-fit: cover;
-	width: 100%;
-	background-size: cover;
-	background-position: center;
+.card-body-df {
+/*     padding: 3em;*/
+   margin-top: -6em;
+/*    position: absolute;*/
+    z-index: 100;
+    display: flex;
+    padding: 2em;
 }
 
 .blog-abstract {
@@ -982,6 +994,15 @@ visibility: visible;
 
 .blog-abstract h6:hover {
 	color:#ff7925
+}
+
+
+a.block-blog-link {
+	color: black;
+	text-decoration: none;
+}
+a.block-blog-link:hover h6{
+	color: orange;
 }
 
 /* CONSULTAS */
