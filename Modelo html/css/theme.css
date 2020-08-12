@@ -229,6 +229,35 @@ small {
 	border: 0;
 }
 
+.bg-gradient-dark {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+
+.bg-gradient-primary:hover {
+    background-color: rgba(0, 0, 0, 0.6)!important;
+}
+.bg-gradient-orange {
+    border: 0.0625em solid #D9923B;
+    background: #ffa200;
+    background-image: linear-gradient(#f8d4a2,#F29F05);
+}
+.bg-gradient-light {
+    background-color: rgba(209, 209, 209, 0.8)!important;
+}
+.bg-light-blue {
+    background-color: #BBE2F7;
+}
+.bg-light-pink {
+    background-color: #F3B4BB;
+}
+.bg-green {
+    background-color: #DEF3E3;
+}
+.bg-light-green {
+    background-color: #F4FBF6;
+}
+
 /* ARROW */
 
 .arrow-duvidas {
