@@ -120,6 +120,10 @@ small {
 	background-image: linear-gradient(#f8d4a2,#F29F05);
 }
 
+.bg-gradient-dark {
+	background-color: rgba(0, 0, 0, 0.6)!important;
+}
+
 .bg-gradient-light {
 	background-color: rgba(209, 209, 209, 0.8)!important;
 }
