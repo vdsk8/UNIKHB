@@ -1085,63 +1085,51 @@ visibility: visible;
 
 
 /* ALTERACOES JUMBOTRON */
-.cover {
+/*.cover {
   object-fit: cover;
   width: 100%;
   height: 250PX;
+}*/
+
+.span-box{
+	position: absolute;
 }
 
+.cover { object-fit: cover; height: 250px; display: block; width: 100%; }
+.spn-cox{height: 250px}
+
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 750px) { 
+ 	#footer-app { height: 300px; }
+ 	.span-box{	position: absolute; margin: 0 auto; }
+	.cover { object-fit: cover; height: 250px;display: block; width: 100%;}
+
+}
 
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
-		.w-100 {
-			min-height: 600px;
-		}
-
-.cover {
-
+		.w-100 { min-height: 600px;	}
+		/*// Small devices (landscape phones, 576px and up)*/
+		.border-right{ border-right: hidden!important;}
+		.dropdown-index { position: relative;}
+		.dropdown-card { position: relative;	}
+		/*.cover { object-fit: contain;height: 250px; display: block; width: 100%; }*/
+		/*#footer-app { height:300px!important}*/
+		/*#footer-app { background-color: yellow; border: 10px yellow solid; }*/
 }
-
-
-
-/*// Small devices (landscape phones, 576px and up)*/
-
-	.border-right{
-		border-right: hidden!important;
-	}
-	.dropdown-index {
-		position: relative;
-	}
-
-	.dropdown-card {
-		position: relative;
-	}
- }
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
-
-
- }
+		/*#footer-app { height:300px!important;}*/
+}
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) { ... }
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-
-	.dropdown-index {
-		position: absolute;
-		z-index: 12;
-		bottom: -28px;
-	}
-	.dropdown-card {
-		position: absolute;
-		top: 5%;
-		right: 100px;
-		z-index: 1;
-	}
-	.border-right{
-		border-right: 1px solid #dee2e6!important;
-	}
+	.dropdown-index { position: absolute; z-index: 12; bottom: -28px; }
+	.dropdown-card { position: absolute; top: 5%; right: 100px; z-index: 1;	}
+	.border-right{ border-right: 1px solid #dee2e6!important; }
 }
